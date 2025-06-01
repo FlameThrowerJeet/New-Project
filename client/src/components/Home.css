@@ -1,0 +1,760 @@
+/* Fullscreen fixes */
+.home-screen {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Camera background with improved visibility */
+.camera-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0; 
+}
+
+/* Content container adjustments for fullscreen */
+.content-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.8);
+  transition: background 0.5s ease;
+  box-shadow: none;
+}
+
+/* Twitch stream container - background layer */
+.twitch-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: transparent;
+  box-shadow: none;
+  opacity: 0.8;
+  pointer-events: none; /* Makes clicks pass through to elements below */
+}
+
+.twitch-container iframe {
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Ensures the iframe cannot receive clicks */
+}
+
+/* Cockpit UI - front layer */
+.cockpit-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 15px solid rgba(51, 51, 51, 0.7); /* Make border semi-transparent */
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  box-shadow: none;
+  z-index: 2; /* Place above the twitch stream */
+}
+
+.cockpit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 2px solid #00ff00;
+  background-color: rgba(0, 0, 0, 0.5); /* More transparent */
+}
+
+.title {
+  color: #00ff00;
+  font-size: 2.5rem;
+  text-shadow: 0 0 5px #000, 0 0 10px #000; /* Add shadow to keep text readable */
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 0;
+}
+
+.login-button {
+  background-color: #222;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  letter-spacing: 0.1em;
+}
+
+.status-light {
+  width: 12px;
+  height: 12px;
+  background-color: #00ff00;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: 0 0 10px #00ff00;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+.main-display {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 700px;
+}
+
+.nav-button {
+  background-color: rgba(0, 0, 0, 0.5); /* More transparent */
+  border: 2px solid #00ff00;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 255, 0, 0.1);
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+.nav-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.cockpit-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* More transparent */
+  border-top: 1px solid #00ff00;
+}
+
+/* Add scan line effect */
+.cockpit-frame::after {
+  display: none;
+}
+
+/* Add or update these styles in Home.css */
+.home-screen {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-container {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.8);
+  transition: background 0.5s ease;
+  box-shadow: none;
+}
+
+/* Site header styling */
+.site-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  background: rgba(0, 10, 30, 0.5);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #00ffff;
+}
+
+.site-header h1 {
+  color: #00ffff;
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+  }
+}
+
+.header-subtitle {
+  color: #ffffff;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+/* Navigation tiles styling */
+.navigation-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.nav-tile {
+  background: rgba(0, 24, 48, 0.6);
+  border: 1px solid #00ffff;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.nav-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.2);
+  background: rgba(0, 36, 72, 0.8);
+}
+
+.tile-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.nav-tile h2 {
+  color: #00ffff;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.nav-tile p {
+  color: #cccccc;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Camera background specific styling */
+.camera-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0; /* Change from -1 to 0 */
+}
+
+/* New container for content that sits above background */
+.navigation-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  background-color: transparent;
+}
+
+/* Terminal scanline effect */
+.scanline {
+  display: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .nav-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  
+  .nav-box {
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Glowing border animation */
+@keyframes pulse {
+  0% {
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(0, 255, 0, 1), 0 0 30px rgba(0, 255, 0, 0.7);
+  }
+}
+
+/* Make sure the clock is visible */
+.retro-clock {
+  width: 280px;
+  margin: 1rem auto 2rem;
+}
+
+/* Terminal Header with Title and Clock */
+.terminal-header {
+  text-align: center;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.terminal-title {
+  color: #00ff00;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.2em;
+  text-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+  text-transform: uppercase;
+}
+
+.terminal-clock {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #00ff00;
+  border-radius: 4px;
+  padding: 10px 25px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+/* Terminal Content and Navigation */
+.terminal-content {
+  width: 100%;
+  max-width: 800px;
+}
+
+.nav-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.terminal-link {
+  display: flex;
+  text-decoration: none;
+  color: #00ff00;
+  background-color: rgba(0, 30, 0, 0.7);
+  border: 2px solid #00ff00;
+  border-radius: 4px;
+  padding: 15px;
+  height: 120px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+}
+
+.terminal-link:hover {
+  transform: scale(1.03);
+  background-color: rgba(0, 40, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+}
+
+.terminal-link:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 255, 0, 0) 0%,
+    rgba(0, 255, 0, 0.1) 50%,
+    rgba(0, 255, 0, 0) 100%
+  );
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.terminal-link:hover:before {
+  transform: rotate(45deg) translate(50%, 50%);
+}
+
+.terminal-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  width: 60px;
+  margin-right: 15px;
+  z-index: 2;
+}
+
+.terminal-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+.label-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-bottom: 5px;
+}
+
+.label-desc {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  
+  .terminal-link {
+    height: 80px;
+  }
+  
+  .terminal-title {
+    font-size: 2rem;
+  }
+  
+  .terminal-clock {
+    font-size: 1.4rem;
+  }
+}
+
+/* More styles as needed */
+
+/* Add to Home.css */
+.content {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-grid {
+  overflow-y: auto;
+}
+
+/* Add to Mission.css */
+.mission-content {
+  height: calc(100vh - 150px); /* Adjust based on your header height */
+  overflow: hidden;
+}
+
+/* Add to Images.css */
+.lightbox-info-container {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.upload-modal-content {
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+.camera-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0; /* Change from -1 to 0 */
+}
+
+/* New container for content that sits above background */
+.navigation-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  background-color: transparent;
+}
+
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-column,
+.right-column {
+  flex: 0 0 300px;
+}
+
+.center-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .content-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-column,
+  .right-column,
+  .center-column {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+.home-root {
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1800px;
+  justify-content: space-between;
+  align-items: stretch;
+  z-index: 1;
+  margin-top: 40px;
+  gap: 0;
+}
+
+.main-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.phone-stream-col,
+.live-chat-col {
+  flex: 0 0 390px;
+  min-width: 390px;
+  max-width: 390px;
+  height: 844px;
+  min-height: 844px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.center-col {
+  flex: 1 1 600px;
+  min-width: 400px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.main-links {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 16px 32px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 400px;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.icon {
+  font-size: 2.2rem;
+  margin-bottom: 4px;
+}
+
+.text {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-top: 2px;
+}
+
+/* Make PhoneStream and LiveChat the same height visually */
+.phone-container,
+.live-chat-container {
+  height: 95vh;
+  width: 440px;
+  min-width: 380px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@media (max-width: 1400px) {
+  .phone-stream-col,
+  .live-chat-col {
+    min-width: 300px;
+    max-width: 340px;
+  }
+  .phone-container,
+  .live-chat-container {
+    width: 340px;
+    min-width: 320px;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-content-row {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+    gap: 24px;
+    min-height: unset;
+  }
+  .main-col {
+    width: 100%;
+    min-width: 0;
+    max-width: 100vw;
+    align-items: center;
+  }
+  .center-col {
+    min-width: 0;
+    max-width: 100vw;
+  }
+  .phone-stream-col,
+  .live-chat-col {
+    min-width: 0;
+    max-width: 100vw;
+    height: 400px;
+    min-height: 400px;
+    padding: 0;
+  }
+  .phone-container,
+  .live-chat-container {
+    height: 400px;
+    width: 95vw;
+    max-width: 95vw;
+  }
+}

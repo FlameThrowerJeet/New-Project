@@ -1,0 +1,99 @@
+.scrollable-container {
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For IE and Edge */
+}
+
+/* Hide default scrollbar */
+.scrollable-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollable-content {
+  width: 100%;
+}
+
+.scroll-track {
+  position: absolute;
+  top: 0;
+  right: 2px;
+  bottom: 0;
+  width: 8px;
+  background: rgba(0, 20, 0, 0.5);
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 10;
+}
+
+.scrollable-container:hover .scroll-track {
+  opacity: 1;
+}
+
+.scroll-thumb {
+  position: absolute;
+  width: 8px;
+  right: 0;
+  background: rgba(0, 255, 0, 0.7);
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(0, 255, 0, 0.5);
+  z-index: 11;
+  transition: background-color 0.2s;
+}
+
+.scroll-thumb:hover {
+  background: #00ff00;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+}
+
+.scroll-thumb.dragging {
+  background: #00ff00;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.9);
+}
+
+/* Terminal-style scrollbar */
+.terminal-scrollable .scroll-track {
+  background: rgba(0, 30, 0, 0.3);
+  border: 1px solid rgba(0, 255, 0, 0.2);
+  width: 10px;
+  right: 4px;
+}
+
+.terminal-scrollable .scroll-thumb {
+  background: linear-gradient(90deg, rgba(0, 100, 0, 0.7), rgba(0, 200, 0, 0.7));
+  border: 1px solid #00ff00;
+  width: 8px;
+  right: 5px;
+}
+
+.terminal-scrollable .scroll-thumb::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 4px;
+  height: 30%;
+  background: rgba(0, 255, 0, 0.8);
+  border-radius: 2px;
+}
+
+/* Scan line effect for terminal style */
+.terminal-scrollable::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 20, 0, 0) 50%, 
+    rgba(0, 20, 0, 0.15) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 2;
+}

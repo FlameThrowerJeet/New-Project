@@ -1,0 +1,102 @@
+.gameContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+}
+
+.gameTitle {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+  letter-spacing: 2px;
+}
+
+.gameCanvas {
+  border: 2px solid #00ff00;
+  background-color: #001100;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.gameControls {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gameButton {
+  padding: 12px 25px;
+  background-color: #003300;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  cursor: pointer;
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.gameButton:hover {
+  background-color: #005500;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+.scoreDisplay {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  color: #00ff00;
+}
+
+.gameInstructions {
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.6;
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #00ff00;
+  background-color: rgba(0, 30, 0, 0.5);
+}
+
+.gameOver {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00ff00;
+  padding: 30px;
+  text-align: center;
+  z-index: 10;
+}
+
+.gameOverText {
+  font-size: 2.5rem;
+  color: #ff3300;
+  margin-bottom: 20px;
+}
+
+.finalScore {
+  font-size: 1.8rem;
+  color: #00ff00;
+  margin-bottom: 25px;
+}
+
+.restartButton {
+  padding: 12px 25px;
+  background-color: #004400;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.restartButton:hover {
+  background-color: #006600;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}

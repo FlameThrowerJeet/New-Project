@@ -1,0 +1,242 @@
+up.css
+.system-bootup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  color: #00ff00;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.bootup-container {
+  width: 80%;
+  max-width: 600px;
+  background-color: rgba(0, 15, 0, 0.9);
+  border: 2px solid rgba(0, 255, 0, 0.7);
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.3), inset 0 0 20px rgba(0, 50, 0, 0.5);
+  padding: 20px;
+  position: relative;
+}
+
+.bootup-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 255, 0, 0.5);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.system-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #00ff00;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.system-version {
+  color: rgba(0, 255, 0, 0.7);
+}
+
+.bootup-content {
+  padding: 15px 0;
+}
+
+.terminal-window {
+  background-color: rgba(0, 5, 0, 0.7);
+  border: 1px solid rgba(0, 255, 0, 0.3);
+  padding: 15px;
+  height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.terminal-window::-webkit-scrollbar {
+  width: 6px;
+  background-color: rgba(0, 10, 0, 0.8);
+}
+
+.terminal-window::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 100, 0, 0.7);
+  border-radius: 3px;
+}
+
+.boot-message {
+  margin-bottom: 8px;
+  line-height: 1.4;
+  font-size: 0.9rem;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.message-prefix {
+  color: rgba(0, 255, 0, 0.7);
+  margin-right: 8px;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  background-color: #00ff00;
+  margin-left: 5px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.progress-container {
+  margin-top: 10px;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: rgba(0, 30, 0, 0.7);
+  border: 1px solid rgba(0, 255, 0, 0.5);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #00ff00;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+  transition: width 0.3s ease-out;
+}
+
+.progress-text {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: rgba(0, 255, 0, 0.9);
+}
+
+.bootup-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(0, 255, 0, 0.5);
+  padding-top: 10px;
+  margin-top: 15px;
+}
+
+.system-status {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #00ff00;
+}
+
+.bypass-btn {
+  background-color: rgba(20, 20, 20, 0.8);
+  color: rgba(0, 255, 0, 0.7);
+  border: 1px solid rgba(0, 255, 0, 0.5);
+  padding: 5px 15px;
+  font-family: 'Share Tech Mono', monospace;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bypass-btn:hover {
+  background-color: rgba(0, 30, 0, 0.8);
+  color: #00ff00;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+.corner {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+}
+
+.corner.tl {
+  top: 0;
+  left: 0;
+  border-top: 2px solid #00ff00;
+  border-left: 2px solid #00ff00;
+}
+
+.corner.tr {
+  top: 0;
+  right: 0;
+  border-top: 2px solid #00ff00;
+  border-right: 2px solid #00ff00;
+}
+
+.corner.bl {
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #00ff00;
+  border-left: 2px solid #00ff00;
+}
+
+.corner.br {
+  bottom: 0;
+  right: 0;
+  border-bottom: 2px solid #00ff00;
+  border-right: 2px solid #00ff00;
+}
+
+/* Scanner effect */
+.bootup-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: rgba(0, 255, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  animation: scan 2s linear infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@keyframes scan {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+/* CRT scan lines */
+.system-bootup::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(0, 0, 0, 0.05) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 10000;
+}

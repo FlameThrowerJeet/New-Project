@@ -1,0 +1,269 @@
+/* Base reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; /* Enable smooth scrolling site-wide */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 80, 0, 0.8) rgba(0, 10, 0, 0.8); /* For Firefox */
+}
+
+:root {
+  --terminal-bg: #000;
+  --terminal-text: #0f0;
+  --terminal-accent: #0ff;
+  --terminal-highlight: #ff0;
+  --terminal-warning: #f00;
+  --terminal-success: #0f0;
+  --terminal-header: #111;
+  --terminal-border: #0f0;
+  
+  /* Dynamic values that will be updated by the component */
+  --health-percent: 92%;
+  --ammo-percent: 84%;
+  --armor-percent: 76%;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  scrollbar-gutter: stable; /* Prevent content jumping when scrollbar appears */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Share Tech Mono', monospace, sans-serif;
+  background-color: #001a33;
+  color: white;
+}
+
+#root {
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+/* Custom scrollbar styles for all elements */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 10, 0, 0.8);
+  border: 1px solid rgba(0, 255, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 80, 0, 0.8);
+  border: 1px solid #00ff00;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 120, 0, 0.8);
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #000;
+}
+
+/* Home screen styling */
+.home-screen {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--terminal-bg);
+  background-image: 
+    radial-gradient(circle at center, rgba(0, 255, 0, 0.05) 0%, transparent 80%),
+    linear-gradient(rgba(0, 255, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 0, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 20px 20px, 20px 20px;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.home-screen::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(transparent 50%, rgba(0,0,0,0.8) 100%),
+    radial-gradient(circle at center, transparent 30%, rgba(0,0,0,0.8) 100%);
+  pointer-events: none;
+}
+
+.home-screen h1 {
+  font-size: 3rem;
+  color: var(--terminal-accent);
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+  margin-bottom: 3rem;
+  letter-spacing: 4px;
+}
+
+.home-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.home-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 180px;
+  text-decoration: none;
+  color: var(--terminal-text);
+  font-size: 1.5rem;
+  border: 2px solid var(--terminal-text);
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-option::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to right, transparent, var(--terminal-text), transparent);
+  animation: scan-line 2s linear infinite;
+}
+
+.home-option:hover {
+  color: var(--terminal-highlight);
+  border-color: var(--terminal-highlight);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--terminal-highlight);
+}
+
+.home-footer {
+  position: absolute;
+  bottom: 2rem;
+  color: var(--terminal-accent);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+@keyframes scan-line {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(1000%);
+  }
+}
+
+/* Placeholder sections */
+.videos-component, .game-component, .marketplace-component {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--terminal-bg);
+  color: var(--terminal-text);
+  font-size: 2rem;
+}
+
+.placeholder-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.placeholder-page::after {
+  content: "This component exists but needs to be reconnected. The team is working on restoring it.";
+  display: block;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: #00ffff;
+}
+
+.loading-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #001a33;
+  color: #00ffff;
+  font-size: 1.5rem;
+}
+
+.loading-page::after {
+  content: "...";
+  animation: ellipsis 1.5s infinite;
+  width: 20px;
+  text-align: left;
+}
+
+@keyframes ellipsis {
+  0% { content: "."; }
+  33% { content: ".."; }
+  66% { content: "..."; }
+  100% { content: "."; }
+}
+
+/* Ensure content is above the Twitch background */
+.home-container {
+  position: relative;
+  z-index: 10;
+}
+
+.home-content {
+  position: relative;
+  z-index: 10;
+}
+
+.home-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.home-background iframe {
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+/* In your App.css or similar */
+.content {
+  position: relative;
+  z-index: 2; /* Make sure this is above the background */
+}

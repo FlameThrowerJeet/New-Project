@@ -1,0 +1,111 @@
+/* Add this at the top */
+.retro-clock {
+  width: 300px !important;
+  margin: 0 auto 1.5rem !important;
+  padding: 15px !important;
+  font-size: 110% !important;
+  z-index: 20 !important;
+  position: relative !important;
+  display: block !important;
+}
+
+.retro-clock {
+  width: 300px;
+  margin: 0 auto 30px;
+  padding: 15px;
+  border: 2px solid;
+  border-radius: 5px;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  position: relative;
+  background-color: rgba(0, 20, 0, 0.7);
+  box-shadow: 0 0 15px currentColor;
+  transition: color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Color states */
+.retro-clock.green {
+  color: #00ff00;
+  border-color: #00ff00;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.6);
+}
+
+.retro-clock.blue {
+  color: #0066ff;
+  border-color: #0066ff;
+  box-shadow: 0 0 15px rgba(0, 102, 255, 0.6);
+}
+
+.clock-container {
+  position: relative;
+  z-index: 2;
+}
+
+.time-display {
+  font-size: 2.8rem !important;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.time-digit {
+  display: inline-block;
+  min-width: 45px;
+}
+
+.colon {
+  display: inline-block;
+  animation: blink 1s infinite steps(1);
+  margin: 0 2px;
+  opacity: 0.8;
+}
+
+.date-display {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.system-status {
+  font-size: 0.8rem;
+  border-top: 1px solid currentColor;
+  padding-top: 5px;
+  letter-spacing: 2px;
+}
+
+/* Scanline effect */
+.clock-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    transparent 51%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Blinking colon animation */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+
+@media (max-width: 768px) {
+  .retro-clock {
+    width: 250px;
+    padding: 10px;
+  }
+  
+  .time-display {
+    font-size: 2rem;
+  }
+}
