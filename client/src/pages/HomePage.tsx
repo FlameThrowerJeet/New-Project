@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="home-container">
       {/* Restore the Twitch background */}
-      <TwitchBackground channel="your_channel_name" />
+      <TwitchBackground />
       
       <div className="content-overlay">
         <h1 className="site-title">FOGGHYA</h1>

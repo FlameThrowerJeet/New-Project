@@ -145,99 +145,15 @@ const Game: React.FC = () => {
   };
   
   return (
-    <div className="game-container">
-      <header className="game-header">
-        <div className="game-title">Border Knowledge Challenge</div>
-        <button className="home-button" onClick={goToHomePage}>Home Page</button>
-      </header>
-      
-      <div className="game-content">
-        {gameMode === 'menu' && (
-          <div className="game-menu">
-            <h2>Test Your Knowledge About India's Geography</h2>
-            <div className="category-selection">
-              <label htmlFor="category-select">Select Category:</label>
-              <select 
-                id="category-select"
-                value={selectedCategory}
-                onChange={e => setSelectedCategory(e.target.value)}
-                aria-label="Select Category"
-              >
-                <option value="all">All Categories</option>
-                <option value="geography">Geography</option>
-                <option value="history">History</option>
-              </select>
-            </div>
-            <button className="start-game-btn" onClick={startGame}>
-              Start Challenge
-            </button>
-          </div>
-        )}
-        
-        {gameMode === 'quiz' && currentQuestion && (
-          <div className="quiz-container">
-            <div className="quiz-header">
-              <div className="question-counter">
-                Question {currentQuestionIndex + 1} of {filteredQuestions.length}
-              </div>
-              <div className="timer">
-                Time Remaining: {timeLeft}s
-                <div 
-                  className="timer-bar" 
-                  style={{ width: `${(timeLeft / 20) * 100}%` }}
-                />
-              </div>
-            </div>
-            
-            <div className="question">
-              {currentQuestion.question}
-            </div>
-            
-            <div className="options">
-              {currentQuestion.options.map((option, index) => (
-                <button 
-                  key={index}
-                  className={`option ${
-                    selectedAnswers.includes(currentQuestionIndex)
-                      ? index === currentQuestion.correctAnswer
-                        ? 'correct'
-                        : index === selectedAnswers[selectedAnswers.length - 1]
-                          ? 'incorrect'
-                          : ''
-                      : ''
-                  }`}
-                  onClick={() => selectAnswer(index)}
-                  disabled={selectedAnswers.includes(currentQuestionIndex)}
-                >
-                  {option}
-                </button>
-              ))}
-            </div>
-            
-            {selectedAnswers.includes(currentQuestionIndex) && (
-              <div className="explanation">
-                {currentQuestion.explanation}
-              </div>
-            )}
-          </div>
-        )}
-        
-        {gameMode === 'result' && (
-          <div className="result-container">
-            <h2>Quiz Completed!</h2>
-            <div className="score-display">
-              <div className="score-value">{score}</div>
-              <div className="score-label">out of {filteredQuestions.length}</div>
-            </div>
-            <p className="score-percent">
-              You scored {((score / filteredQuestions.length) * 100).toFixed(1)}%
-            </p>
-            
-            <button className="restart-btn" onClick={() => setGameMode('menu')}>
-              Return to Menu
-            </button>
-          </div>
-        )}
+    <div className="main-module-panel">
+      <div className="game-container">
+        <header className="game-header">
+          <div className="game-title">Border Knowledge Challenge</div>
+          <button className="home-button" onClick={goToHomePage}>Home Page</button>
+        </header>
+        <div className="game-content">
+          <div className="main-module-title">Border Knowledge Challenge coming soon.<br/>Tactical quiz module in progress.</div>
+        </div>
       </div>
     </div>
   );

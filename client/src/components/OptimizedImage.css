@@ -1,0 +1,79 @@
+.optimized-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.optimized-image.loading {
+  min-height: 200px;
+}
+
+.loading-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #001a33, #00264d);
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(0, 255, 0, 0.3);
+  border-radius: 50%;
+  border-top-color: #00ff00;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.image-content {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-content.visible {
+  opacity: 1;
+}
+
+.image-content.hidden {
+  opacity: 0;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+.error-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #ff4444;
+}
+
+.error-icon {
+  font-size: 24px;
+}
+
+.error-text {
+  font-size: 14px;
+  font-family: 'Courier New', monospace;
+} 

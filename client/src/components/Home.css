@@ -599,162 +599,1241 @@
 .home-root {
   min-height: 100vh;
   width: 100vw;
-  position: relative;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-  overflow-x: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background: #000;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Share Tech Mono', 'JetBrains Mono', 'Fira Mono', 'Consolas', monospace;
 }
 
 .main-content-row {
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 1800px;
-  justify-content: space-between;
-  align-items: stretch;
+  flex: 1;
+  padding: 20px;
+  gap: 20px;
+  position: relative;
   z-index: 1;
-  margin-top: 40px;
-  gap: 0;
 }
 
 .main-col {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.phone-stream-col,
-.live-chat-col {
-  flex: 0 0 390px;
-  min-width: 390px;
-  max-width: 390px;
-  height: 844px;
-  min-height: 844px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  padding: 0;
 }
 
 .center-col {
-  flex: 1 1 600px;
-  min-width: 400px;
+  flex: 1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.right-components {
+  width: 1200px;
+  min-width: 1200px;
+}
+
+.right-components-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  height: 100%;
+}
+
+.component-wrapper {
+  flex: 1;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation Links Styling */
+.main-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid #0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background: rgba(0, 255, 0, 0.05);
+  border: 1px solid rgba(0, 255, 0, 0.2);
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link:hover {
+  background: rgba(0, 255, 0, 0.1);
+  transform: translateX(8px);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
+.nav-link:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 255, 0, 0) 0%,
+    rgba(0, 255, 0, 0.1) 50%,
+    rgba(0, 255, 0, 0) 100%
+  );
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.nav-link:hover:before {
+  transform: rotate(45deg) translate(50%, 50%);
+}
+
+.nav-link .icon {
+  font-size: 2.5rem;
+  margin-right: 16px;
+  text-shadow: 0 0 8px #0f0;
+  z-index: 2;
+}
+
+.nav-link .text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-right: 12px;
+  text-shadow: 0 0 8px #0f0;
+  letter-spacing: 0.1em;
+  z-index: 2;
+}
+
+.nav-link .description {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-left: auto;
+  z-index: 2;
+}
+
+/* iPhone-style LiveChat */
+.live-chat-container {
+  width: 430px;
+  height: 932px;
+  background: #18191a;
+  border-radius: 54px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  border: 3px solid #222;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.45), 0 1.5px 0 #fff inset;
+}
+
+.chat-header {
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chat-header h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.messages-container {
+  flex: 1;
+  padding: 24px 18px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-size: 1.1rem;
+  background: #18191a;
+}
+
+.message {
+  max-width: 80%;
+  margin-bottom: 10px;
+}
+
+.message.user {
+  align-self: flex-end;
+}
+
+.message-content {
+  background: #23272b;
+  padding: 14px 18px;
+  border-radius: 18px;
+  color: #fff;
+  font-family: 'JetBrains Mono', 'Fira Mono', 'Consolas', monospace;
+  font-size: 1.1rem;
+}
+
+.message.user .message-content {
+  background: #007AFF;
+  color: #fff;
+}
+
+.message-time {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 6px;
+  display: block;
+}
+
+.message-input-form {
+  padding: 18px;
+  background: #18191a;
+  display: flex;
+  gap: 12px;
+  border-top: 1px solid #333;
+}
+
+.message-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 20px;
+  background: #23272b;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.message-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #007AFF;
+}
+
+.message-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.send-button {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 20px;
+  background: #007AFF;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background 0.3s ease;
+}
+
+.send-button:hover {
+  background: #0056b3;
+}
+
+/* Scanline effect */
+.scanline-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(0, 255, 0, 0.02) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 2;
+  animation: scanline 8s linear infinite;
+}
+
+@keyframes scanline {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+.dashboard-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Share Tech Mono', 'Courier New', monospace;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  border-radius: 12px;
+  border: 2px solid #00ffcc;
+  background: linear-gradient(90deg, rgba(0,255,128,0.18) 0%, rgba(0,0,0,0.7) 100%);
+  color: #00ffcc;
+  box-shadow: 0 0 8px #00ffcc44, 0 0 2px #0f0 inset;
+  transition: all 0.22s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+  text-shadow: 0 0 8px #00ffcc, 0 0 2px #0f0;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+.dashboard-link:hover, .dashboard-link:focus {
+  background: linear-gradient(90deg, #00ffcc 0%, #7f00ff 100%);
+  color: #fff;
+  box-shadow: 0 0 24px #00ffcc, 0 0 8px #7f00ff, 0 0 2px #0f0 inset;
+  border-color: #7f00ff;
+  text-shadow: 0 0 16px #00ffcc, 0 0 8px #7f00ff;
+  transform: scale(1.04) translateY(-2px);
+}
+.dashboard-link:active {
+  background: linear-gradient(90deg, #0f0 0%, #00f 100%);
+  color: #fff;
+  box-shadow: 0 0 16px #0f0, 0 0 8px #00f, 0 0 2px #0f0 inset;
+  border-color: #0f0;
+  transform: scale(0.98);
+}
+
+.links-label {
+  text-align: center;
+  color: #0ff;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  text-shadow: 0 0 8px #0ff, 0 0 16px #00ffcc, 0 0 2px #0f0;
+  filter: drop-shadow(0 0 8px #0ff);
+  animation: linksGlow 2.5s infinite alternate;
+}
+
+@keyframes linksGlow {
+  0% { text-shadow: 0 0 8px #0ff, 0 0 16px #00ffcc, 0 0 2px #0f0; }
+  100% { text-shadow: 0 0 24px #0ff, 0 0 32px #00ffcc, 0 0 8px #0f0; }
+}
+
+/* --- Cockpit Grid Layout --- */
+.cockpit-grid-layout {
+  display: grid;
+  grid-template-rows: 72px 1fr 72px;
+  grid-template-columns: 250px 1fr 250px;
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  font-family: 'Share Tech Mono', 'JetBrains Mono', 'Fira Mono', 'Consolas', monospace;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+.cockpit-top-links, .cockpit-bottom-links {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100vw;
+  background: #0a1a22;
+  box-shadow: 0 0 24px #00fff7 inset;
+  z-index: 10;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 0;
+  height: 72px;
+  border-bottom: 2px solid #00fff7;
+  scrollbar-width: thin;
+  scrollbar-color: #00fff7 #0a1a22;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+.cockpit-link-box-lg {
+  min-width: 120px;
+  max-width: 200px;
+  height: 64px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 0 !important;
+  border: 2px solid #00fff7;
+  box-shadow: 0 0 12px #00fff7, 0 0 4px #0ff inset;
+  background: #111 !important;
+  color: #00fff7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2px;
+  letter-spacing: 0.12em;
+  text-shadow: 0 0 12px #00fff7, 0 0 4px #0ff;
+  transition: all 0.18s;
+  white-space: nowrap;
+  padding: 0 18px;
+  overflow: hidden;
+  outline: none;
+  position: relative;
+  font-family: 'Share Tech Mono', 'JetBrains Mono', 'Fira Mono', 'Consolas', monospace;
+}
+.cockpit-link-box-lg:focus {
+  outline: 3px solid #00fff7;
+  outline-offset: -3px;
+  z-index: 2;
+  box-shadow: 0 0 0 3px #00fff7, 0 0 16px #00fff7;
+}
+.cockpit-link-box-lg.selected {
+  background: #00fff7 !important;
+  color: #181b1c;
+  box-shadow: 0 0 24px #00fff7, 0 0 12px #0ff inset !important;
+  transform: translateY(2px) scale(0.98);
+}
+.cockpit-link-box-lg:hover {
+  background: #00fff7cc !important;
+  color: #181b1c;
+  box-shadow: 0 0 16px #00fff7, 0 0 6px #0ff inset !important;
+}
+.cockpit-hotkey {
+  font-size: 0.9rem;
+  color: #00fff7;
+  background: none;
+  border: none;
+  margin-right: 6px;
+  padding: 0;
+  font-family: 'Share Tech Mono', 'JetBrains Mono', 'Fira Mono', 'Consolas', monospace;
+  text-shadow: 0 0 4px #00fff7;
+  display: inline-block;
+  opacity: 0.7;
+}
+.cockpit-main-viewer, .cockpit-grid-mainviewer {
+  width: 900px;
+  height: 600px;
+  min-width: 900px;
+  min-height: 600px;
+  max-width: 900px;
+  max-height: 600px;
+  margin: 0 auto;
+  border: 3px solid #00fff7;
+  box-shadow: 0 0 48px #00fff7, 0 0 24px #0ff inset, 0 0 32px #00fff7 inset;
+  background: rgba(10,20,30,0.98);
+  background-image: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.cockpit-main-viewer > * {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-module-panel {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 3px solid #00fff7;
+  background: rgba(10,20,30,0.98);
+  box-shadow: 0 0 32px #00fff7, 0 0 12px #0ff inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cockpit-status-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,10,20,0.98);
+  color: #00fff7;
+  font-size: 1.15rem;
+  font-family: 'Share Tech Mono', 'JetBrains Mono', 'Fira Mono', 'Consolas', monospace;
+  letter-spacing: 0.12em;
+  text-shadow: 0 0 8px #00fff7, 0 0 3px #0ff;
+  border-top: 2px solid #00fff7;
+  padding: 12px 28px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+}
+.cockpit-status-light, .cockpit-warning-light {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+  display: inline-block;
+}
+.cockpit-status-light {
+  background: #00ff7f;
+  box-shadow: 0 0 6px #00ff7f, 0 0 2px #fff inset;
+}
+.cockpit-warning-light {
+  background: #ff2d2d;
+  box-shadow: 0 0 6px #ff2d2d, 0 0 2px #fff inset;
+}
+.phone-mockup, .phone-notch, .phone-screen, .phone-home-indicator {
+  border-radius: 0 !important;
+}
+.cockpit-main-viewer {
+  border-radius: 0 !important;
+}
+
+/* Remove all curves from cockpit elements */
+.main-module-title, .main-module-welcome, .main-module-title *, .cockpit-main-viewer *, .cockpit-link-box *, .cockpit-link-box-lg * {
+  border-radius: 0 !important;
+}
+
+/* --- Modern Retro Overlays --- */
+.obs-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.65);
+  z-index: 2;
+  pointer-events: none;
+  box-shadow: 0 0 64px #00fff7 inset;
+}
+
+.retro-scanline {
+  pointer-events: none;
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  z-index: 1;
+  background: repeating-linear-gradient(0deg, rgba(0,255,247,0.08) 0px, rgba(0,255,247,0.08) 1px, transparent 2px, transparent 8px);
+  opacity: 0.25;
+}
+
+/* --- Modern Retro Navigation & Content --- */
+.cockpit-link-box, .cockpit-main-viewer {
+  font-family: 'Share Tech Mono', 'JetBrains Mono', 'Fira Mono', 'Consolas', monospace;
+  border: 2px solid #00fff7;
+  background: rgba(0, 10, 20, 0.85);
+  color: #00fff7;
+  box-shadow: 0 0 12px #00fff733, 0 0 2px #0ff inset;
+  text-shadow: 0 0 8px #00fff7, 0 0 2px #0ff;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.cockpit-link-box:hover, .cockpit-link-box:focus {
+  background: #00fff7;
+  color: #181b1c;
+  box-shadow: 0 0 24px #00fff7, 0 0 8px #0ff, 0 0 2px #0ff inset;
+  border-color: #00fff7;
+  text-shadow: 0 0 16px #00fff7, 0 0 8px #0ff;
+}
+.cockpit-main-viewer {
+  border-radius: 18px;
+  background: rgba(10, 20, 30, 0.92);
+  box-shadow: 0 0 32px #00fff722, 0 0 24px #00fff7 inset;
+  color: #00fff7;
+  font-size: 1.2rem;
+}
+
+/* Remove excessive glows, noise, and blur from cockpit */
+.cockpit-main-viewer::before,
+.cockpit-main-viewer::after {
+  display: none !important;
+}
+
+/* Make sure all text is readable */
+.cockpit-main-viewer, .cockpit-link-box {
+  text-shadow: 0 0 8px #00fff7, 0 0 2px #0ff;
+}
+
+/* Responsive font size for retro look */
+@media (max-width: 800px) {
+  .cockpit-main-viewer {
+    font-size: 1rem;
+  }
+  .cockpit-link-box {
+    font-size: 0.9rem;
+  }
+}
+
+/* --- Modern Retro Navigation Buttons --- */
+.cockpit-link-box {
+  min-width: 90px;
+  min-height: 38px;
+  margin: 0 4px;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
+  box-shadow: 0 0 8px #00fff7aa;
+  border: 2px solid #00fff7;
+  background: rgba(0, 10, 20, 0.92);
+  color: #00fff7;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+}
+.cockpit-link-box:focus {
+  outline: 2px solid #00fff7;
+  outline-offset: 2px;
+}
+
+/* --- Divider between nav and main content --- */
+.cockpit-top-links, .cockpit-bottom-links {
+  box-shadow: 0 2px 12px #00fff733;
+  border-bottom: 1.5px solid #00fff7;
+  background: rgba(0, 10, 20, 0.85);
+}
+.cockpit-bottom-links {
+  border-top: 1.5px solid #00fff7;
+  border-bottom: none;
+}
+
+/* --- Main Content Card --- */
+.cockpit-main-viewer {
+  margin: 24px 0;
+  padding: 36px 32px;
+  border-radius: 18px;
+  background: rgba(10, 20, 30, 0.97);
+  box-shadow: 0 0 32px #00fff722, 0 0 24px #00fff7 inset;
+  color: #00fff7;
+  font-size: 1.25rem;
   max-width: 700px;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- Side Panels (Phones & Chat) --- */
+.cockpit-left-phones, .cockpit-right-chat {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  gap: 18px;
+}
+.cockpit-left-phones .phone-container,
+.cockpit-left-phones .phone-container.classic,
+.cockpit-right-chat > .live-chat-container {
+  width: 180px;
+  height: 340px;
+  border-radius: 18px;
+  box-shadow: 0 0 12px #00fff7aa;
+  border: 2px solid #00fff7;
+  background: #181b1c;
+  margin-bottom: 18px;
+}
+.cockpit-right-chat > .live-chat-container {
+  margin-top: 18px;
+}
+
+/* --- Spacing between main and side panels --- */
+.cockpit-main-viewer-grid {
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+/* --- Remove redundant/conflicting styles --- */
+.cockpit-main-viewer::before,
+.cockpit-main-viewer::after {
+  display: none !important;
+}
+
+/* --- Ensure all text is readable --- */
+.cockpit-main-viewer, .cockpit-link-box {
+  text-shadow: 0 0 8px #00fff7, 0 0 2px #0ff;
+}
+
+@media (max-width: 1200px) {
+  .cockpit-left-phones .phone-container,
+  .cockpit-left-phones .phone-container.classic,
+  .cockpit-right-chat > .live-chat-container {
+    width: 110px;
+    height: 180px;
+  }
+  .cockpit-main-viewer {
+    padding: 18px 8px;
+    font-size: 1rem;
+    min-height: 180px;
+  }
+}
+
+/* --- Main Module Welcome Card --- */
+.main-module-welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.main-module-title {
+  font-family: 'Share Tech Mono', 'JetBrains Mono', 'Fira Mono', 'Consolas', monospace;
+  font-size: 2.5rem;
+  color: #00fff7;
+  padding: 32px 48px;
+  border-radius: 16px;
+  border: 2.5px solid #00fff7;
+  background: rgba(10, 20, 30, 0.98);
+  box-shadow: 0 0 24px #00fff7aa, 0 0 8px #0ff;
+  text-shadow: 0 0 12px #00fff7, 0 0 2px #0ff;
+  letter-spacing: 0.12em;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .main-module-title {
+    font-size: 1.3rem;
+    padding: 12px 8px;
+  }
+}
+
+/* --- Services Page Styles --- */
+.services-main {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services-title {
+  font-family: 'Share Tech Mono', 'JetBrains Mono', 'Fira Mono', 'Consolas', monospace;
+  color: #00fff7;
+  font-size: 2.2rem;
+  margin-bottom: 32px;
+  text-shadow: 0 0 12px #00fff7, 0 0 2px #0ff;
+  letter-spacing: 0.1em;
+}
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  width: 100%;
+}
+.service-card {
+  background: rgba(10, 20, 30, 0.98);
+  border: 2px solid #00fff7;
+  border-radius: 14px;
+  box-shadow: 0 0 18px #00fff7aa, 0 0 4px #0ff;
+  padding: 24px 20px;
+  min-width: 220px;
+  max-width: 340px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #00fff7;
+  font-family: 'Share Tech Mono', 'JetBrains Mono', 'Fira Mono', 'Consolas', monospace;
+  text-align: center;
+  position: relative;
+}
+.service-card h3 {
+  margin-bottom: 16px;
+  font-size: 1.3rem;
+  color: #00fff7;
+  text-shadow: 0 0 8px #00fff7;
+}
+.service-btn {
+  margin-top: 12px;
+  background: #101820;
+  color: #00fff7;
+  border: 2px solid #00fff7;
+  box-shadow: 0 0 8px #00fff7, 0 0 2px #0ff inset;
+  font-family: 'Share Tech Mono', 'JetBrains Mono', 'Fira Mono', 'Consolas', monospace;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 8px 24px;
+  border-radius: 0;
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 8px #00fff7;
+  opacity: 0.5;
+  cursor: not-allowed;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+}
+.service-desc {
+  color: #00fff7cc;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+  text-shadow: 0 0 6px #00fff7;
+  font-family: 'Share Tech Mono', 'JetBrains Mono', 'Fira Mono', 'Consolas', monospace;
+}
+.coming-soon-label { display: none !important; }
+
+/* --- Strong Neon Cockpit Base Styles --- */
+.home-root {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Share Tech Mono', 'JetBrains Mono', 'Fira Mono', 'Consolas', monospace;
+}
+
+/* --- Strong Scanline & Grid Overlays --- */
+.retro-scanline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 2;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 2px,
+    rgba(0,255,247,0.15) 2px,
+    rgba(0,255,247,0.15) 3px
+  );
+  opacity: 0.25 !important;
+  mix-blend-mode: overlay;
+}
+
+.obs-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 20, 30, 0.85);
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.15 !important;
+  mix-blend-mode: multiply;
+}
+
+/* --- Cockpit Grid Layout --- */
+.cockpit-grid {
+  display: grid;
+  grid-template-columns: 320px 900px 320px;
+  grid-template-rows: auto 1fr auto;
+  gap: 24px;
+  padding: 24px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+/* --- Strong Neon Cockpit Links --- */
+.cockpit-link-box {
+  background: rgba(0, 10, 20, 0.92) !important;
+  border: 3px solid #00fff7;
+  box-shadow: 0 0 24px #00fff7aa, 0 0 8px #0ff inset;
+  color: #00fff7;
+  font-size: 1.45rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  padding: 28px 0;
+  transition: all 0.18s;
+  position: relative;
+  letter-spacing: 0.12em;
+  text-shadow: 0 0 12px #00fff7, 0 0 4px #0ff;
+}
+
+.cockpit-link-box:hover, .cockpit-link-box:focus {
+  background: #00fff7cc !important;
+  color: #181b1c;
+  box-shadow: 0 0 32px #00fff7, 0 0 16px #0ff inset;
+  text-shadow: 0 0 24px #00fff7, 0 0 8px #0ff;
+  transform: translateY(-2px);
+}
+
+.cockpit-link-box.selected {
+  background: #00fff7 !important;
+  color: #181b1c;
+  box-shadow: 0 0 48px #00fff7, 0 0 24px #0ff inset !important;
+  text-shadow: 0 0 32px #00fff7, 0 0 16px #0ff;
+}
+
+/* --- Strong Neon Main Viewer --- */
+.cockpit-main-viewer {
+  width: 900px;
+  height: 600px;
+  background: rgba(10, 20, 30, 0.92);
+  border: 4px solid #00fff7;
+  border-radius: 24px;
+  box-shadow: 0 0 48px #00fff7, 0 0 24px #00fff7 inset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00fff7;
+  font-size: 26px;
+  text-shadow: 0 0 12px #00fff7, 0 0 4px #0ff;
+  overflow-y: auto;
+  position: relative;
+  transition: all 0.2s;
+}
+
+/* --- Strong Neon Phone Mockups --- */
+.phone-mockup {
+  width: 320px;
+  height: 600px;
+  background: #18191a;
+  border: 3px solid #00fff7;
+  border-radius: 32px;
+  box-shadow: 0 0 32px #00fff7, 0 0 16px #0ff inset;
+  position: relative;
+  overflow: hidden;
+}
+
+.phone-notch {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 32px;
+  background: #18191a;
+  border-bottom-left-radius: 18px 12px;
+  border-bottom-right-radius: 18px 12px;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-notch::before {
+  content: '';
+  width: 40px;
+  height: 6px;
+  background: #333;
+  border-radius: 3px;
+  margin-right: 8px;
+}
+
+.phone-notch::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #222;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  border-radius: 32px;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.phone-home-indicator {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 5px;
+  background: #444;
+  border-radius: 3px;
+  z-index: 2;
+  opacity: 0.7;
+}
+
+/* --- Cockpit Link Groups --- */
+.cockpit-top-links, .cockpit-bottom-links {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100vw;
+  background: #0a1a22;
+  box-shadow: 0 0 24px #00fff7 inset;
+  z-index: 10;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 0;
+  height: 72px;
+  border-bottom: 2px solid #00fff7;
+  scrollbar-width: thin;
+  scrollbar-color: #00fff7 #0a1a22;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+
+.cockpit-bottom-links {
+  border-top: 2px solid #00fff7;
+  border-bottom: none;
+}
+
+/* Custom scrollbar styling */
+.cockpit-top-links::-webkit-scrollbar,
+.cockpit-bottom-links::-webkit-scrollbar {
+  height: 10px;
+  background-color: #0a1a22;
+}
+
+.cockpit-top-links::-webkit-scrollbar-thumb,
+.cockpit-bottom-links::-webkit-scrollbar-thumb {
+  background-color: #00fff7;
+  border-radius: 0;
+  border: 2px solid #0a1a22;
+  box-shadow: 0 0 8px #00fff7, 0 0 3px #0ff inset;
+}
+
+.cockpit-top-links::-webkit-scrollbar-track,
+.cockpit-bottom-links::-webkit-scrollbar-track {
+  background-color: #0a1a22;
+  border-radius: 0;
+  box-shadow: 0 0 12px #00fff7 inset;
+}
+
+/* Add scroll indicator arrows */
+.cockpit-scroll-indicator {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #00fff7;
+  text-shadow: 0 0 8px #00fff7;
+  pointer-events: none;
+  z-index: 11;
+  animation: pulse-glow 1.5s infinite alternate;
+}
+.cockpit-scroll-indicator.left {
+  left: 10px;
+}
+.cockpit-scroll-indicator.right {
+  right: 10px;
+}
+@keyframes pulse-glow {
+  0% { opacity: 0.5; text-shadow: 0 0 5px #00fff7; }
+  100% { opacity: 1; text-shadow: 0 0 15px #00fff7, 0 0 5px #fff; }
+}
+
+/* --- Images Preview Row Buttons --- */
+.cockpit-main-viewer .cockpit-top-links,
+.cockpit-main-viewer .cockpit-bottom-links {
+  justify-content: flex-start;
+  gap: 8px;
+  margin: 8px 0 0 0;
+  padding: 0 8px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.cockpit-main-viewer .cockpit-bottom-links {
+  margin: 8px 0 0 0;
+}
+
+/* --- Responsive: Stack vertically on small screens --- */
+@media (max-width: 1000px) {
+  .cockpit-dashboard {
+    flex-direction: column;
+    gap: 12px;
+    min-height: 0;
+  }
+  .cockpit-main-viewer { width: 98vw; height: 320px; }
+  .phone-mockup { width: 98vw; height: 180px; }
+}
+
+/* --- Soften overlays --- */
+.retro-scanline { opacity: 0.07 !important; }
+.obs-overlay { opacity: 0.05 !important; }
+
+/* --- Extra Large Cockpit Link Boxes --- */
+.cockpit-link-box-lg {
+  min-width: 210px;
+  max-width: 320px;
+  height: 90px;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 0 !important;
+  border: 3px double #00fff7;
+  box-shadow: 0 0 32px #00fff7, 0 0 16px #0ff inset, 0 2px 12px #00fff7 inset;
+  background: #111 !important;
+  color: #00fff7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2px;
+  letter-spacing: 0.12em;
+  text-shadow: 0 0 24px #00fff7, 0 0 8px #0ff;
+  transition: all 0.18s;
+  white-space: nowrap;
+  padding: 0 36px;
+  overflow: hidden;
+  outline: none;
+  position: relative;
+  font-family: 'Share Tech Mono', 'JetBrains Mono', 'Fira Mono', 'Consolas', monospace;
+}
+.cockpit-link-box-lg:focus {
+  outline: 4px solid #00fff7;
+  outline-offset: -4px;
+  z-index: 2;
+  box-shadow: 0 0 0 4px #00fff7, 0 0 32px #00fff7;
+}
+.cockpit-link-box-lg.selected {
+  background: #00fff7 !important;
+  color: #181b1c;
+  box-shadow: 0 0 48px #00fff7, 0 0 24px #0ff inset !important;
+  transform: translateY(2px) scale(0.98);
+}
+.cockpit-link-box-lg:hover {
+  background: #00fff7cc !important;
+  color: #181b1c;
+  box-shadow: 0 0 32px #00fff7, 0 0 12px #0ff inset !important;
+}
+.cockpit-hotkey {
+  font-size: 1.1rem;
+  color: #00fff7;
+  background: #111;
+  border: 1.5px solid #00fff7;
+  border-radius: 0;
+  margin-right: 8px;
+  padding: 2px 8px;
+  font-family: 'Share Tech Mono', 'JetBrains Mono', 'Fira Mono', 'Consolas', monospace;
+  text-shadow: 0 0 8px #00fff7;
+  display: inline-block;
+}
+.cockpit-main-viewer, .cockpit-grid-mainviewer {
+  border-radius: 0 !important;
+  border: 4px double #00fff7;
+  background: rgba(10,20,30,0.98);
+  box-shadow: 0 0 64px #00fff7, 0 0 32px #0ff inset, 0 0 32px #00fff7 inset;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-image: repeating-linear-gradient(0deg, rgba(0,255,247,0.22) 0px, rgba(0,255,247,0.22) 2px, transparent 4px, transparent 32px), repeating-linear-gradient(90deg, rgba(0,255,247,0.22) 0px, rgba(0,255,247,0.22) 2px, transparent 4px, transparent 32px);
+}
+.cockpit-corner-accent {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border: 4px solid #00fff7;
+  z-index: 20;
+}
+.cockpit-corner-accent.tl { top: 0; left: 0; border-right: none; border-bottom: none; }
+.cockpit-corner-accent.tr { top: 0; right: 0; border-left: none; border-bottom: none; }
+.cockpit-corner-accent.bl { bottom: 0; left: 0; border-right: none; border-top: none; }
+.cockpit-corner-accent.br { bottom: 0; right: 0; border-left: none; border-top: none; }
+.cockpit-warning-light {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ff2d2d;
+  box-shadow: 0 0 12px #ff2d2d, 0 0 4px #fff inset;
+  margin-right: 12px;
+  display: inline-block;
+}
+.cockpit-status-light {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #00ff7f;
+  box-shadow: 0 0 12px #00ff7f, 0 0 4px #fff inset;
+  margin-right: 12px;
+  display: inline-block;
+}
+.cockpit-main-viewer::after, .cockpit-grid-mainviewer::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none;
+  border-radius: 0;
+  background: radial-gradient(ellipse at center, rgba(0,255,247,0.12) 0%, rgba(0,0,0,0.18) 100%);
+  box-shadow: 0 0 128px #00fff7 inset;
+  z-index: 9;
+  mix-blend-mode: screen;
+  animation: crt-flicker 1.2s infinite alternate;
+}
+@keyframes crt-flicker {
+  0% { opacity: 0.98; }
+  100% { opacity: 0.88; }
+}
+
+.cockpit-grid-main {
+  display: grid;
+  width: 100vw;
+  height: 600px;
+  grid-template-columns: 250px 900px 250px;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  background: none;
+  box-shadow: none;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.cockpit-grid-main > .phone-mockup.cockpit-grid-phone:first-child {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0;
+  border: 3px solid #00fff7;
+  box-shadow: 0 0 32px #00fff7, 0 0 12px #0ff inset, 0 0 32px #00fff7;
+  background: #101820;
+  border-radius: 0;
+  z-index: 3;
+}
+.cockpit-grid-main > .cockpit-main-viewer {
+  grid-column: 3;
+  grid-row: 1;
+  z-index: 4;
+}
+.cockpit-grid-main > .phone-mockup.cockpit-grid-phone:last-child {
+  grid-column: 4;
+  grid-row: 1;
+  margin: 0;
+  border: 3px solid #00fff7;
+  box-shadow: 0 0 32px #00fff7, 0 0 12px #0ff inset, 0 0 32px #00fff7;
+  background: #101820;
+  border-radius: 0;
+  z-index: 3;
+}
+.phone-mockup.cockpit-grid-phone {
+  width: 250px !important;
+  height: 600px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 20px;
+  position: relative;
+  box-shadow: 0 0 32px #00fff7, 0 0 12px #0ff inset, 0 0 32px #00fff7;
+  background: #101820;
 }
-
-.main-links {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: center;
-  margin-bottom: 32px;
+.cockpit-side-shadow {
+  width: 18px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0,255,247,0.18) 0%, rgba(0,0,0,0.01) 100%);
+  z-index: 2;
+  pointer-events: none;
 }
-
-.nav-link {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.3rem;
-  padding: 16px 32px;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.08);
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  width: 100%;
-  max-width: 400px;
+.cockpit-grid-main > .cockpit-side-shadow.left {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
 }
-
-.nav-link:hover {
-  background: rgba(255, 255, 255, 0.18);
-  transform: translateY(-2px) scale(1.03);
+.cockpit-grid-main > .cockpit-side-shadow.right {
+  grid-column: 4;
+  grid-row: 1;
+  justify-self: start;
 }
-
-.icon {
-  font-size: 2.2rem;
-  margin-bottom: 4px;
-}
-
-.text {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.description {
-  font-size: 0.9rem;
-  color: #bbb;
-  margin-top: 2px;
-}
-
-/* Make PhoneStream and LiveChat the same height visually */
-.phone-container,
-.live-chat-container {
-  height: 95vh;
-  width: 440px;
-  min-width: 380px;
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-sizing: border-box;
-  margin: 0;
-}
-
-@media (max-width: 1400px) {
-  .phone-stream-col,
-  .live-chat-col {
-    min-width: 300px;
-    max-width: 340px;
-  }
-  .phone-container,
-  .live-chat-container {
-    width: 340px;
-    min-width: 320px;
-    max-width: 400px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .main-content-row {
-    flex-direction: column;
-    align-items: center;
-    max-width: 100vw;
-    gap: 24px;
-    min-height: unset;
-  }
-  .main-col {
-    width: 100%;
-    min-width: 0;
-    max-width: 100vw;
-    align-items: center;
-  }
-  .center-col {
-    min-width: 0;
-    max-width: 100vw;
-  }
-  .phone-stream-col,
-  .live-chat-col {
-    min-width: 0;
-    max-width: 100vw;
-    height: 400px;
-    min-height: 400px;
-    padding: 0;
-  }
-  .phone-container,
-  .live-chat-container {
-    height: 400px;
-    width: 95vw;
-    max-width: 95vw;
-  }
+.cockpit-main-viewer, .cockpit-grid-mainviewer {
+  grid-column: 3;
+  grid-row: 1;
+  z-index: 4;
 }

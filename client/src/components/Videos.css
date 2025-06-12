@@ -5,7 +5,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Share Tech Mono', monospace, sans-serif;
+  font-family: 'JetBrains Mono', 'Consolas', 'Courier New', monospace;
+  background: #181c1f;
+  color: #b0ffb0;
 }
 
 /* Video display specific styling */
@@ -905,16 +907,15 @@ body {
 /* Cockpit Terminal Layout */
 .videos-cockpit-root {
   min-height: 100vh;
-  background: #0a1820;
-  font-family: 'JetBrains Mono', 'Fira Mono', 'Consolas', monospace;
-  color: #00ffe0;
+  background: #181c1f;
+  color: #b0ffb0;
   padding: 0;
 }
 
 .videos-header {
-  background: #07213a;
+  background: #23282b;
   padding: 18px 32px 10px 32px;
-  border-bottom: 3px solid #00ffe0;
+  border-bottom: 2px solid #3a4a3a;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -924,23 +925,23 @@ body {
   font-size: 2.2rem;
   font-weight: bold;
   letter-spacing: 2px;
-  color: #00ffe0;
-  text-shadow: 0 0 8px #00ffe0, 0 0 2px #000;
+  color: #b0ffb0;
+  text-shadow: none;
 }
 
 .videos-controls .home-button {
-  background: #0a1820;
-  color: #00ffe0;
-  border: 2px solid #00ffe0;
-  border-radius: 8px;
+  background: #23282b;
+  color: #b0ffb0;
+  border: 1px solid #3a4a3a;
+  border-radius: 4px;
   padding: 8px 18px;
   font-size: 1.1rem;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
 }
 .videos-controls .home-button:hover {
-  background: #00ffe0;
-  color: #07213a;
+  background: #b0ffb0;
+  color: #23282b;
 }
 
 .videos-cockpit-layout {
@@ -949,159 +950,126 @@ body {
   gap: 32px;
   padding: 32px 32px 0 32px;
   min-height: 80vh;
+  align-items: flex-start;
 }
 
+/* --- MINI-PLAYERS --- */
 .mini-players-col {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  min-width: 320px;
-  max-width: 340px;
+  gap: 24px;
+  min-width: 260px;
+  max-width: 320px;
+  align-items: flex-start;
 }
-
 .mini-player-frame {
-  background: #101c24;
-  border-radius: 18px;
-  box-shadow: 0 0 18px #00ffe0a0, 0 0 2px #000 inset;
-  border: 2px solid #00ffe0;
-  padding: 18px 12px 12px 12px;
-  position: relative;
+  background: #23282b;
+  border: 2px solid #3a4a3a;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px #000a, 0 1px 0 #333 inset;
+  min-width: 240px;
+  max-width: 320px;
+  min-height: 140px;
+  max-height: 180px;
+  padding: 8px 8px 8px 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 220px;
 }
 .mini-player-label {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #00ffe0;
+  color: #b0ffb0;
   margin-bottom: 8px;
   letter-spacing: 1px;
-  text-shadow: 0 0 4px #00ffe0;
+  text-shadow: none;
   font-family: inherit;
 }
 .mini-player-inner {
-  width: 100%;
-  height: 180px;
+  width: 220px;
+  height: 120px;
+  background: #111;
+  border: 1px solid #3a4a3a;
+  border-radius: 4px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 .mini-player-iframe {
   width: 100%;
   height: 100%;
-  border-radius: 12px;
   border: none;
-  background: #000;
-  box-shadow: 0 0 8px #00ffe0a0;
-}
-
-/* iPod style for the top mini player */
-.mini-player-ipod {
-  background: #222;
-  border-radius: 38px;
-  border: 3px solid #fff;
-  box-shadow: 0 0 24px #00ffe0a0, 0 0 2px #000 inset;
-  min-height: 320px;
-  padding-bottom: 32px;
-}
-.mini-player-ipod .mini-player-inner {
-  height: 200px;
-  border-radius: 28px;
-  overflow: hidden;
-  background: #000;
-  box-shadow: 0 0 12px #00ffe0a0;
-}
-.mini-player-ipod .mini-player-iframe {
-  border-radius: 28px;
-}
-.mini-player-ipod::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 50%;
-  bottom: 18px;
-  transform: translateX(-50%);
-  width: 54px;
-  height: 54px;
   background: #111;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  box-shadow: 0 0 8px #00ffe0a0;
-}
-.mini-player-ipod::before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 50%;
-  bottom: 38px;
-  transform: translateX(-50%);
-  width: 18px;
-  height: 18px;
-  background: #fff;
-  border-radius: 50%;
-  z-index: 2;
 }
 
-/* Main player cockpit terminal style */
+/* --- MAIN PLAYER --- */
 .main-player-frame {
-  flex: 1 1 700px;
-  min-width: 480px;
-  max-width: 900px;
-  background: #101c24;
-  border-radius: 32px;
-  border: 3px solid #00ffe0;
-  box-shadow: 0 0 32px #00ffe0a0, 0 0 2px #000 inset;
+  flex: 1 1 1000px;
+  min-width: 0;
+  max-width: 100vw;
+  width: 100%;
+  height: 80vh;
+  min-height: 500px;
+  max-height: 90vh;
+  margin: 0 auto;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px 18px 18px 18px;
-  position: relative;
+  justify-content: center;
+  background: #23282b;
+  border: 2px solid #3a4a3a;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px #000a, 0 1px 0 #333 inset;
 }
 .main-player-label {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #00ffe0;
+  color: #b0ffb0;
   margin-bottom: 12px;
   letter-spacing: 1px;
-  text-shadow: 0 0 6px #00ffe0;
+  text-shadow: none;
   font-family: inherit;
 }
 .main-player-inner {
-  width: 100%;
-  height: 480px;
+  width: 98%;
+  height: 95%;
+  min-height: 400px;
+  max-height: 80vh;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #111;
+  border: 1px solid #3a4a3a;
+  box-shadow: 0 0 8px #000a;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  border-radius: 24px;
-  overflow: hidden;
-  background: #000;
-  box-shadow: 0 0 18px #00ffe0a0;
 }
 .main-player-iframe {
   width: 100%;
   height: 100%;
-  border-radius: 24px;
+  min-height: 400px;
+  max-height: 80vh;
   border: none;
-  background: #000;
+  background: #111;
 }
-
-/* Scanline effect for all players */
-.mini-player-frame::before, .main-player-frame::before {
+/* Subtle grid overlay for main player (optional) */
+.main-player-inner::after {
   content: '';
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
   pointer-events: none;
-  background: repeating-linear-gradient(
-    0deg,
-    rgba(0,255,128,0.07),
-    rgba(0,255,128,0.07) 1px,
-    transparent 1px,
-    transparent 4px
-  );
+  background-image: linear-gradient(rgba(176,255,176,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(176,255,176,0.07) 1px, transparent 1px);
+  background-size: 32px 32px;
+  opacity: 0.25;
   z-index: 2;
+}
+
+/* Remove excessive scanlines, glows, and rounded corners from all players */
+.mini-player-frame::before, .main-player-frame::before, .scan-line {
+  display: none !important;
 }
 
 /* Responsive adjustments */
@@ -1115,6 +1083,12 @@ body {
     min-width: 320px;
     max-width: 100vw;
     width: 100%;
+    height: 60vh;
+    min-height: 300px;
+  }
+  .main-player-inner {
+    min-height: 300px;
+    height: 60vh;
   }
   .mini-players-col {
     flex-direction: row;
@@ -1125,27 +1099,28 @@ body {
     justify-content: center;
   }
   .mini-player-frame {
-    min-width: 180px;
-    min-height: 180px;
-    max-width: 220px;
-    padding: 10px 6px 6px 6px;
+    min-width: 120px;
+    max-width: 180px;
+    min-height: 80px;
+    max-height: 120px;
+    padding: 6px 4px 4px 4px;
   }
-  .mini-player-ipod {
-    min-height: 180px;
-    padding-bottom: 18px;
+  .mini-player-inner {
+    width: 100px;
+    height: 60px;
   }
 }
 
 @media (max-width: 700px) {
-  .videos-header {
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px 6px 6px 6px;
+  .main-player-frame, .main-player-inner, .main-player-iframe {
+    min-height: 180px;
+    height: 30vh;
+    max-height: 40vh;
   }
-  .videos-cockpit-layout {
-    padding: 8px 2px 0 2px;
-  }
-  .main-player-inner {
-    height: 220px;
+  .mini-player-frame, .mini-player-inner {
+    min-width: 80px;
+    max-width: 100px;
+    min-height: 50px;
+    max-height: 60px;
   }
 }

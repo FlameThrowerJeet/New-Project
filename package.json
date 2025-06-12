@@ -11,11 +11,13 @@
   "dependencies": {
     "axios": "^1.9.0",
     "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
     "dotenv": "^16.5.0",
     "express": "^4.18.2",
     "leaflet": "^1.9.4",
     "node-media-server": "^4.0.18",
     "react": "^17.0.2",
+    "react-datepicker": "^8.4.0",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "react-twitch-embed": "^3.0.2"
