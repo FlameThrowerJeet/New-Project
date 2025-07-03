@@ -154,14 +154,17 @@ const Images: React.FC<ImagesProps> = ({ sectionIndex, setSectionIndex, imageInd
     setJumpInput('');
   };
 
-  // --- Auto-slideshow (advance every 6 s) ---
+  // Play / Pause slideshow
+  const [isPlaying, setIsPlaying] = React.useState(true);
+  const togglePlay = () => setIsPlaying(prev => !prev);
+
   useEffect(() => {
-    if (filteredImages.length <= 1) return;
+    if (filteredImages.length <= 1 || !isPlaying) return;
     const timer = setTimeout(() => {
       setImageIndex((imageIndex + 1) % filteredImages.length);
     }, 6000);
     return () => clearTimeout(timer);
-  }, [imageIndex, filteredImages.length]);
+  }, [imageIndex, filteredImages.length, isPlaying]);
 
   // --- Clean anime image viewer ---
   return (
@@ -224,6 +227,7 @@ const Images: React.FC<ImagesProps> = ({ sectionIndex, setSectionIndex, imageInd
               <div className="image-controls-overlay">
                 <button onClick={handleZoomIn} className="control-button">➕</button>
                 <button onClick={handleZoomOut} className="control-button">➖</button>
+                <button onClick={togglePlay} className="control-button">{isPlaying ? '⏸' : '▶️'}</button>
                 <button onClick={handleFullscreen} className="control-button">{isFullscreen ? '↙️' : '⛶'}</button>
               </div>
               
