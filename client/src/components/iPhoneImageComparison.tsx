@@ -100,19 +100,6 @@ const iPhoneImageComparison: React.FC = () => {
     }
   };
 
-  // Auto-generate anime version when image changes
-  useEffect(() => {
-    const currentImage = portraitImages[leftIndex];
-    if (currentImage && !animeVersions[currentImage.url] && !loading) {
-      // Auto-generate anime version after a short delay
-      const timer = setTimeout(() => {
-        generateAnimeVersion(currentImage.url);
-      }, 1000);
-      
-      return () => clearTimeout(timer);
-    }
-  }, [leftIndex, portraitImages]);
-
   // Shuffle function
   function shuffleArray(length: number) {
     const arr = Array.from({ length }, (_, i) => i);
@@ -137,8 +124,7 @@ const iPhoneImageComparison: React.FC = () => {
   useEffect(() => {
     if (portraitImages.length > 1) {
       if (leftTimerRef.current) clearTimeout(leftTimerRef.current);
-      const initialDelay = 2000 + Math.random() * 5000;
-      const interval = 8000 + Math.random() * 7000;
+      const interval = 4000 + Math.random() * 3000;
       function tick() {
         setLeftPointer(prev => {
           if (prev + 1 >= leftShuffle.length) {
@@ -149,7 +135,8 @@ const iPhoneImageComparison: React.FC = () => {
         });
         leftTimerRef.current = setTimeout(tick, interval);
       }
-      leftTimerRef.current = setTimeout(tick, initialDelay);
+      // Start immediately (no initial delay)
+      tick();
       return () => { if (leftTimerRef.current) clearTimeout(leftTimerRef.current); };
     }
   }, [portraitImages.length, leftShuffle.length]);
@@ -240,20 +227,6 @@ const iPhoneImageComparison: React.FC = () => {
 
   return (
     <div className="iphone-comparison-container">
-      <div className="comparison-header">
-        <h2>📱 आईफोन चित्र तुलना</h2>
-        <p>मूल पोर्ट्रेट बनाम एआई एनीमे शैली</p>
-        <div className="image-counter">
-                      {leftIndex + 1} का {portraitImages.length}
-            {loading && <span className="status-indicator"> • 🎨 जेनरेट हो रहा है...</span>}
-        </div>
-        {error && (
-          <div className="error-banner">
-            ⚠️ {error}
-          </div>
-        )}
-      </div>
-
       <div className="iphones-container">
         {/* Original Image iPhone */}
         <div className="iphone-frame">
