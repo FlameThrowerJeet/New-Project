@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ratpreet Godara</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Courier New', monospace;
+      color: #00ff00;
+      background: #000;
+    }
+    
+    .container {
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .twitch-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    
+    .twitch-bg iframe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 20, 0, 0.75);
+      z-index: 2;
+    }
+    
+    .content {
+      position: relative;
+      z-index: 4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 20px;
+      color: #00ff00;
+    }
+    
+    .title {
+      font-size: 3.5rem;
+      margin-bottom: 30px;
+      text-align: center;
+      text-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+      letter-spacing: 4px;
+      font-weight: bold;
+    }
+    
+    .clock {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 40px;
+      transition: color 0.5s ease;
+      color: #00ff00;
+      text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+    }
+    
+    .clock.blue {
+      color: #00aaff;
+      text-shadow: 0 0 10px rgba(0, 170, 255, 0.8);
+    }
+    
+    .clock-subtext {
+      font-size: 1rem;
+      opacity: 0.7;
+      margin-top: 5px;
+    }
+    
+    .nav-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      width: 80%;
+      max-width: 800px;
+    }
+    
+    .nav-item {
+      background: rgba(0, 30, 0, 0.3);
+      border: 1px solid rgba(0, 255, 0, 0.4);
+      border-radius: 15px;
+      padding: 30px;
+      text-decoration: none;
+      color: #00ff00;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 32px rgba(0, 255, 0, 0.1);
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .nav-item:hover {
+      transform: translateY(-10px);
+      border-color: rgba(0, 255, 0, 0.8);
+      box-shadow: 0 15px 35px rgba(0, 255, 0, 0.2);
+      background: rgba(0, 40, 0, 0.4);
+    }
+    
+    .nav-heading {
+      margin: 0 0 15px 0;
+      font-size: 2rem;
+      letter-spacing: 3px;
+      text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+    }
+    
+    .nav-text {
+      margin: 0;
+      opacity: 0.8;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Background with Twitch iframe -->
+    <div class="twitch-bg">
+      <iframe
+        src="https://player.twitch.tv/?channel=xqc&parent=localhost:5173&muted=true&autoplay=true"
+        frameborder="0"
+        allowfullscreen="true"
+        title="XQC Twitch Stream">
+      </iframe>
+      <div class="overlay"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <h1 class="title">RATPREET GODARA</h1>
+      
+      <div class="clock" id="clock">
+        <span id="time"></span>
+        <div class="clock-subtext">SYSTEM ONLINE</div>
+      </div>
+      
+      <div class="nav-grid">
+        <a href="#" class="nav-item">
+          <h2 class="nav-heading">IMAGES</h2>
+          <p class="nav-text">Visual Archives</p>
+        </a>
+        
+        <a href="#" class="nav-item">
+          <h2 class="nav-heading">VIDEOS</h2>
+          <p class="nav-text">Motion Recordings</p>
+        </a>
+        
+        <a href="#" class="nav-item">
+          <h2 class="nav-heading">GAME</h2>
+          <p class="nav-text">Interactive Experience</p>
+        </a>
+        
+        <a href="#" class="nav-item">
+          <h2 class="nav-heading">STORE</h2>
+          <p class="nav-text">Digital Marketplace</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Clock functionality
+    function updateClock() {
+      document.getElementById('time').textContent = new Date().toLocaleTimeString();
+    }
+    
+    // Initialize
+    updateClock();
+    
+    // Update every second
+    setInterval(updateClock, 1000);
+    
+    // Flicker effect
+    let isGreen = true;
+    setInterval(() => {
+      isGreen = !isGreen;
+      const clock = document.getElementById('clock');
+      if (isGreen) {
+        clock.classList.remove('blue');
+      } else {
+        clock.classList.add('blue');
+      }
+    }, 2000);
+  </script>
+</body>
+</html>

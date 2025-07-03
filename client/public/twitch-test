@@ -1,0 +1,225 @@
+.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitch Embed Test</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #00ff00;
+      font-family: 'Courier New', monospace;
+      line-height: 1.6;
+    }
+    
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background-color: rgba(0, 10, 0, 0.8);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 80, 0, 0.8);
+      border: 1px solid #00ff00;
+      border-radius: 4px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(0, 120, 0, 0.8);
+      box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      border: 1px solid #00ff00;
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    }
+    
+    h1 {
+      color: #00ff00;
+      text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .embed-container {
+      width: 100%;
+      height: 400px;
+      margin-bottom: 20px;
+      border: 1px solid #00ff00;
+      overflow: hidden;
+    }
+    
+    button {
+      padding: 10px 15px;
+      background: rgba(0, 50, 0, 0.8);
+      color: #00ff00;
+      border: 1px solid #00ff00;
+      cursor: pointer;
+      font-family: 'Courier New', monospace;
+      margin-right: 10px;
+      transition: all 0.3s ease;
+    }
+    
+    button:hover {
+      background: rgba(0, 100, 0, 0.8);
+      box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+    
+    .status-panel {
+      background: rgba(0, 20, 0, 0.5);
+      border: 1px solid #00ff00;
+      padding: 15px;
+      margin: 20px 0;
+    }
+    
+    .status-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      border-bottom: 1px dashed rgba(0, 255, 0, 0.3);
+      padding-bottom: 10px;
+    }
+    
+    .status-label {
+      font-weight: bold;
+    }
+    
+    .status-value {
+      color: #00cc00;
+    }
+    
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    
+    .channel-selector {
+      background: rgba(0, 20, 0, 0.8);
+      color: #00ff00;
+      border: 1px solid #00ff00;
+      padding: 10px;
+      font-family: 'Courier New', monospace;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    
+    .channel-selector:focus {
+      outline: none;
+      box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>TWITCH STREAM EMBED</h1>
+    <div class="embed-container">
+      <iframe
+        id="twitch-player"
+        title="Twitch stream player"
+        src="https://player.twitch.tv/?channel=xqc&parent=localhost&muted=true"
+        height="100%"
+        width="100%"
+        frameborder="0"
+        allowfullscreen="true">
+      </iframe>
+    </div>
+    
+    <div class="status-panel">
+      <div class="status-item">
+        <span class="status-label">CURRENT URL:</span>
+        <span id="current-url" class="status-value"></span>
+      </div>
+      <div class="status-item">
+        <span class="status-label">PARENT DOMAIN:</span>
+        <span id="parent-domain" class="status-value">localhost</span>
+      </div>
+      <div class="status-item">
+        <span class="status-label">CURRENT CHANNEL:</span>
+        <span id="current-channel" class="status-value">xqc</span>
+      </div>
+      <div class="status-item">
+        <span class="status-label">STATUS:</span>
+        <span id="embed-status" class="status-value">OPERATIONAL</span>
+      </div>
+    </div>
+    
+    <div class="actions">
+      <div>
+        <select id="channel-selector" class="channel-selector">
+          <option value="xqc">xQc</option>
+          <option value="shroud">Shroud</option>
+          <option value="pokimane">Pokimane</option>
+          <option value="ninja">Ninja</option>
+          <option value="timthetatman">TimTheTatman</option>
+        </select>
+        <button onclick="changeChannel()">SWITCH CHANNEL</button>
+      </div>
+      <button onclick="window.location.reload()">RELOAD PAGE</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('current-url').textContent = window.location.href;
+    
+    function updateStatus(msg) {
+      const statusEl = document.getElementById('embed-status');
+      statusEl.textContent = msg;
+    }
+    
+    function changeChannel() {
+      const selector = document.getElementById('channel-selector');
+      const channel = selector.value;
+      const parentDomain = document.getElementById('parent-domain').textContent;
+      
+      updateStatus("CONNECTING...");
+      
+      // Update iframe src
+      document.getElementById('twitch-player').src = 
+        `https://player.twitch.tv/?channel=${channel}&parent=${parentDomain}&muted=true`;
+      
+      // Update current channel display
+      document.getElementById('current-channel').textContent = channel;
+      
+      // Reset status after a delay
+      setTimeout(() => {
+        updateStatus("OPERATIONAL");
+      }, 2000);
+      
+      console.log(`Changed channel to ${channel}`);
+    }
+    
+    // Handle potential parent domain issues
+    window.addEventListener('message', function(e) {
+      if (e.data && typeof e.data === 'string' && e.data.includes('Twitch')) {
+        console.log('Received message from Twitch:', e.data);
+        if (e.data.includes('error')) {
+          updateStatus("ERROR: CHECK PARENT DOMAIN");
+        }
+      }
+    });
+    
+    // Strip port from parent domain if needed
+    const currentHost = window.location.hostname;
+    if (currentHost === 'localhost') {
+      const parentDomain = document.getElementById('parent-domain');
+      parentDomain.textContent = 'localhost';
+      
+      // Automatically update iframe src with correct parent
+      const player = document.getElementById('twitch-player');
+      const channel = document.getElementById('current-channel').textContent;
+      player.src = `https://player.twitch.tv/?channel=${channel}&parent=localhost&muted=true`;
+    }
+  </script>
+</body>
+</html> 

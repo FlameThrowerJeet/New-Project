@@ -1,0 +1,833 @@
+.maps-root {
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+  background: #0a0a0a;
+  color: #fff;
+}
+
+.maps-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.maps-header h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #00d4aa;
+  font-size: 2.5rem;
+  margin: 0 0 10px 0;
+  text-shadow: 0 0 20px rgba(0, 212, 170, 0.5);
+}
+
+.maps-header h1 .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.maps-header h1 .english-text {
+  font-size: 0.6em;
+  color: #888;
+  text-shadow: none;
+}
+
+.maps-header p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #888;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.maps-header p .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.maps-header p .english-text {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.maps-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.map-nav-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: rgba(30, 30, 30, 0.8);
+  border: 1px solid rgba(0, 212, 170, 0.3);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-weight: 500;
+  min-width: 140px;
+}
+
+.map-nav-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.map-nav-icon {
+  font-size: 1.5em;
+  margin-bottom: 4px;
+}
+
+.map-nav-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.map-nav-text .hindi-text {
+  font-size: 0.9em;
+  margin-bottom: 1px;
+}
+
+.map-nav-text .english-text {
+  font-size: 0.7em;
+}
+
+.map-nav-button:hover {
+  background: rgba(0, 212, 170, 0.1);
+  border-color: #00d4aa;
+}
+
+.map-nav-button.active {
+  background: linear-gradient(135deg, #00d4aa, #667eea);
+  color: #000;
+  border-color: #00d4aa;
+  box-shadow: 0 4px 15px rgba(0, 212, 170, 0.3);
+}
+
+.map-nav-button.active .hindi-text,
+.map-nav-button.active .english-text {
+  color: #000;
+}
+
+.maps-content {
+  background: rgba(20, 20, 20, 0.8);
+  border-radius: 15px;
+  padding: 30px;
+  border: 1px solid rgba(0, 212, 170, 0.2);
+  margin-bottom: 20px;
+}
+
+.map-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.map-info h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #00d4aa;
+  margin: 0 0 10px 0;
+  font-size: 1.8rem;
+}
+
+.map-info h2 .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.map-info h2 .english-text {
+  font-size: 0.7em;
+  color: #888;
+}
+
+.map-info p {
+  color: #888;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.map-display {
+  min-height: 400px;
+}
+
+/* Map Content Styles */
+.map-content {
+  padding: 20px;
+}
+
+.map-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.stat-card {
+  background: rgba(30, 30, 30, 0.8);
+  border: 1px solid rgba(0, 212, 170, 0.3);
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 212, 170, 0.2);
+  border-color: #00d4aa;
+}
+
+.stat-card h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: #888;
+  margin: 0 0 15px 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.stat-card h3 .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.stat-card h3 .english-text {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.stat-value {
+  color: #00d4aa;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 212, 170, 0.3);
+}
+
+/* State Distribution Chart */
+.state-distribution h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #00d4aa;
+  margin: 0 0 20px 0;
+  font-size: 1.5rem;
+}
+
+.state-distribution h3 .hindi-text,
+.state-distribution h3 .english-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.distribution-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.state-bar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.state-name {
+  min-width: 120px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.bar-container {
+  flex: 1;
+  background: rgba(30, 30, 30, 0.8);
+  border-radius: 20px;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 212, 170, 0.2);
+}
+
+.bar-fill {
+  background: linear-gradient(90deg, #00d4aa, #667eea);
+  height: 100%;
+  border-radius: 20px;
+  transition: width 0.5s ease;
+  position: relative;
+}
+
+.bar-value {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Regional Distribution */
+.regional-distribution h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #00d4aa;
+  margin: 0 0 20px 0;
+  font-size: 1.5rem;
+}
+
+.regional-distribution h3 .hindi-text,
+.regional-distribution h3 .english-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.region-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.region-card {
+  background: rgba(30, 30, 30, 0.8);
+  border: 1px solid rgba(0, 212, 170, 0.3);
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.region-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 212, 170, 0.2);
+  border-color: #00d4aa;
+}
+
+.region-card h4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: #00d4aa;
+  margin: 0 0 15px 0;
+  font-size: 1.2rem;
+}
+
+.region-card h4 .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.region-card h4 .english-text {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.region-count {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Cultural Centers */
+.cultural-centers h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #00d4aa;
+  margin: 0 0 20px 0;
+  font-size: 1.5rem;
+}
+
+.cultural-centers h3 .hindi-text,
+.cultural-centers h3 .english-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.centers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.center-card {
+  background: rgba(30, 30, 30, 0.8);
+  border: 1px solid rgba(0, 212, 170, 0.3);
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.center-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 212, 170, 0.2);
+  border-color: #00d4aa;
+}
+
+.center-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.center-card h4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: #00d4aa;
+  margin: 15px 0 10px 0;
+  font-size: 1.1rem;
+}
+
+.center-card h4 .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.center-card h4 .english-text {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.center-card p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: #ccc;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.center-card p .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.center-card p .english-text {
+  font-size: 0.85em;
+  color: #999;
+}
+
+.center-members {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: #00d4aa;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.center-members .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.center-members .english-text {
+  font-size: 0.8em;
+  color: #888;
+}
+
+/* Economic Distribution */
+.occupation-distribution h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #00d4aa;
+  margin: 0 0 20px 0;
+  font-size: 1.5rem;
+}
+
+.occupation-distribution h3 .hindi-text,
+.occupation-distribution h3 .english-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.occupation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.occupation-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(30, 30, 30, 0.8);
+  border: 1px solid rgba(0, 212, 170, 0.2);
+  border-radius: 8px;
+  padding: 15px 20px;
+  transition: all 0.3s ease;
+}
+
+.occupation-item:hover {
+  border-color: #00d4aa;
+  background: rgba(0, 212, 170, 0.05);
+}
+
+.occupation-name {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.occupation-name .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.occupation-name .english-text {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.occupation-count {
+  color: #00d4aa;
+  font-weight: bold;
+  background: rgba(0, 212, 170, 0.1);
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+
+/* Maps Footer */
+.maps-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.state-filter {
+  background: rgba(30, 30, 30, 0.8);
+  border: 1px solid rgba(0, 212, 170, 0.3);
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  min-width: 200px;
+}
+
+.state-filter:focus {
+  outline: none;
+  border-color: #00d4aa;
+  box-shadow: 0 0 0 2px rgba(0, 212, 170, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .maps-navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .map-nav-button {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .map-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .region-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .centers-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .state-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .state-name {
+    min-width: auto;
+  }
+}
+
+/* Bilingual Text Styles */
+.hindi-text {
+  display: block;
+  font-size: 1em;
+  color: #00d4aa;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.english-text {
+  display: block;
+  font-size: 0.85em;
+  color: #888;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+/* Map description bilingual styling */
+.map-description {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.map-description h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #00d4aa;
+  margin: 0 0 10px 0;
+  font-size: 1.8rem;
+}
+
+.map-description h2 .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.map-description h2 .english-text {
+  font-size: 0.7em;
+  color: #888;
+}
+
+.map-description p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #888;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.map-description p .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.map-description p .english-text {
+  font-size: 0.8em;
+  color: #666;
+}
+
+/* Stat card bilingual styling */
+.stat-card h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: #888;
+  margin: 0 0 15px 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.stat-card h3 .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.stat-card h3 .english-text {
+  font-size: 0.8em;
+  color: #666;
+}
+
+/* Section headers bilingual styling */
+.state-distribution h3,
+.regional-distribution h3,
+.cultural-centers h3,
+.occupation-distribution h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #00d4aa;
+  margin: 0 0 20px 0;
+  font-size: 1.5rem;
+}
+
+.state-distribution h3 .hindi-text,
+.regional-distribution h3 .hindi-text,
+.cultural-centers h3 .hindi-text,
+.occupation-distribution h3 .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.state-distribution h3 .english-text,
+.regional-distribution h3 .english-text,
+.cultural-centers h3 .english-text,
+.occupation-distribution h3 .english-text {
+  font-size: 0.7em;
+  color: #888;
+}
+
+/* Region card bilingual styling */
+.region-card h4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: #00d4aa;
+  margin: 0 0 15px 0;
+  font-size: 1.2rem;
+}
+
+.region-card h4 .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.region-card h4 .english-text {
+  font-size: 0.8em;
+  color: #888;
+}
+
+/* Center card bilingual styling */
+.center-card h4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: #00d4aa;
+  margin: 15px 0 10px 0;
+  font-size: 1.1rem;
+}
+
+.center-card h4 .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.center-card h4 .english-text {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.center-card p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: #ccc;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.center-card p .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.center-card p .english-text {
+  font-size: 0.85em;
+  color: #999;
+}
+
+.center-members {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: #00d4aa;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.center-members .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.center-members .english-text {
+  font-size: 0.8em;
+  color: #888;
+}
+
+/* Occupation item bilingual styling */
+.occupation-name {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.occupation-name .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.occupation-name .english-text {
+  font-size: 0.8em;
+  color: #888;
+}
+
+/* Responsive adjustments for bilingual text */
+@media (max-width: 768px) {
+  .hindi-text {
+    font-size: 0.9em;
+  }
+  
+  .english-text {
+    font-size: 0.75em;
+  }
+  
+  .map-nav-button {
+    min-width: 120px;
+    padding: 10px 16px;
+  }
+  
+  .map-nav-text .hindi-text {
+    font-size: 0.8em;
+  }
+  
+  .map-nav-text .english-text {
+    font-size: 0.6em;
+  }
+  
+  .maps-header h1 {
+    font-size: 2rem;
+  }
+  
+  .maps-header h1 .english-text {
+    font-size: 0.65em;
+  }
+  
+  .map-description h2 {
+    font-size: 1.5rem;
+  }
+  
+  .map-description h2 .english-text {
+    font-size: 0.75em;
+  }
+} 

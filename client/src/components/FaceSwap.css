@@ -1,0 +1,174 @@
+.face-swap-root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  gap: 20px;
+  color: #00d4aa;
+  font-family: 'Share Tech Mono', 'Courier New', monospace;
+}
+
+.face-swap-title {
+  font-size: 20px;
+  text-shadow: 0 0 12px #00d4aa;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.face-swap-controls {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-btn {
+  position: relative;
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(0, 212, 170, 0.2);
+  border: 2px solid #00d4aa;
+  border-radius: 6px;
+  color: #00fff7;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-shadow: 0 0 6px #00d4aa;
+  font-size: 11px;
+  width: 150px;
+  text-align: center;
+}
+
+.upload-btn:hover {
+  background: rgba(0, 255, 247, 0.25);
+  box-shadow: 0 0 12px #00fff7;
+}
+
+.upload-btn input {
+  display: none;
+}
+
+.swap-btn {
+  padding: 8px 20px;
+  background: #00d4aa;
+  border: 2px solid #00fff7;
+  border-radius: 6px;
+  color: #000;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-size: 12px;
+}
+
+.swap-btn:disabled {
+  background: #555;
+  border-color: #777;
+  color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.swap-btn:not(:disabled):hover {
+  background: #00fff7;
+  box-shadow: 0 0 18px #00fff7aa;
+}
+
+.face-swap-phone {
+  width: 260px;
+  height: 520px;
+}
+
+.swap-result-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.face-swap-previews {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.preview-box {
+  position: relative;
+  width: 150px;
+  height: 220px;
+  border: 2px solid #00d4aa;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 212, 170, 0.4);
+  background: #000;
+  aspect-ratio: 3/4;
+}
+
+.preview-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.preview-label {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #00fff7;
+  padding: 2px 0;
+}
+
+.face-swap-layout {
+  display: flex;
+  gap: 32px;
+  margin-top: 12px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.preview-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.preview-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 12px;
+  background: #111;
+}
+
+.preview-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+
+.face-swap-header {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+/* Ensure cockpit viewer aligns content to top when FaceSwap is active */
+.cockpit-grid-mainviewer {
+  justify-content: flex-start !important;
+  padding-top: 8px;
+} 

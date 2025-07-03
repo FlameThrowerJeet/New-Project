@@ -1,0 +1,42 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "client": "cd client && npm run dev",
+    "dev:all": "concurrently \"npm run dev\" \"npm run client\"",
+    "kill-node": "taskkill /F /IM node.exe || exit 0"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "canvas": "^3.1.1",
+    "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "form-data": "^4.0.0",
+    "framer-motion": "^12.18.1",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.516.0",
+    "multer": "^1.4.5",
+    "node-media-server": "^4.0.18",
+    "openai": "^4.28.0",
+    "puppeteer": "^24.10.2",
+    "react": "^17.0.2",
+    "react-datepicker": "^8.4.0",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "react-twitch-embed": "^3.0.2",
+    "replicate": "^1.0.1",
+    "sharp": "^0.33.2",
+    "stability-client": "^1.9.0",
+    "ytdl-core": "^4.11.5"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.18",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.3"
+  }
+}

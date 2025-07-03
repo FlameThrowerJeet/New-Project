@@ -1,0 +1,101 @@
+.activity-counter-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 200px;
+    height: 150px;
+    background: rgba(0, 20, 40, 0.75);
+    border: 1px solid #00d4aa;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    font-family: 'Share Tech Mono', monospace;
+    color: #00d4aa;
+}
+
+.counter-display {
+    font-size: 64px;
+    font-weight: bold;
+    color: #00fff7;
+    text-shadow: 0 0 15px rgba(0, 255, 247, 0.7);
+}
+
+.counter-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.activity-prompt-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.prompt-window {
+    width: 400px;
+    background: #001122;
+    border: 2px solid #00d4aa;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 212, 170, 0.5);
+}
+
+.prompt-question {
+    font-size: 18px;
+    margin: 0 0 25px 0;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.prompt-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.prompt-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    border: 2px solid;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.prompt-btn.yes {
+    color: #00ff88;
+    border-color: #00ff88;
+    background: rgba(0, 255, 136, 0.1);
+}
+
+.prompt-btn.yes:hover {
+    background: #00ff88;
+    color: #001122;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.7);
+}
+
+.prompt-btn.no {
+    color: #ff4444;
+    border-color: #ff4444;
+    background: rgba(255, 68, 68, 0.1);
+}
+
+.prompt-btn.no:hover {
+    background: #ff4444;
+    color: #001122;
+    box-shadow: 0 0 15px rgba(255, 68, 68, 0.7);
+} 

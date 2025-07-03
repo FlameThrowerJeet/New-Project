@@ -1,0 +1,2144 @@
+Environemt
+
+
+	Individual----> Population ---> Community --> Ecosystem -> Biome
+	
+		- Communities, jyadatar, dominant plant species ke naam par name ki jati hai---> Ex : Grassland community. 
+		
+		
+		- Biosphere ki structural and functional unit hoti hai--> Ecosystem. 
+		
+		
+		
+	Consumers : Hetertrops or Phagotrophs	
+	
+		- Micro and Macro
+		
+		- Micro : Saprotorophs (Decomposers or osmotrophs)
+		
+			Ex : Bacteria and Fungi ---> Dead organic matter ko decompose karke energy lete hain. 
+			
+			Ex : Earthworms : Detritus feeders---> Decomposition of organic matter me kaam aate hain---> "Detrivores"
+			
+			
+			
+	2 or more diverse ecosystems ke beech ka zone : Ecotone. 
+	
+		Ex : Mangrove, ek ecotone hai, marine and terrestrial ecosystem  ke beech. 
+		
+		Ex : Grasslands,  Estuary  and  River Bank. 
+		
+		
+			- Ye kaafi narrow ya kaafi wide bhi ho sakte hain. 
+			
+			- Ye, zone of tension hote hain. 
+			
+			- LInear===> Progressive increase and decrease of species. 
+			
+			- Well developed wale me---> Contain species entirelly different from adjoining communities. 
+			
+			- Kabhi kabhi to---> Number of species and population density of some species is much greater---> "Edge effect".
+			
+			
+	
+	Kisi species ka kisi ecosystem me jo unique functional role/place hoti hai---> Niche
+	
+		- Kinhi 2 species ka same niche nahi ho sakta.    A niche is unique for a species. 
+		
+		- Types : Habitat Niche ,   Food Niche,   Reproductive niche,   Physical and chemical niche
+		
+		
+		
+		
+	Grazing Food Chain :   Jisme, Consumer, jo food chain shuru karta hai, plant khata hai.    Green plant at base and primary consumer is herbivore. 
+	
+		- Plant - Caterpillar - Lizard - Chinese
+		
+		- Phytoplankton - Zooplankton - Fish - Pelican - Chinese  (Aquatic)
+		
+	
+	Detritus Food Chain : Ye, Dead organic matter se shuru hoti hai. 
+	
+		- Litter - Earthworm - Chicken - Chinese		
+		
+	
+	Dono me fark : Source of Energy for the 1st level consumer. 
+	
+	Dono aapas me linked hai ---> Grazing wale ka dead organic matter hi, Detritus wale ka initial food source hai. 
+	
+	
+	
+	
+	Food Web---> Represent --> All possible transfers of energy and nutrients among the organisms in an ecosystem.     Food Chain to bas ek hi pathway ko trace karti hai. 
+	
+		- Ghas ko bas gaye nahi khaati.  Ghas ko khargosh bhi khaate hain. Jinhe lekin, chinese kha jata hai. 
+		
+		
+	1) Pyramid of Numbers : Upright
+	
+		- Lowest level pe max. 
+		
+		- Ex :Grassland ecosystems me dikhta hai. : Base Level : Ghas 	
+		
+					
+	2) Pyramid of Numbers : Inverted
+	
+		- Highest level pe max
+		
+		- Ex : Forest : Thode se ped : Bohot saare Birds : Or bhi jyada parasites(keede, makode) : Or bhi bohot bohot jyada Hyper Parasites(Bacteria, Viruses)			
+		
+	
+	   - Pyramid of Number, organism ke size ko dhyan me nahi leta hai. 
+	   
+	   - Or, kyunki har organism ko gin na namumkin sa hai, isliye---> Does not completely define the trophic structure of an ecosystem. 
+	   
+	   
+	  
+	  
+	Pyramid of Biomass : Individuals ko gina nahi, balki unka weight liya jata hai. ---> Total dry weight of all organisms at each trophic level at a particular time. 
+	
+		- Size difference problem overcome karne ke liye, dry weight use karte hain ---> gram /meter squated. 
+		
+		Isme bhi upward ya inverted ho sakta hai 
+		
+			1) Upward : Jyadatar land wale ecosystems ke liye ---> large base of primary producers. 
+			
+				- Autotrophs, yani producers ka biomass sabse jyada hota hai. 
+				
+			2) Inverted : Aquatic ecosystems wale 
+			
+				- Kyunki, producer to nanhe se planktons hote hain, that grow and reproduce rapidly. 
+				
+				
+	Pyramid of Energy : Most suitable hai--> To compare the functional role of trophic levels in an ecosystem. 
+	
+		- Always upward--> Large base---> Due to conservation of thermodynamics
+		
+		- Ye pyramid explain karta hai : Biomagnification - Toxic subtances ki concentration increase hona at higher levels progressively
+		
+		
+		
+	Bioaccumulation : Kaise pollutant food chain me enter karta hai. 
+	
+		- There is increase in concentration of pollutant from the environment to the 1st organism in a food chain. 
+		
+	Biomagnification : Increase in concentration. 
+	
+		- Iske liye jaruri hai ki pollutant : Long-Lived,  Mobile,  Soluble in fats   and   Biologically active ho.  Ex : DDT
+		
+		- Inactive pollutant, biomagnify to ho sakta hai, lekin, hame nuksan nahi karega. 
+		
+		
+	
+	
+	Dono species ko fayda : Mutualism ,    Ex : Pollination								  
+	
+	
+	Ek ko fayda, dusre ko aand farq nahi padta ,    Ex : Gaye ke gobar me beetle rehta hai
+	
+	
+	Competition : Dono ko nuksan
+	
+	Predation and Parasitism : Ek ko fayda, dusre ko nuksan
+	
+	Amensalism : Ek species ko harm,  dusra unaffected
+	
+	 		- Bada tree, chote wali ki roshni rok le. 
+	 		
+	 Neutralism : No benifit, No harm		
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 Nitrogen Cycle : 
+	 
+	 	- 16% by weights of all proteins-- Basic building block of all living tissues.  
+	 	
+	 	- Plant log seedha Nitrogen nahi use nahi kar sakte.  Isliye, Nitrogen Fixation ki madad se, pehle ise Ammonia, Nitrites or Nitrates me convert kiya jat hai. 
+	 	
+	 	- Earth par, 3 different tareeko se Nitrogen Fixation hota hai : 
+	 	
+	 		1) Micro-organims se :  Bacteria and Blue-Green Algae  ---> Ye, Nitrogen ko Ammonium Ions me convert kar dete hain. 
+	 		
+	 			- Free living nitrifying bacteria : Aerobic Azotobacter   and    Anerobic Clostridium
+	 			
+	 			- Symbiotic nitrifying bacteria jo leguminous root nodule plants : Ex --> Rhizobium
+	 			
+	 			- Blue-Green Algae : Ex --> Anabaena, Spirulina
+	 		
+	 		
+	 				- Plant log, ammonium ion ko seedha hi use kar sakte hain. 
+	 				
+	 				- Lekin, 2 groups of specialized bacterias - Nitrosomonas bacterias : --> Converts ammonia to nitrite ----> Further transformed into nitrate by Nitrobacter bacteria. 
+	 				
+	 				- In nitrates ko plant log kheench lete hain soil se, and convert them into amino acids---> Building blocks of proteins. 
+	 				
+	 				- Soil nitrates, paani me highly soluble hote hain---> Transported away by surface or ground water. 
+	 				
+	 				- Soils or Oceans me -- Special denitrifying bacterias hote hain--> Pseudomonas ---> Ye, Nitrates/Nitrites ko elemental Nitrogen me convert kar dete hain. 
+	 				
+	 				- Ye Nitrogen fir, atmosphere me dobara vileen ho jaati hai. Or paad ki aawaj aati hai, pu pu pu pu. 
+	 				
+	 						
+	 		2) Industrial processes ka use se : Fertilizer factories
+	 		
+	 		3) Thunder and lightning jaise atmospheric phenomenon se : 
+	 
+	 
+	 
+	 
+	 Sedimentary Cycle : Phosphorous, Calcium and Magnesium, is cycle ke through circulate karte hain. 
+	 
+	 
+	 	1) Phosphorous : Occurs in large amount in minerals in phosphate rocks ---> Erosion and mining activites ki wajah se, it enters the cycle. 
+	 	
+	 			- Lakes, me rooted and free-floating microscopic plants ki excessive growth ke peeche, yahi bhadwa involved hai. 
+	 			
+	 			- Main storage hai iska : Earth Crust. 
+	 			
+	 			- Oceans me--> It accumulates on continental shelves in form of insoluble deposits. 
+	 			
+	 		
+	 	2) Sulphur : Iska reservoir Soil hai : Locked in organic(Coal, Oil and Peat)    and     inorganci deposits(Pyrite rock and sulphur rock) ---> In form of Sulphates,Sulphides and Organic Sulphur. 
+	 	
+	  			- Mostly sedimentary lekin, H2S  and  SO2,  are gaseous components. 
+	  			
+	  			- Sulphates ko plants keench lete hain,  and  incorporate it into sulphur-bearing amino acids, which is incorporated in the proteins of autotrophs tissue.  
+	  			
+	  		
+	  		
+	  		
+	  Ecological Succession : Ecological time scale par, directional change in vegetation 
+	  
+	  	- Ye hota hai, jab a series of communities ek dusre ko replace kar deti hai, due to a large scale destruction - natural or man-made. 
+	  	
+	  	- Ye hota rehta hai, jabtak ek stable mature community na develop ho jaye. 
+	  	
+	  	- Ex ; Annual Plants ---> Perennial Plants and Grasses ----> Shrubs ----> Softwood Trees-Pines ----> Hardwood Trees
+	  	
+	  	- Pehla plant jo aata hai colonise karne kisi area ko ---> Pioneer community. 
+	  	
+	  	- Final stage of succession --> Climax community. 
+	  	
+	  	- Increased productivity  ,    Shift of nurtients from reservoir,   Increased organism diversity with Increased niche development,    Gradual increase in complexities of food webs. 
+	  	
+	  
+	 	- Secondary succession shuru hota hia, well developed soil par, already formed at the site. ---> Relatively faster. 
+	 	
+	 
+	 
+	 Autogenic Succession : Jab, community ke living inhabitants ki wajah se succession aaye. 
+	 
+	 Allogenic Succession : Jab koi outside force ki wajah se aaye. 
+	 
+	 
+	 Autotrophic Succession : In which, initially, the green plants are much greater in quantity. 
+	 
+	 Heterotrophic Succession : In which, heterotrophs are greater in quantity. 
+	 
+	 
+	 	- Continets ke middle me situated areas me, Succession would occur faster. 
+	 	
+	 	
+	 	
+	 
+	 TUNDRA : Matlab - Barren Land
+	 
+	 	1) FOund where environmental conditions are very severe. ---> 2 tarah ke tundras --> Arctic and Alpine
+	 	
+	 	2) Polar Ice caps ke neeche and above the treeline in north-hemisphere,  ek continous belt me milte hain   	 
+	  
+	  	3) Canada, Alaska, European Russia, Siberia and ArctiC ocean ke island groups me  
+	  	
+	  	4) South pole ke tundra bohot chote hote hain.
+	  	
+	  	5) Alpine Tundra--> High Mountains par---> Ye day and night variations show karte hain. 
+	  	
+	  		- Vegitation : Cotton Grass,  Sedges,  Dwarf heath,  Willow birches and lichens
+	  	6)	
+	  			- Pedo ki long lives hoti hai 150 to 300 years.   Thich cuticle  and  epidermal hairs inhe thand se bachta hain. 
+	  		
+	  		- Animals : Reindeer, Musk ox,  Arctic hare,  Caribous,  Lemmings  and  Squirrel
+	  		
+	  			- Mammals ke--> Large Body size,  Small tail  and  Small ear to avoid heat loss from surface. 
+	  			
+	  			- Body covered hoti hai--> Fur for insulation. 
+	  			
+	  			- Insects- Short life cycles	
+	  
+	  
+	  
+	  	
+	  FOREST ECOSYSTEMS : Complex assembly of different kinds of biotic communities. 
+	  	
+	  	1) Temperature and ground mositure ki optimal conditions responsible hoti hai, for establishment of forest communities. 
+	  	
+	  	2) Trees ka distribution and abundance determine karta hai : Nature of soil, Climate and local topography. 
+	  	
+	  	3) Forest, Evergreen ya Decidous ho sakte hain.  ---> Distinguished on the basis of lead ---> Broad-leafed   or   Needle-leafed coniferous forests(Temperate)	
+	  
+	  	4) 3 major categories : Confiferous Forests,   Temperate Forests    and   Tropical Forests
+	  	
+	  	5) Noth to south latitude    or    High to low altitude,    ke hisab se arranged hote hain. 
+	  	
+	  	
+	 		Coniferous Forests : a.k.a Boreal Forests
+	 		
+	 			1) Cold Regions with High Rainfall,   Strong seasonal Climates with long winters and Short summers 
+	 			
+	 			2) Evergreen plants : Spruce,  Fir  and  Pine Trees 
+	 			
+	 			   Animals : Lynx,  Wolf,  Bear,  Red Fox,  Porcupine,  Squirrel      and   Amphibians like Hyla, Rana etc
+	 			   
+	 			3) Soils : Poor hoti hai with Thin Podzols
+	 			
+	 				- Kyunki, rocks ki weathering slow ho jati hai cold environments me. 
+	 				
+	 				- Confireous pedo ka litter, boho slowly decompose hota hai  and  is not rich in nutrients. 
+	 				
+	 				- Soil acidic hoti + Deficient in minerals
+	 				
+	 				- Kyunki, paani ka large movement hota hai soil se, or evaporation to hota hai nahi,isliye,water soluble nutrients, kaafi neeche chale jate hain, jaha roots nahi ja pati. 
+	 					 	
+					- Isliye, litter ke organic acis ko counter karne ke liye, koi alkaline ions(jaise, Calcium, Nitrogen and Potassium) nahi bachte	 
+	  
+	  	
+	  			
+	  			
+	  			Temperate Deciduous Forests : Moderate Climate  and  Broad-leafed decidous trees ---> Jo apni leaves shed kar dete hain in fall and are bare in winter 
+	  			
+	  				- Precipitation is fairly uniform throughout
+	  				
+	  				- Soils are podzoic  and fairly deep
+	  				
+	  			
+	  			Temperate Evergreen Forests : World ke wo part that have Mediterranean type of Climate---> Warm dry summer   and   Cool moist winters
+	  			
+	  				1) Low Broad leefed evergreen trees
+	  				
+	  				2) Yaha pedo me aag lag jaati hai---> Enable them to regenerate quickly afer being burnt.  		
+	  				
+	  				
+	  			Temperate Rain Forests : Marked seasonality with regard to temperature and rainfall 
+	  			
+	  				1) High Rainfall  +  Very heavy fog ---> Ye khud ek important source of water hota hai. 
+	  				
+	  				2) Yaha ki biotic diversity kaafi jyada hoti hai, baaki temperate forests ke mukable. 
+	  				
+	  				3) Lekin, Plants and animals ki diversity, Tropical Rainforests ke comparison me kaafi kam hoti hai. 
+	  				
+	  		
+	  		
+	  			Tropical Rain Forests : 
+	  			
+	  				1) Equator ke paas hote hain. 
+	  				
+	  				2) Most diverse and rich communities on earth
+	  				
+	  				3) Temperature and Humidity dono kaafi jyada hoti hain. 
+	  				
+	  				4) Annual Rainfall > 200 cm ---> Distributed througout the year
+	  				
+	  				5) Flora bhi highly diversified hota hai. 
+	  				
+	  				6) Dense Vegitation --> Remain vertically stratified : Tall trees covered hote hain : Vines, Creepers, Lianas, Epiphutic orchids and bromoliads se
+	  				
+	  				7) Lowest layers me milte hain --> Trees, Shrubs, Herbs, Ferns  and  Palms
+	  				
+	  				8) Soil : Red Latosols ---> Very thick
+	  				
+	  				9) Lekin, high rate of leaching ki wajah se--> Useless for agri purposes
+	  				
+	  			       10) Lack of sunlight ki wajah se, Undergrowth restricted hoti hai. 
+	  			       
+	  			       
+	  		
+	  
+	  Indian Forest Types : 
+	  
+	  	1) Tropical Wet Evergreen Forests : 
+	  	
+	  		1) Western Ghats,  Nicobar and Andaman Islands   and  North East
+	  		
+	  		2) Tall, Straight Evergreen trees. 
+	  		
+	  		3) Jackfruit,  Betel Nut palm,  Jamun,  Mango   and  Hollock    naam ke ped milte hain
+	  		
+	  		4) Tier patter me milte hain ped ---> Ground par shrubs, followed by short structured trees  and then tall variety
+	  		
+	  		5) Trees ke trunks par--> Beautiful ferns and orchids ki different varieties milti hai. 
+	  		
+	  		
+	  	
+	  	2) Tropical Moist Deciduous Forests : Througout India, except WEstern adn North-West regions. 
+	  		
+	  		1) Tall tress  +  Broad Trunks  and roots to hold them firmly to ground
+	  		
+	  		2) Taller trees dry season me leaves shed kar dete hain. 
+	  		
+	  		3) Layer of shorter trees and evergreen shrubs in the undergrowth. 
+	  		
+	  		4) Forests are dominated by Sal and Teak + Mango, Bamboo and Rosewood. 
+	  		
+	  		
+	  	3) Tropic Dry Decidous Forests : Pure Northern part me, except North-EAst
+	  	
+	  		- Tamil Nadu, Gujrat, MP, Kerala and Karnataka me bhi milte hain. 
+	  		
+	  		- Canopy, 25m se jyada exceed nahi karti. 
+	  		
+	  		- Common trees ---> Sal,  Acacia  and bamboo
+	  		
+	  				
+	  	
+	  	4) Tropical Dy-Evergreen Forests : Tamil Nadu,  Andhra Pradesh  and  Karnatak Coast
+	  	
+	  		- Hard-Leaved evergreen ped hote hain, with fragrant flowers  +  Thode bohot decidous trees
+	  		
+	  		
+	  		
+	  	5) Littoral and Swamp
+	  	
+	  		1) A and N Islands,   Ganga and Brahmaputra ke delta regions
+	  		
+	  		2) Roots--> Soft tissues, taaki plant log, paani ke andar breathe kar sake. 	
+	  		
+	  		
+	  		
+	  	6) Sub-Tropical Broad-Leaved Forests : East Himalayas + Western Ghats + Silent Valley 
+	  	
+	  		- Silent valley me ---> Poonspar,  Cinnamon,  Rhododendron   and  Fragrant Grass
+	  		
+	  		- East Himalayas ---> Maa chudi padi hai, flora ki due to shifting cultivation ---> Oak, Alder, Chestnut, Birch
+	  		
+	  		
+	  	7) Pine-Forests : Steep dry slopes of Shivalik Hills,  Western and Central Himalayas,  Khasi, Naga and Manipur Hills
+	  	
+	  		- Chir, Oak, Rhododendron and Pine(Duh) 
+	  	
+	  		
+	  	8) Montane Wet Temperate Forests : Nepal ke east se, Arunachal Pradesh tak, jaha min 200 cm ki rainfall hoti hai. 
+	  	
+	  		-North Me --> 3 layers of Forest : 
+	  		
+	  			Higher Layers : Confierous 
+	  			
+	  			Middle Layers : Decidous such as Oak
+	  			
+	  			Lowest Layers : Rhododendron and Champa
+	  			
+	  		- South Me ---> Nilgiri and Higer reached of Kerala
+	  		
+	  		- North ke forest jyada dense hote hai. 
+	  		
+	  		
+	  		
+	Grassland Ecosystem : Jaha rainfall 25 se 75 cm ke beech hoti hai---> Not enough to support a forest but more than that of a desert. 
+	
+		- Generally temperate climates me milte hain. 
+		
+		- India me--> mainly in Himalayas.
+		
+		- 2 types in India: Steppes and Savanas  -
+		
+			- Steppe me, all the forage is provided only during the brief wet season.
+			
+			- Savana me, forrage, na sirf wet season me ugne wale grasses ki wajah se hota hai, balki, dry season me bhi smaller amount of regrowth ho jati hai. 
+			
+		- Steppe formation--> Western Rajasthan ke sandy and Saline areas me, jaha semi-arid climate hai or rainfall is less than 20 cm per year, and dry season of 10 months. 
+		
+		- Svanna formation--> Central and Eastern Rajasthan ---> 50 cm rain per year,  and dry season 6 se 8 mahine ka hota hai.
+		
+			- Khetri pedo ke, light shade bhi in grasses ki development me madad karti hai. 
+			
+		
+		- Indian Grassland  and  Fodder Research Insitute, Jhansi         and      Central Arid Zone Research Institute, Jodhpur
+		
+		- Grazing ki wajah se, soild ka mulch cover kam ho jata hai,  microclimates become more dry    and is readily invaded by xerophyte plants and borrowing animals. 
+		
+		- Water and wind erosions se bhi maa chud jati hai 
+		
+		- Moist conditions me--> Fire favour karta hai grass, over trees.     Lekin, dry conditions me fire is necessary to maintain grasslands against invasion of desert shrubs. 
+		
+		- Burning se forage yield bhi badh jati hai. 
+		
+		
+		
+	Andhra Pradesh ka--> Sri Venkateshwa Zoological Park---> Largest Zoo in the country. 
+	
+	
+	
+	Desert Plants under, Hot and Dry Conditions : 
+	
+		1) Mostly shrubs hote hain. 
+		
+		2) Leaves ya to absent hoti hai, ya reduced in size
+		
+		3) Leaves or stem, succulent and water storing hoti hai. 
+		
+		4) Kuch plants me, even stem contains, chlrophyll for photosynthesis. 
+		
+		5) Root system well developed hota hai, and is spread over large area. 			 					  		
+		
+		
+	Desert animals : 
+	
+		1) Fast runners
+		
+		2) Nocturnal 
+		
+		3) Concentrated urine moot te hain
+		
+		4) Animals and birds ki lambi taange hoti hain, to keep the body away from ground. 
+		
+		5) Lizards, insectivorous hoti hain, or bina pani ke kai dino tak reh sakti hai. 
+		
+		6) Herbivorous animals ko, sufficient pani mil jata hai, from the seeds which they eat. 	
+		
+		
+		
+	Thar Desert ka Flora :  2 types : Ephernerals   and   Rain Perennials
+	
+		1) Ephernerals ---> Delicate annuals,  free from xerophytic adaptations ,  Have slender stems and root systems  ,   Large flowers. 
+		
+			- Appear almost immediately after rain---> Develop fruits and flowers in incredibly short time and dies as soon as the surface layer of soil dries up. 
+			
+		
+		2) Rain Perennials ---> Bas rainy season ke time hi jammen par dikhte hain, lekin in saalo ke, perennial under-ground stem hota hai. 
+		
+		
+		- Jyadatar desi plants--> Capable hote hain, water absorb karne ke, from deep below the surface , by a well-developed root system
+		
+			- Main part --> Slender, Woody tap root of extraordinary length
+			
+		- Xerophilous adaptations : Reduced leaves,  Thick hairy growth,  succulence,  Wax coatings,   Thick cuticle,  Protected stomata etc  ---> Taaki transpiration kam ho sake. 	
+		
+		
+		
+		
+	Cold Desert of India : Ladakh,  Leh  and  Kargil of Kashmir       and    Spiti Valley of Himachal Pradesh     and    Some parts of North Uttarakhand  and Sikkim. 
+	
+		- Ye areas, Himalayan mountain system ke rain shadow region me hai. 
+		
+		- Jyadatar time, temperature 0 degrees ke neeche---> Drops to -50 degrees during winter. 
+		
+		- Mean annual rainfall less than 40 cm
+		
+		- Novemeber and March ke beech heavy snowfall hota hai. 
+		
+		- Soil type--> Sandy to sandy loam
+		
+		- Soil nutrient --> Poor organic matter content
+		
+		- Soil---> Low water retention capacity
+		
+		- Wind erosion - Most common
+		
+		- Narrow growing period --> Mostly, during summer
+		
+		- Extreme conditions ki wajah se---> Growth of vegetation is slow and slutned nature. 
+		
+		- Janwar : Asiatic Ibex,  Tibetan Argai,  Ladakh Uriyal,  Bharal,  Tibetan Antelope(Chiru),  Tibetan Gazelle,  Wild Yak,  Snow Leopard,  Brown Bear,   Tibetan Wolf,  Wild Dog
+		
+			Tibetan Wild Ass (Kiang),  Wolly Hare,   Black Necked Crane
+			
+	
+	
+		
+	Fresh Water Ecosystem : Salt content 5 ppt se kam ---> Lakes, Ponds, Pools, Springs, Streams and Rivers
+	
+	Marine Ecosystem : 35 ppt se jyada --> Seas and Open oceans
+	
+	Brackish water ecosystem : 5 se 35 --> Estuaries, Salt marshes, Mangrov swamps and forests
+	
+	
+	
+	
+	Acquatic Oganisms ko classify kiya jata hai---> On the basis of their zone of occurance  and their ability to cross these zones. 
+	
+		1) Neuston : 
+		
+			- Unattached organisms, jo air-water interface par rehte hain ---> Ex : Floating plants
+			
+			- Kuch organisms, jaise water strider, puri life, air-water interface ke upar hi rehte hain. 
+			
+			- Kuch organisms, jaise beetles and back-swimmers, iske neeche rehte hain. 
+			
+		
+		2) Periphyton : 
+		
+			- Ye organisms, Rooted plants ki stems and leaves,  Ya fir ye, bottom mud se emerge hone wale mud se attached hokar rehte hain. 
+			
+			- Ex : Sessile Alage and their associated group of animals
+			
+		
+		3) Plankton : Microscopic plants like algae(Phytoplankton)  and animals like crustaceans  and  protozoans(Zooplanktons), found in all aquatic ecosystems
+		
+			- Planktons jyada hil-dul nahi sakte, isliye inki movements, currents hi control karte hain
+			
+			
+		4) Nekton : Wo animals, jo swimming karte hain. 
+		
+			- Ye relatively large  and  powerful hote hain, kyunki inhe water currents ko overcome karna hota hai 
+			
+			- Insects(2 mm long) se leke, Blue Whales, sab saaale Nekton hain
+			
+			
+		5) Benthos : Water mass ke bottom par milne wale organisms
+		
+		
+		
+		
+	Aquatic Habitats kai zones me distributed hota hai, depending upon the penetration of sunlight. 
+	
+		1) Photic Zone : Upper layer of aquatic ecosystems ---> Jaha light penetrate kar jaati hai ---> Saara photosynthesis, yahi tak confined hota hai. 
+		
+			- Is zone ki depth, pani ki transparency par depend karti hai. 
+			
+			- Ya photosynthesis or respiration, dono hota hai. 
+			
+			- Ise euphotic zone bhi kehte hain ===> Lighted and well-mixed portion, that extends from the lake surface down to where the light level is 1% of that at the surface. 
+			
+		
+		2) Aphotic Zone : Aquatic Ecosystems ki lower layers, jaha light penetration and plant growth restricted hota hai
+		
+			- Yaha bas respiration hota hai. 
+			
+			- Ye, littoral and Photic zone ke neeche hota hai, jaha light levels is too low for phtosynthesis. 
+			
+			- Deep unlit region ko, Profundal ZOne kehte hain. 		
+			
+			
+			
+		
+		
+	Dissolved Oxygen :
+	
+		- Fresh water me,  iski concentration hoti hai, 0.0010 % by weight ----> Air se, 150 times kam. 
+		
+		- Aquatic ecosystem me air enter karti hai--> Through Air water interface and through photosynthesis. 
+		
+		- To quantity of DO depends upon these 2 activites. 
+		
+		- Temperatue : Water-Water me oxygen kam soluble hoti hai.   Warm-water me decomposer activity bhi badh jati hai. 
+		
+			- Isliye, temperature badhane se, Dissolved Oxygen kam ho jati hai. 
+			
+			- Jab DO, 3 to 5 ppm se kam ho jaye, tab bohot saare aquatic organisms dam tod dete hain. 
+			
+		- Transparency : Turbid water me light penetration nahi ho pata jis se photosyntheic activity kam ho jati hai. 		
+			         
+			        
+			        
+	Acquatic Organisms ki temperature tolerance kaafi kam hoti hai. 
+	
+		- Kyunki, paani ki specific heat bohot jyada hoti hai.  Isliye, wo jaldi se garam bhi nahi hota, na hi jaldi se thanda hota hai. 
+		
+		- Isliye, thode se temperature change ki wajah se hi aquatic organisms ki maa chud sakti hai. 		         
+			         
+			         
+			         
+	Saaf Lake : Oligotrophic Lake. 
+		
+			- Isme, hypolimnion yani ki bottom layer me bhi oxygen present hoti hai.
+			 
+	Wo lake jiski maa chudi padi hai : Eurtrophic lake. 		         
+			      
+	
+		Lakes se nutrients nikalne ke tarreke : 
+		
+			1) Nutirent poor-water se flush kardo
+			
+			2) Deep water abstraction
+			
+			3) Flocculation/Floation with water ki madad se on site P-elimination          
+			
+			4) On-Stie algae removal by filters and P-adsorbers
+			
+			5) Harvest of fishes and macrophytes
+			
+			6) Sludge removal
+			
+			
+			
+	Ammenpur Lake : 1st Biodiversity Heritage site, under Biodiversity act, 2002. 
+	
+		- Telangana me ek ancient man-made lake hai. 
+		
+		- BD heritage sites , protected areas ke bahar lie karti hain. 
+		
+		- Inhe, locally constituted Biodiversity Management committee manage karti hain
+		
+		
+		
+		
+	Point Sources :   Jo kisi 1 influence ke directly attributed hota hai. 
+	
+		1) Nutrient waste directly travel karta hai, from source to water
+		
+		2) Inhe regulate karna easy hota hai. 
+		
+		
+	Non-Point Source : Various ill-defined  and  diffuse sources
+	
+		- Vary spatially and temporarily    and   are difficult to regulate
+		
+		
+	Major reasons for Bloom : Nutrient enrichment and Warm Waters				
+	
+		- Alage or Phytoplankton, kutte ki tarah reproduce karne lagte hain. 
+		
+		- Jyadar harmful nahi hote, lekin kuch saale toxins produce karne lagte hain, jin se fish log ki maa chud jati hai---> Harmful Algal Blooms(HABs)
+		
+		- Ise red tide bhi kehte gawar log. 
+		
+		- HABs oxygen levels bhi deplete kar deti hai. ---> When masses of algae die and decompose
+		
+		- Low oxygen se bhi fish log ki maa chud jati hai. 
+		
+		
+		
+	
+	Inland Wetlands :  
+	
+		Natural : Lakes/Ponds,   Ox-bow lakes,   Waterlogged,  Swamp/Marsh
+		
+		Man-Made : Reservoirs,  Tanks,  Ash ponds
+		
+	
+	Coastal Wetlands : 
+	
+		Natural : Estuary,  Lagoon,  Creek,  Backwater,  Bay,  Coral Reef,   Tidal Flat,  Mangroves,  Salt Marsh
+		
+		Man-Made : Salt Pens,  Aquaculture		
+		
+		
+	Indian Wet-Lands : 
+	
+		1) Total - 27,403 wetlands ---> 23,444  Inland   and  3959 Coastal
+		
+		2) Occupy --> 18% of country's area ----> 70% is under paddy cultivation
+		
+
+
+	Montreux Record : Ramsar COnvention ke under, Principal took ----> List of Wetlands of International Imporatnce ke wetland sites ka register hai. 
+	
+		- Jinme, ecological character ke changes, have occured, are occuring or are likely to occur as result of tech dvpt, pollution or other human interference. 	
+		
+		- Chilika lake ko 1993 me dala tha, due to siltation. Lekin, kaam pura hone par, 2002 me hata liya
+		
+		- Loktak Lake, manipur ko bhi same year ---> Water hyacint infestation
+		
+		- Keoladeo National Park, Rajasthan , 1990 ---> Water shortage and unbalanced grazing. 
+		
+			- Paspalum Distichum naam ki invasive grass ne iski maa chod rakhi hai. 
+		
+		
+		
+	Neknampur Lake : Hyderabad --->  Largest, floating treatment wetland in the desh. 
+	
+		- Hydroponics technique par based hota hai. 
+		
+		- Allow plants to grow on the water, with the help of sunlight (soil nahi chahiye) . 	
+		
+
+
+	Estuaries : Located, where river meets the sea. 
+	
+		- Freshwater from river mixes with salt water transported by tide from the ocean. 
+		
+		- Most productive water bodies in the world. 
+		
+		- Ye, river ke lower end me located hoti hain---> Subject to tidal fluctuations. 
+		
+		- Din me ek do baar seawater inhe wash karta hai. 
+		
+		- Yaha bohot thdoa wave action hota hai---> Provide calm refuge from open sea.  Animals ko shelter milta hai. 
+		
+		- Most productive region hota hai, kyunki dono marine and fresh water se nutrients milte hain. 
+		
+		- Lekin, duniya ke sabse heavily poluted areas me se hain---> Duniya ki 60% of population, estuaries and coast ke along rehti hai. 
+		
+		
+	Wo coastal lakes, jinka Ek small opening ke through sea ke saath connection hota hai ---> Lagoons and Backwaters. 
+	
+		- Gradient in salinity from freshwater to marine, depending upon the extent of influence of sea-water. 
+		
+		
+	
+	India ki jyadatar Estuaries : East Coast par hain. 
+	
+		- 14 major river,  44 medium  and 162 minor rivers,  sea me drain karti hai, through estuaries. 
+		
+		- Bohot saare sea ports bhi inhi par hain. 
+		
+		
+	
+	
+	Mangroves : Tropical and sub-tropical sheltered coastlines ke charateristic littoral plant formations
+	
+		- Trees and shrubs, jo spring tides ke High Water level ke neech grow karte hain ---> Exhibits remarkale capacity for salt water tolerance. 
+		
+		- Ye generally grow karte hain : Tidal FLats, Deltas, Estuaries, Bays, Creeks and Barrier Islands par
+		
+		- Best locations---> Jaha rivers, abundant silt lekar aata hai
+		
+		- Require high solar radiation .     Ye saale, salt water me se bhi fresh water absorb kar lete hain. 
+		
+		- Produces pneumatophores(blind roots) to overcome respiration problem in anaerobic soil conditions
+		
+		- Rhizopora species : Paani ke andar arching roots bhej deti hai. 
+		
+		- Avicennia speices : Send vertical "Pneumatophores" or air roots up from the mud
+		
+		- Jyadatar mangrove vegetation ke--> Lenticellated bank hote hain---> Facilitate water loss. 
+		
+		- Leaves thick hoti hain---> Produces salt secreting glands. 
+		
+		- Viviparity mode of reproduciton show karte hain ---> Seeds germinate from the tree itself (before falling to the ground).. 
+		
+			- Saline water me germinaiton ki problem ko overcome karne ke liye. 
+			
+		- Kabhi kabhi main trunks se hi roots nikal jaati hain ---> Stilt Roots
+		
+		
+	India ke mangroves : Simgle Largest block of tidal holophytic mangroves of the world. 
+	
+		- Species : Herritiera Fames,   Rhizophora Spp,   Bruguriera spp,    Ceriops decandra,   Sonneratia spp,   Avicennia spp,   Nypa Fruticans
+		
+		- Bhitarkanika---> 2nd largest --> High genetic diversity. 			
+			
+		- Pichavaram  and  Vedaranyam ke mangroves ki maa chudi padi hai---> Due to constuction of aquaculture ponds  and  salt pans
+		
+		- Kerala coast ke mangroves--> sparse and thin
+		
+		- Indus river par Kori creek walo ki condition achi ho rahi hai. 
+		
+		- Gulf of kutchh ke mangroves chote se hote hain. 
+		
+		
+		
+	
+	Cold-water Corals : Deep-cold water me milte hain. 
+	
+		- UNEP ke hisab se, more cold-water coral reefs worldwide than tropical reefs
+		
+		- Largest species : Rost Reef of Norway
+		
+		
+		
+	4 tarah ke coral reefs hote hain : 
+	
+		1) Fringing reefs : Contiguous with the shore---> Most common
+		
+			- Andamans me milte hain. 
+			
+		2) Patch reefs : Isolated and discontinous
+		
+			- Palk bay,  Gulf of Mannar   and  Gulf of Katchh
+			
+		3) Barrier Reefs : Linear offshore structures----> Run parallel to coastlines  and arise from submerged shelf platforms
+		
+			- Reef and shore ke beech ki water body ko lagoon kehte hain. 
+			
+			- Andaman and Nicobar Islands me milte hain
+			
+		4) Atolls : Circular and Semi-Circular reefs ---> Arise from subsiding sea floor platforms
+		
+	
+	
+	Coral Reefs : Largest biogenic calcium carbonate producers. 
+	
+		- Mangroves ko substrate provide karte hain. 
+		
+		- Avifauna naam ke plants ko habitat provide karte hain. 
+		
+	
+		Solar Irradiance ki wajah se bhi bleaching ho jati hai. 
+		
+			- Photocsynthetically active as well as UV radiation, dono bleaching kar sakti hain	
+			
+			
+		Coral reefs, WPA ke Schedule I me aate hain. 	
+		
+		
+	
+	COMPAS : Coastal Ocean Monitoring and Prediction System : Coastal waters ki heath monitor karta hai
+	
+	
+	LOICZ : Land Ocean Interactions in the coastal Zone : Global change ka, coastal zones par kya effect hai
+	
+	
+	ICMAM : Integrated Coastal and Marine Area Mgmt : Coastal and marine area ke intergrated Mgmt ke liye
+	
+	
+	SICOM : Society of Integrated COastal Mgmt : Coastal ecosytem ko protect karne ke liye
+	
+	
+	
+	National Ganga River Basin Authority ka Chairman : Modi Kaka = PM
+	
+	
+	
+	Namami Ganga Program : Inegrated Ganga Conservation Mission ke under	
+	
+	
+	
+	
+	National Air Quality Monitoring Programme : CPCB
+	
+		i) Ambient Air quality ka status and trend determine karne ke liye
+		
+		ii) NAAQS ke compliance ascertain karne ke liye
+		
+		iii) Non-attainment cities ko indentify karna
+		
+		iv) Atmosphere clean karne ke natural processes
+		
+		v) Preventive and corrective measures lena
+		
+	
+	National Ambient Air Quality Standards (NAAQS)
+	
+		1) 12 pollutants ko naapta hai : SO2, NO2, PM 10,  PM 2.5,  O3,  Lead,  CO, Arsenic, Nickel, Benzene, Benzopyrene  and  Ammonia
+		
+	
+	National Air Quality Index : 
+	
+		1) 2015 me launch kiya tha. ---> 14 cities me ---> To disseminate air quality info. 
+		
+		2) 6 categories hain - Good , satisfactory...
+		
+		3) 8 pollutants ko consider karta hai : PM10, PM2.5,  NO2,  SO2,  CO,  O3,  NH3  and Lead     for which NAAQS are prescribed. 
+		
+	
+	National Clean Air Programme(NCAP) : 
+	
+		1) Mid-Term, 5-year Action plan hai, jise 2019 me launch kiya gaya tha. 
+		
+		2) Target : 30% reduction of PM2.5   and  PM10 concentration  by 2024,   taking 2017 as the base year in 122 non-attainment cities
+		
+		
+		
+	
+	BS-VI fuel : Reduces NOx emissions by 70% in diesel cars  and  by 25% in petrol cars   
+	
+		     Reduces PM in vehicles by 80%. 
+		     
+		     
+
+
+	India ke, 66 crore log un areas me rehte hain, jaha PM ki concentration, India ke safe standards se jyada hai. 
+	
+	
+	
+	Heat-Island Effect : Concretisation of Ground and Green belt ki wajah se. 
+	
+		- Raat me, Concrete surfaces se, short-wave radiations nikalti hain. 
+		
+		- Concretisation se, groundwater recharge bhi ruk jata hai---> Deplete green cover
+		
+		- Tall buildings, winds ko bhi block kar leti hain---> Reduces cooling effect
+		
+		- Trees bhi weak ho jate hain. 
+		
+		
+		
+	Soap and Detergetn Industry ke pollutants : Tertiary Ammonium Compounds ,   Glycerol,  Polyphosphates,  Sulphonated Hydrocarbons
+	
+	
+	Food Processing : Highly putrescible organic matter and pathogens
+	
+	
+	Paper and Pulp : Sulphides,  Bleaching Liquors,   Cellulose Fibres, Bark, Woods Sugars
+	
+	
+	
+	Tubifex : Annelid worm ---> Ye sala, low DO content wale pani me bhi jinda reh sakta hai. 
+	
+		- Recognised as indicator species for polluted water
+		
+		
+	
+	Organic and Inorganic wastes--> Reduces DO
+	
+		- 8 mg/L se kam DO wala paani --> Contaminated.   4 se kam wala to highly polluted. 
+		
+		- Wastes se, rates of decomposition badh jata hai, and O2 consumption increases. 
+		
+	
+	   - BOD : Amount of dissolved oxygen needed by bacteria in decomposing the organic wastes present in water. 
+	   
+	   	- Expressed in milligrams of oxygen per litre of water. 
+	   	
+	   	- Higher BOD--> Low DO content of water
+	   	
+	   	- Par, ye bas biodegradable material ke liye hai. 
+	   	
+	   
+	   - COD : Total organic matter(biodegradable and non-biodegradable) ke oxidation me  kitne oxygen equivalents lagenge. 
+	   
+	   
+	   		 	
+	- Mercury Compunds : Waste water me present bacterias, inhe Methyl Mercury me convert kar dete hain--> Ye bhayanak toxic hota hai. 
+		
+		- Can cause numbness of limbs, lips and tongue,   deafness, blurring of vision and mental derangement. 
+		
+	
+	
+	
+	Excess nitrates in drinking water: Reacts with Hemoglobin ---> Forms non-functional methaemoglobin ---> Impairs oxygen transport
+	
+		- "Methamoglobinemia"--> Blue Baby syndrome
+		
+		
+		
+		
+	Alpha Particles : Can be blocked by a piece of Paper  and  Human Skin
+	
+	
+	Beta Particles : Skin ko penetrate kar dete hain====> Can be blocked by glass and metal
+	
+	
+	Gamma Rays : Cells ki maa chod deti hai, 		
+	
+	
+	
+	
+	Warm WAter : 
+	
+		- Less oxygen
+		
+		- Isliye, rate of decomposition kam ho jata hai. 
+		
+		- Green ko replace kar deta hai, less desirable Blue-Green Algae. 
+		
+		- Many animals fail to multiply. 
+		
+		- Aquatic Animals ki metabolic rate ko badha deta hai---> Consume more food in shorter time
+		
+		- Cell walls kam permeable ho jati hain, to necessary osmosis
+		
+		- Cell proteins ka coagulation ho jata hai. 
+		
+		- Enzyme metabolism me alteration ho jata hai. 
+		
+		- Primary producers ki bhi lag jati hai----> Warm water increases plant growth rates, Resulting in shorter life span and species overpopulation
+		
+		- THis causes algal bloom --> Reduces oxygen even more. 
+		
+		- Hydrogen-disulphide bonds break down ho jate hain, within the quaternay structure of enzymes ---> Denaturing of life-supporting enzymes. 
+		
+		- Decreased enzyme activity leads to--> Inability to break down lipids---> Leads to malnutrition. 
+		
+		
+		
+	Oilzapper : Mixture of bacteria---> Bioremediation tech, jise TERI ne develop kiya hai. 
+	
+		- Oil-contaminated sites se pollutants ko degrade karne ke liye. 
+		
+		- Koi harmful residue piche nahi bachta. 	
+	
+	
+	Phytoremediation : Plants ka use karke, soil and water se contaminants ko hatana. 
+	
+		- Phytoextraction/Phytoaccumulation : Isme, plants roots, and shoots and leaves me, contaminants ko accumulate kar lete hain. 
+		
+		- Phytotransformation or Phytodegradation : Uptake to hota hai hi, lekin saath saath contaminants ka transformation bhi ho jata hai to more stable, less toxic, less mobile form
+		
+		- Phytostabalization : Is se, plant log, contaminated soil ki, mobility and migration ko kam kar dete hain. 
+		
+		- Phytodegradation  or Rhizodegradation : Rhizosphere me hone wali activity se, conatminants ka breakdown. 
+		
+				- Due to presence of proteins and enzymes produced by plants or by soil organisms such as bacteria, yeast and fungi. 
+				
+		- Rhizofiltration : Water saaf karte hain is se, Natural wetlands and estuary areas me. 
+		
+		
+	
+	Deinococcus Radiodurans : Ek bacteria hai, jiska use karte hain, Toluene and ionic mercury ko detoxify karne me. ====> Ye dono radioactive nuclear waste hain. 
+	
+	
+	
+	Mycoremediation : Ye ek tarah ka bioremediation hai jis me, funhi ka use karke area ko decontaminate karte hain. 
+	
+	
+	
+	
+	Acid Deposition 2 tarah ka hota hai : 
+	
+		1) Wet Deposition : Agar acid chemicals us area me chale jaye, jaha ka weather wet hai, to acid, jameen par girta hai in the form of rain, snow, fog or mist. 
+		
+			- Jaise jaise ye acidic paani, ground ke upar flow karta hai---> it affects a variety of plants and animals. 
+			
+		
+		2) Dry Deposition : Wo areas jaha weather dry hota hai, acid chemicals dust ya smoke me incorporate ho jate hain and fall to the ground, buildings, vegetation, cars etc
+		
+			- Dry depostited particles---> Surfaces se washed away ho jati hain, by rainstorms, through runoff. 
+			
+			- Is runoff ki wajah se resulting mixture or jyada acidic ho jata hai. 
+			
+			- Atmosphere ki aadhi acidity, atmosphere se dry deposition ke tareeke se hi girti hai. 
+			
+			
+			
+	Andhra Pradesh : Leading Palm oil producing State in India. ===> 86% of the production > Kerala (10%) > Karnataka(2%)
+	
+			- Inka long gestation period hota hai -- 4 years. 
+		
+			
+			
+			
+			
+	Critically Endangered (CR)
+	
+		1) Reduction in population (>90% over the last 10 years)
+		
+		2) Population size (< 50 mature individuals)
+		
+		3) Probability of extinctions in wild at least 50% in their last 10 years
+		
+		4) Facing extremely high risks of extinction in the wild
+		
+	
+	Endangered (EN)
+	
+		1) Reduction in population size (70% over the last 10 years)
+		
+		2) 250 se kam mature individuals
+		
+		3) Probability of extinction in wild at least 20% within 20 years
+		
+		4) Facing very high risk of extinction in the wild
+		
+	
+	Vulnerable (VU)
+	
+		1) Reduction in population (>50% in the last 10 years)
+		
+		2) 10,000 se kam mature individuals
+		
+		3) Probability of extinction in the wild at least 10% within 100 years
+		
+		4) Facing high risk of extinction in the wild
+		
+	
+	Near Threatened (NT)
+
+	Least Concern (LC)					
+	
+	
+	
+	
+	Indian Biodiversity : 
+	
+		1) India me bas 2.4% of land area hai, lekin, 7% of Recorded Species hain,    and  18% of Human population
+		
+		2) Ranks 7th in Mammals
+		
+		3) 9th in Birds
+		
+		4) 5th in Reptiles
+	
+		5) 2 Realms ,   5 Biomes,   10 Bio-Geographic Zones,     25 Bio-Geographic provinces
+		
+		
+			Realms : Continent, ya sun-continent sized area, jiske andar, ecosystems, similar biota ko share karte hain.
+			
+				1) Himalayan Region : Palearctic Realm
+				
+				2) Rest of Sub-continent : Malayan Realm
+				
+			
+			Biomes : Main group of plants and animals living in areas of certain climate patterns
+			
+				1) Tropical Humid Forests
+				
+				2) Tropical Dry or Deciduous Forests (Including Monsoon Forests)
+				
+				3) Warm Deserts and Semi-deserts
+				
+				4) Coniferous Forests
+				
+				5) Alpine meadows
+				
+			
+			Bio-Geographic Zones : Geographical distribution of plants and Animals
+			
+				1) Trans-Himalayas - 5.7%
+				
+				2) Himalayas - 7.2%
+				
+				3) Desert - 6.9%
+				
+				4) Semi-Arid - 15.6%
+				
+				5) Western Ghats - 5.8%
+				
+				6) Deccan Peninsula - 43% ---> Largest --> Predominantly decidous vegetation
+				
+				7) Gangetic Plain - 11%
+				
+				8) North-East India - 5.2%
+				
+				9) Islands - 0.03 %
+				
+				10) Coasts - negligible		
+				
+				
+				
+				
+				
+				
+	Animal Kingdom : Vertebrates    and   In-Vertebrates
+	
+		Ver : Fish,  Amphibians,  Reptiles,   Birds,   Mammals
+		
+			- In sabke, Backbones or Spinal columns hote hain. 
+			
+			- Ye earth ke sabse advanced organisms hain. 
+			
+			- They dominate their environment because of their size
+			
+		
+		
+		Fish : Cold Blooded,    Lives in water,    Gills,    Have Scales and Fins,   Lay Eggs
+		
+		
+		Amphibians : Cold Blooded,   Land And Water,    webbed feet,    Breathe with lungs and gills,   Moist smooth skin,   4 legs(sometimes none),   Lay eggs
+		
+		
+		Reptiles : Cold Blooded,  Have scales,  Have Dry skin,   Usually lay eggs,  Ear holes instead of ears,  4 legs or no legs
+		
+		
+		Aves : Warm blooded, Have Feathers and wings,  Lay eggs,  Have 2 legs,  Ear holes instead of ears
+		
+		
+		Mammals : Warm blooded, Have Hair and fur,  Give birth to live young ones,   Ma apne bacho ko doodh pilati hai,   Lungs,  4 legs,   Ears that stick out	
+		
+		
+		
+		
+		Invert : Annelids,  Mollusks,   Arthropods,   Arachnids,   Echinoderms,   Protozoa
+		
+		
+			- In saalo ki backbone hi nahi hoti. 
+			
+			- 98% of all animal species. 
+			
+			- Inka internal skeleton nahi hota, bones se bana hua. 
+			
+			- Jyadatar me, fluid-filled, hydrostatic skeleton hota hai, jaise ki jelly fish and worm
+			
+			- Baakio me hard outer shell hoti hai, jaise ki insects and crustaceans
+			
+			
+		
+		Annelids : 
+		
+			1) Inki body, segments me divided hoti hai. 
+			
+			2) Very-Well developed internal organs
+			
+			3) Found almost anywhere in the world
+			
+			4) DOn't have any limbs
+			
+			5) Earhworms,   Leeches,  Roundworms etc
+			
+			
+	
+		Mollusks : 
+		
+			1) Soft-skin like organ hota hai, jo inki hard outside shell ko cover karta hai. 
+			
+			2) Kuch mollusks jammen par,rehte hain, jaise Snail and Slug
+			
+			3) Baaki, pani me---> Oyster,  Mussel,  Clam,  Squid  and  Octopus
+			
+		
+		Echinoderms : 
+		
+			1) Marine animals jo, oceans me rehte hain. 
+			
+			2) Inke paas, arms and spines hoti hai, jo body ke bahar radiate karti hai. 
+			
+			3) Sea star,  Sea Urchin,  Sand Dollar  and  Sea Cucumber
+			
+		
+		
+		Protozoa : 
+		
+			1) Simple, Single-celled animals
+			
+			2) Smallest of all animals
+			
+			3) Jyadatar, protozoas, microscopic hote hain. 
+			
+			4) Lekin, ye multicellular animals ki tarah hi, breathe, move and reproduce karte hain. 
+			
+			5) Ex : Amoebas,  Flagellates etc
+			
+			
+		
+		
+		Arthropods : 
+		
+			1) Inke pass limbs and joints hoti hain, jis se ye move karte hain. 
+			
+			2) Inka ek exoskeleton hota hai, jo hard hota hai. 
+			
+			3) Crustaceans,   Insects  and   Archnids,   sab saale arthropods hain. 
+			
+			
+				Crustacenas : Pani ke andar rehte hain. 
+				
+					- Hard, External shell hoti hai, body ko protect karne ke liye
+					
+					- Crab,  Lobsters  and  Barnacle
+					
+				
+				Insects : Inka exoskeleton, inki puri body ko cover karta hai. 
+				
+					- 3 body parts and  6 legs  and an antennae
+					
+					- Beetle,  Butterfly,  Moth,  Dragonfly,  Bee,  Wasp  and  Praying mantis
+					
+				
+				Arachnids : Inke, 2 body parts and 4 pairs of legs hote hain, lekin inke paas antennae nahi hota. 
+				
+					- Spiders,  Scorpions, Ticsk and Mites
+					
+					
+					
+	
+	India me milne wale Floral Groups : 
+	
+		1) Algae : Green-non-differentiated(into organs like roots, stem and leaf) plants ,  jinke pass cholorophyll hota hai. 
+		
+			- Ye pani, ya moist situations me ugte hain. 
+			
+			- Fresh-water algae, green ya blue-green hoti hai
+			
+			- Marine algae, Red ya Brown hoti hai. 
+			
+			- Ye autotrophic podhe hote hain, jo khudka khana manufacture kar sakte hain. 
+			
+			
+		
+		2) Fungi : Non-Green,  Non-differentiated plants,  Total absence of Chlorophyll
+		
+			- Dead, Rotten Organic matters, jaise ki saprophytes par grow karti hai
+			
+			- Or, live as parasites on other living bodies -- Hosts--- > Jaise ki main. 
+			
+			- Moulds  and  Mushrooms - Examples of Saprophytic Fungi
+			
+			- India me max diversity milti hai--> Western Ghats > Eastern Himalayas > Western Himalayas
+			
+		
+		3) Bacteria : Non-Chlorophyllous micro-organisms ---> Lead saprophytic or parasitic existence
+		
+			- Jyadatar pathogenic hote hain
+			
+			- Saprophytic bacteria kaam ke hote hain ---> Soil borne and used in industries
+			
+			
+		
+		4) Lichen : Alga + Fungus
+		
+			- Greyish green plants, which grow on rocks, Tree-trunks and dead wood etcc
+			
+			- Algae, food manufacture karke, fungus ko deta hai. 
+			
+			- Fungus pani absorb and retain karta hai, to keep the algal cells moist 
+			
+			- Most common in wetlands,  Rare in rivers and streams,  not found in ground water
+			
+			
+		
+		5) Bryophytes : Plant is differentiated into a small stem and simple leaves, lekin, true roots absent hoti hai. 
+		
+			- Usually moist places me grow karte hain Ex : Liverworts, Mosses
+			
+			- India ke 2nd largest Green plants ka group hai.   
+			
+			- Mosses > Liverworts > Hornworts
+			
+		
+		6) Pteridophytes : Well differentiated plant bodies,  consisting of roots, stems and leaves. ----> Posses vascular bundles
+		
+			- Jyadatar terrestrial hote hain----> Flourish well in moist and shady places ---> Kuch Aquatic hote hain. 
+			
+			- Vascular Cyptograms like, Club-mosses,  Horse-tails and ferns ---> Usually distributed all over the world
+			
+			- North-East > South-India > North-India
+			
+			
+		
+		7) Gymnosperms : 	Naked-Seeded plants
+		
+			- Simple Flowes without accessory whorld and Stamens and carpels--> Remain aggregated in cones. 
+			
+			- Carpels ke suface par ovules present hota hai, jo directly pollinate kiya jata hai, pollen grain se. 
+			
+			- Cycas,  Pinus,  Gnetum
+			
+		
+		8) Angiosperms : Closed-Seeded plants
+		
+			- Sabse developed platns, bears flowers . 
+			
+			- Carpels have ovary, Style and Stigma
+			
+			- Ovary, usually fruits me develop hoti hai,  or ovules, seeds me. 
+			
+			- Isliye, seeds, fruits ke andar hi rehte hain. 
+			
+			- India ke pass, 7% of the world's flowering plants hain. 
+			
+			
+			
+			
+		
+		
+	Himalayan Moutain System : 
+	
+		1) West Himalayas : Low Rain, Heavy Snow
+		
+		2) East Humalayas : Hevy Rain, Snow only in higher latitudes.     
+		
+					- Lower lats par, condition similiar to tropical rain forests. 
+					
+		
+		
+	Tropical Rain forest Regions : 
+	
+		1) Western Ghats and North East India
+		
+		2) Nilgiris me Sholas milte hain : Extensive grasslands, interspersed with denselly forested gorges of evergreen vegetation. 
+		
+		3) Sholas, Aanaimalai and Palani Hills me bhi milte hain. 
+		
+		4) Moses, Ferns, Epiphytes, Orchids, Lianas and Vines. 
+		
+		
+		
+	
+	
+	WPA, 1972
+	
+		1) Schedule I ke janwar : Lion Tailed Macaque,  Rhinoceros,  Great Indian Bustard,  Narcondam Hornbill,  Nicobar megapode,  Black Buck
+		
+		2) Schedule II ke janwar : Rhesus macaque,  Dhole,  Bengal Porcupine, King Cobra, Flying Squirrel,  HImalayan Brown Bear etc
+		
+		3) Schedule III ke janwar : Hyaena, Hogdeer, Nilgai, Goral, Sponges, Barking Deer etc
+		
+		4) Schedule IV ke janwar : Goose, Vultures etc
+		
+		5) Schedule V ke janwar : Vermins --> Mice, Rat, Common Crow and Flying FOx
+		
+		
+		
+		
+		
+		
+	Andaman White-Tootherd Shrew : South Andaman ke Mount Harriet me milta hai bas---> Critically endangered. 
+	
+	Jenkin's Andaman Spiny Shrew : Ye bhi isi mountain par + Wright Myo par milta hai -> Same	
+		
+		
+	
+	Kondana Rat : Ye sala bhi critically endangerd hai, or bas India me milta hai. 	
+			
+	
+	Brown Antlered Deer : Endangered : South and South East ASia me milta hai. 
+	
+		- Manipur ke Loktak lake me. 
+		
+		- Open Grass dominated habitiat. 
+		
+		- Hydroelectric power project se iski maa chud gayi hai.
+		
+		
+	Brown Beer : Critically Endangered : India, Nepal, Pakistan and China
+	
+		- Jammu and Kashmir,   Himachal Pradesh,  Uttarakhand, 
+		
+		- Temperate rain forests me. 
+		
+		
+	
+	Fishin Cat : Endangered
+	
+		- Keoladeo national Park 
+		
+		- Wetlands me rehti hai. 
+		
+		- Pakistan me bhi					
+		
+		
+		
+	Golden Langur : Endangered
+	
+		- Bhutan and North East India	
+		
+		
+	Hispid Hare : Endangered
+	
+		- UP to NEpal ke Tall Grasslands me--> Elephant grass
+		
+	
+	Hoolock Gibbon : West wala, Endangered.    East wala Vulenrable
+	
+		- Eastern wala bas, Eastern Arunachal pradesh me milta hai. 
+		
+		- Baaki jyadatar, china me rehte hain ye vanar log. 
+		
+		
+	
+	Red Panda : Endangered
+	
+		- Temparate FOrests --> Nepal, India, Bhutan, Myanmar, SOuthern CHina
+		
+		
+	
+	Lion Tailed Macaque : Endangered
+	
+		- Western Ghants  ke Tropical Evergreen forests me
+		
+		- COffee plantation ki wajah se inki maa chudi padi hai. 
+		
+	
+	
+	Red Slender Lori : Ye Bas Sri-Lanka me milti hai, or Endangered hai
+	
+			
+	Grey Slender Lori : Least Concern : Southern Eastern India  and  Sri Lanka
+	
+	
+	
+	Malabar Civet : Critically Endangered : Western Ghats
+		
+			- Lowland Forest,   Lowland Swamp and Riparian Forest in coastal plain district
+			
+			
+			
+	Himalayan Musk Deer : Endangered : Bhutan,  North India (Sikkim),  Nepal and China
+	
+	
+	
+	Nilgiri Tahr : Endangered : Western Ghats and Sri-Lanka
+	
+	
+	Pygmy Hog : Critically Endangered : Bengal and Assam ===> Duniya ka sabse chota or rare wild pig hai ---> Grasslands me rehta hai. 
+	
+		- Grassland habitats ke liye ek Indicator species hai. 
+		
+		- Isi ke habitat me rehte hain : Indian Rhino, Swamp Deer,  Wild Buffalo,  Hispid Hare,  Bengal Florican  and  Swamp Francolin
+		
+		- Bas, Manas WS ke Terai Grasslands me milte hain. 	
+	
+	Snow Leopard : Endangered : J.K,   H.P,  Sikkim and Uttarakhand
+	
+	
+	Chiru : Endangered : China, J.K
+	
+	
+	Terrapin : Critically Endangered : Bangladesh, India, Cambodia, India, Indonesia, Malaysia
+	
+	
+	Gharial : Critically Endangered
+	
+	
+	
+	Bengal Florican : Critically Endangered : South Asia  and  South East ASia
+	
+	
+	Forest Owlet : Critically Endangered : Bas Central India me milta hai. 
+	
+	
+	
+	Marine Mammals : 
+	
+		1) Freshwater River Dolphin
+		
+		2) Ganges River Dolphin
+		
+		3) Indus RIver Dolphin
+		
+		4) Herbivorous Marine Mammals
+		
+		5) Dugong
+		
+		6) Manatees
+		
+		
+		
+	Monotremes : Wo mammals, jo ande dete hain. 
+	
+		1) Duck Billed Platypus
+		
+		2) Spiny Anteaters ki 4 species - a.k.a Echidna 
+		
+			Ye saare, Australia and New-Guinea  me milte hain. 
+			
+			
+				
+	Marsupials : Pouched mammals --> Wallaby and Kangaroo
+	
+		Phlangers,  Kola,  Kangaroo,  Wallaby,  Wombats,  Dasyure,  Possum,  Tasmanian Devils,   Bandi Coot,   Tasmanian Wolf
+		
+		
+		
+		
+	Critically Endangered Birds : 
+	
+		1) Jerdon's Courser
+		
+			- Andhra Pradesh
+			
+			- Extremely threatened scrub jungle ki flagship species hai
+			
+			- 1987 me mila tha, to iski discovery ki area ko---> Sri Lankamaleswara Wildlife Sanctuary bana diya gaya
+			
+		
+		
+		2) Forest Owlet
+		
+			- MP, Maharashtra
+			
+		
+		3) White-Bellied Heron
+		
+			- Assam and Arunachal in India,  Bhutan and  Myanmar
+			
+		
+		4) Bengal Florican
+		
+			- Bustard ka species hai. 
+			
+			- Bengal ke tall grasslands me rehta hai. 
+			
+			- Bas 3 desho me milta hai - India, Nepal and Cambodia
+			
+		
+		5) Himalayan Quail
+		
+			- 2003 me Nainital me last baar dikha tha
+			
+			- Tall Grass and Scrub
+			
+		
+		6) Pink-Headed Duck
+		
+			- Ye bhai, 1949 ke baad se dikha nahi hai. 
+			
+		
+			- India, Bangladesh and Myanmar ke tall grasslands me. 
+			
+		
+		7) Sociable Lapwing
+		
+			- India me Winters me aata hai, central Asia se
+			
+		
+		8) Spoon Billed Sandpiper
+		
+			- India is home to last existing wintering ground of this species
+			
+		
+		
+		9) Siberian Crane
+		
+			- Keoladeo National Park
+			
+		
+		
+		
+		
+				
+	India me aane wale Migratory Birds : 
+	
+		1) Winter Birds : 
+		
+			- Siberian Crane
+			
+			- Greater Flamingo
+			
+			- Common Teal
+			
+			- Yellow Wagtail
+			
+			- White Wagtail
+			
+			- Northern Shoveler
+			
+			- Rosy Pelican
+			
+			- Wood Sandpiper
+			
+			- Spotted Sandpiper
+			
+			- Eurasian Pigeon
+			
+			- Black Tailed Godwit
+			
+			- Spotted Redshank
+			
+			- Starling Bluethroat
+			
+			- Long Billed Pipit
+			
+		
+	
+	Summer Birds : 
+	
+		1) Asian Koel
+		
+		2) Black Crowned Night Heron
+		
+		3) Eurasian Golden Oriole
+		
+		4) Comb Duck
+		
+		5) Blue Cheeked Bee Eater
+		
+		6) Blue-Tailed Bee- Eater
+		
+		7) Cuckoos
+		
+		
+		
+		
+		
+	Frost ka plants par effect : 
+	
+		1) Young plants mar jaate hain --> Kyunki, frost, soil moisture ko freeze kar deti hai,or jab subh hoti hai,to increased transpiration se plant mar jata hai(Roots, mositure supply nahi kar pati)
+		
+				
+		2) Cell damage ho jata hai. ---> Cells ke andar pani freeze ho jata hai,---> Increases concentration of salts and dehydration of cells. 
+		
+		3) Leads to formation of Canker		
+	
+	
+	
+	
+	India ke Insectivorous Plants : 
+	
+		1) Drosera or Sundew : Wet marshy places
+		
+		2) Aldrovanda : Freefloating, Rootless aquatic podha---> Sunderbans me milat hai. 
+		
+		3) Nepenthes a.k.a Pitcher Plants ---> High Rainfall hills of meghalaya
+		
+		4) Bladderworts or Utricularia : Inhibit freshwater wetlands and waterlogged areas
+		
+		5) Pinguicula or Butterwort : Kashmir se sikkim tak, Himalayas ki alpine heights par milta hai. 
+		
+		
+		
+		
+	India ke Invasive Alien Flora : 
+	
+		1) Needle Bush : South America ka hai ---> Thorny scrubs and dry degraded forests me milta hai. 
+		
+		2) Black Wattle : SE Australia ka : Western Ghats me milta hai. 
+		
+		3) Goat Weed : America ka hai ---> Pure India me.
+		
+		4) Alternanthera paronychiodies : America ka ---> Pure India me
+		
+		5) Prickly Poppy : South America --> Pure India
+		
+		6) Blumera Eriantha : Trop America : Pure India : Aggressive colonizer
+		
+		7) Palmyra, Toddy Palm : Trop Africa 
+		
+		8) Calotropis/ Madar,  Swallo Wort : Trop Africa
+		
+		9) Datura, Mad Plant, Thorn Apple : Trop America
+		
+		10) Water Hyacinth : Trop America	
+		Quagga : Extinct marsupial wolf
+	
+		
+		11) Impatiens, Balsam : Trop America
+		
+		12) Ipomea/Pink morning glory : Trop America
+		
+		13) Lantana Camara : Trop America
+		
+		14) Black Mimosa : Trop America ---> Himalayas, Western Ghats
+		
+		15) Touch-Me-Not, Sleeping Grass : Brazil 
+	
+		16) 4 'o' clock plant : Peru
+		
+		17) Parthenium/Congress Grass : North America
+		
+		18) Prosopis Juliflora/Mesquite : Mexico
+		
+		19) Townseed Grass : W.Asia
+		
+		
+	
+	Medicinal Podhe : 
+	
+		1) Blue Vanda/ Autum Ladies Tresses Orchid : North India
+		
+		2) Kuth/Kustha/Pooshkarmoola/Uplet : Kashmir, Himachal Pradesh
+		
+		3) Ladies Slipper Orchid
+		
+		4) Red Vanda : Manipur, Assam, Andhra Pradesh
+		
+		5) Sarpagandha : Punja, North east
+		
+		6) Emodi/Indian Podophyllum : Himalayan May Apple, Indian May Apple
+		
+		7) Cycads : Western and Eastern Ghats, North East and Andaman-Nicobar
+		
+			- Ek Gymnosperm Tree hai
+			
+			- Ise, Living fossil bhi kehte hain
+			
+			- Lkein, is se Lytico-Bodig disease hoti hai--> Parkinson's disease jaise.
+			
+		8) Elephant's Foot : Disogenin ka commercial source--->North West Himalayas		
+	
+	
+	
+	
+	
+	World's oldest Trees : USA ke, Bristlecone pine---> Ye bhai log, 4600 saal purane hain. 
+	
+	
+	
+	Trunk ke outside layer par jo skin hoti hai, use Bark kehte hain. 
+	
+		- Inner bark : Living cells se bani hoti hai
+		
+		- Outer bArk : Dead cells se bani hoti hai ---> like finger nails.
+		
+		- Inner layer ko Phloem kehte hain---->Leaves se sugar sap carry karke, rest of tree tak leke jana. 
+		
+		
+	Bark ke just inside, cambium naam ki layer hoti hai, jo living cells se bani hoti hai. 
+	
+		= It allows the tree to grow wider each year. 
+		
+	
+	Sapwood a.k.a Xylem
+	
+		- Roots se, twigs and leaves taaki, pani lejane ke liye, network of living cells hota hai 
+			k
+				
+				
+				
+	HEartwood : 
+	
+		- Trunk ke center ka dead sapwood
+		
+		- Tree ka hardest wood---> Gives it support and strength\
+		
+		- Usually color me darker hota hai. 
+		
+	
+	Pith : 
+	
+		- Tiny dark spot of spongy living cells--> Trunk ke centre me. 
+		
+		- Iske through essential nutrients carry kiye jaate hain			
+				
+		- Ye bilkul center me hota hai, kyunki, ye sabse jyada protcted rakha jata hai, insects, wind etc ke damage ke.
+		
+		
+		
+		
+	Roots ke types : 
+	
+		1) Tap Root : Primary descending root---> Embroy ke radicle ka prolongation hai. 
+		
+		2) Lateral Root : Ye, tap roots me se nikalti hai and are spread laterall to support the tree. 
+		
+		3) Adventitious Roots : Radicle ke alawa kisi part se jo roots nikalti hai. 
+		
+			- Ex : Silk Cotton Tree,   Banyan Tree, Mangroves ka Rhizphora species
+		
+		
+		4) Pneumatophore : Swamp/Mangrove Trees ke roots ki spike like projection----> Helps the submerged roots to obtain oxygen
+		
+		5) Mycorrhiza : Modified rootlet with fungal tissue ka combination
+		
+		
+		
+		
+	Tiger Reserves :
+		
+		
+		
+		1) State Govt, Expert Committee se consultation par, notify karti hai ---> Core ZOne
+		
+		2) Buffer Zone : To promote, co-existence b/w wildlife and human activity    
+		
+			- Gram Sabha and Expert Committee ka recomendation liya jata hai. 
+			
+		3) Tiger Reserve ki boundry ka alteration nahi kiya jata , except on a recommendation of National Tiger Conservation Authority  and the approval of National Board of Wild Life. 
+		
+		
+		
+	GWP ---> Co2 ke mukable, kitni jyada heat trap karte hain. 	
+		
+		
+	Gas		Global Warming Potential 		Lifetime
+	
+	
+	CO2		1					100
+	
+	Methane	21					12
+	
+	Nitrous Oxide	310					120 
+	
+	HFCs		11700					270
+	
+	PFCs		6500 - 9200				800-50,000
+	
+	SF6		23,900					3200
+	
+	
+	
+	
+	
+	
+		- Methane ka 100 years GWP hai, 21----> Ye agle 100 saal me, CO2 se, 21 guna jyada damage karega. 
+		
+			Lekin, aaj jo methane emit hui hai, wo bas 12 saal thak atmosphere me rahegi. 
+			
+		
+		- N20 ka GWP, 310 guna jyada hai,or ye saali 120 saal tak rahegi atmosphere me. 
+		
+		- 
+	
+	
+	
+	
+	Insan log jo, CO2 produce karte hain, uska 1/3rd, Oceans absorb kar lete hain. ---> Is wajah se oceans ka acidification hota hai.
+	
+		- CO2 ka uptake se, Hydrogen Ions ki concentration badh jati hai oceans me----> Carbonate ions ki concentration kam ho jati hai----> Ph of the oceans decreases--: Oceans become less alkaline. 
+		
+		- Abhi ocean ki Ph 8.0 hai---> It is alkaline. 
+		
+		- Industrial revolution ke baad se, Ph 0.1 kam ho gayi hai---> Hydrogen ions ki concentration 26% badh gayi hai. 
+		
+		- OCeans ki Ph 7 se kam hona to impossible sa kaam hai. 
+		
+		
+	CO2 + H2O ---> H2CO3 (Carbonic Acid)  ---> Ye sala disintegrate ho jata hai, H+ ions and HCO3-   bicarbonate ions me.---> Ye further disintegrate ho jata hai, Carbonate and H+ ions me.  	
+		
+		- In Carbonate ions ka use karke, marine organisms, apne calcium carbonate shells and skeletons banate hain
+		
+		- Lekin, Ocean Acidification, ki wajah se, Carbonic acid and Bicarbonate ions, ki concentration badh jati hai, jis wajah se, Carbonate ions ki concentration kam ho jati hai. 
+		
+		
+	Acidification ki wajah se, Coral Reefs grow nahi kar paate----> Less plankton production---> Less productive fisheries	
+		
+		
+		
+	Calcium carbonate ke 2 forms hoe hain " 
+	
+		1) Calcite : Mineral Form 	
+		
+			- Found in the shells of Planktonic algae,  Amoeboid Protists,  Some corals,  Echinoderms and some molluscs (Oyseters etc)
+			
+			- Ye kam soluble hota hai. 
+			
+	
+		2) Argonite : More soluble form
+		
+			- Jyadatar corals, mollusks etc me yahi hota hai. 	
+	
+	
+		
+	
+	- Deep, cold water me, Carbonate ions waise bhi kam hote hain---> Shells of most calcifying organims, dissolve
+	
+	- Surface waters, over saturated hote hain, carbonate ions se--->Do not dissolve these shells. 
+	
+	- Saturation Horizon : Ocean ka wo level, jiske neeche, Calcium carbonate minerals, dissolve ho jate hain. 
+	
+	- Ocean acidification ki wajah se, ye horizon ka level, upar se upar jata rahta hai----> Jyada se jyada calcifying organisms ki maa chudne lagti hai. 
+	
+	- Calcite walo ka horizon, jyada greater depth par hota hai, Aragonite walo se. 
+	
+	- Lysocline : The depth at which dissolution, strongly increases in deep ocean. 
+	
+		
+		
+		
+		
+		
+	Hoolock Gibbon : Only ape found in India. 
+	
+		- Baaki sare vanar, Macaques 	ya  langurs hain. 
+		
+		
+		
+	Ya saari organisations, Ozone levels ko monitor karti hain : 
+	
+		1) World Meteorological Organization
+		
+		2) World Weather watch
+		
+		3) Integrated Global Ocean Services Systems
+		
+		4) Global Climate observing system
+		
+		
+	Stratospheric clouds bhi, Ozone ki maa chod dete hain : 
+	
+	 3 tarah ke hote hain ye clouds : 
+	 
+	 	1) Nacreous Clouds : 10 se 100km ki leangth tak extend karte hain  +   Several kms in thickness. 
+	 	
+	 		- Inhe hi , "Mother of pearls" clouds kehte hain. 000===> Ye sea-shells jaise dikhte hain. 
+	 		
+	 	
+	 	2) 2nd type walo me, pani ki jagah, nitric acid hota hai. 
+	 	
+	 	3) 3rd type wala, nacreous jaisa hi hota hai, lekin, ye slower rate me form hota hai---> Larger cloud with no iridescence. 		 	
+		
+		
+		
+	
+	
+	
+	
+	Siviculture : Cultivating forest trees. 
+	
+	Sericulture : Silk Worms
+	
+	Apiculture : Honey bees
+	
+	Olericulture : Vegetable growing
+	
+	Viticulture : Grapes
+	
+	Floriculture : Flowering and Ornamental plants
+	
+	Arboriculture : Cultivation, Mgmt and Study of Individual trees, shrubs, vines and other perennial woody plants. 
+	
+	Pomology : Branch of horticulture which focuses on the cultivation, production, harvest and storage of fruits
+	
+	Aeroponics : Growing plants in an air or mist environment without the use of soil or an aggregate medium
+	
+	Hydroponics : Growing plants using mineral nutrient solutions in water without soil
+	
+	Geoponics : Grwoing plants in normal soil 
+	
+	
+	
+	
+	Green Revolution  : Food Grain 
+	
+	Golden  : Fruit 
+	
+	Grey : Fertilizer
+	
+	Blue : Fish production
+	
+	Black : Petro
+	
+	Pink : Prawn
+	
+	Round : Potato
+	
+	Red : Meat/Tomato
+	
+	Silver : Egg/Poultry
+	
+	White : Milk 
+	
+	Yellow : Oil Seeds
+	
+	
+	
+	Major Millets : Sorghum/Jowar      Pearl MIllet/Bajra/Cumbu       Finger Millet or Ragi
+	
+	
+	Minor Millets : Foxtail   Little Millet   Common Millet   Barnyard Millet     Kodomillet
+	
+	
+	
+	Sugar : 
+	
+		1) Molasses : Used for alcohol and yeast formation
+		
+		2) Bagasse  : Paper making and fuel
+		
+		3) Pressmud : Soil Amendment
+		
+		4) Trash (Green leaf + Dry Foilage) : Cattle Feed
+		
+		5) Sugar Beet : Tuber for extraction of sugar
+	
+	
+	
+	
+	Soil Erosin ki stages : 
+	
+		1) Splash Erosion - 1st stage, when Raindrops hit bare soil. 
+		
+		2) Sheet Erosion - Thin layer of soil ka uniform movement, us land par, jispe koi vegetation na ho.
+		
+		3) Rill erosion : Jab sheet flows, kisi land surface par concentrate hona shuru ho jate hain---> Rill erosion hota hai. 
+		
+				- Leaves visible scouring on the landscape.
+				
+		4) Gully erosion : Rill wala evolve hoke, gully me convert ho jata hai---- As duration and intensity of rain continues to increase and runoff volume continues to accelerate. 
+		
+			- Gully wo scoured out area hota hai, that is not crossable with tillage or grading equipment
+			
+		
+		5) Ammonification : Ammonia ka production as a result of biological decomposition of organic nitrogen compounds. 
+		
+
+
+
+	Allelopathy : Direct or indirect harmfull effect of one plant over te crop species through exudation of toxic substances from th roots or the decomposition of crop residues. 
+	
+	
+	C:N ration : Ration of weight of organic C to weight of Total N of the soil. 
+	
+	
+	Heaving : Injury to plants caused by lifting upward of the plant along with soil from its normal position in the temperate regions where snowfall is common. 
+	
+	
+	Contour Farming : Practice of plouging across a slope following its elevation contour lines. 
+	
+	
+	Growth Regulators : Wo organic substances, jo minute amount me growth process ko control karte hain : Ex : Auxinx, Cytokinis. 
+	
+	
+	Heliophytes : Plants of sun loving speices , require intense light for normal development : Ex : Rice, Wheat, COtton, Sugarcane
+	
+	
+	Sciophytes : Shade loving plants, require less sunlight
+	
+	
+	Heliotropism : Movement of plant parts towars the sun : Ex  Sunflower
+	
+	
+	
+	Geotropism : Growth movement in response to gravity  Ex : Groundnut peg penetration into the soil 
+	
+	
+	Herbicide : Chemical used for killing or inhibiting the growth of unwanted plants : Ex : Atrazine
+	
+	
+	Insecticide : Endosulfan
+	
+	

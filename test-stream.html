@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iPhone Stream Test</title>
+</head>
+<body>
+    <h1>iPhone Stream Test</h1>
+    
+    <h2>Left iPhone (192.168.29.21:8989)</h2>
+    <img id="left" src="http://192.168.29.21:8989" style="width: 300px; height: 400px; border: 1px solid red;">
+    
+    <h2>Right iPhone (192.168.29.208:8080)</h2>
+    <img id="right" src="http://192.168.29.208:8080" style="width: 300px; height: 400px; border: 1px solid red;">
+    
+    <script>
+        document.getElementById('left').onload = function() {
+            console.log('✅ Left iPhone stream loaded');
+        };
+        document.getElementById('left').onerror = function() {
+            console.log('❌ Left iPhone stream failed');
+        };
+        
+        document.getElementById('right').onload = function() {
+            console.log('✅ Right iPhone stream loaded');
+        };
+        document.getElementById('right').onerror = function() {
+            console.log('❌ Right iPhone stream failed');
+        };
+    </script>
+</body>
+</html> 

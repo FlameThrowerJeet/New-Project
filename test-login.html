@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flame Thrower Jat - Login Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .test-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .test-case {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        .test-case h3 {
+            margin-top: 0;
+            color: #34495e;
+        }
+        .credentials {
+            background: #e8f4fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .credentials strong {
+            color: #2980b9;
+        }
+        .note {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Flame Thrower Jat - Login Test Guide</h1>
+        
+        <div class="note">
+            <strong>Note:</strong> This is a test page showing the valid credentials for the Choudhary login system. 
+            The actual login system is implemented in the React application.
+        </div>
+
+        <h2>Valid Test Credentials</h2>
+        <p>The following credentials are valid for testing the login system:</p>
+
+        <div class="test-case">
+            <h3>Test User 1</h3>
+            <div class="credentials">
+                <strong>First Name:</strong> Rajesh<br>
+                <strong>Aadhar Number:</strong> 123456789012
+            </div>
+        </div>
+
+        <div class="test-case">
+            <h3>Test User 2</h3>
+            <div class="credentials">
+                <strong>First Name:</strong> Priya<br>
+                <strong>Aadhar Number:</strong> 234567890123
+            </div>
+        </div>
+
+        <div class="test-case">
+            <h3>Test User 3</h3>
+            <div class="credentials">
+                <strong>First Name:</strong> Amit<br>
+                <strong>Aadhar Number:</strong> 345678901234
+            </div>
+        </div>
+
+        <div class="test-case">
+            <h3>Test User 4</h3>
+            <div class="credentials">
+                <strong>First Name:</strong> Neha<br>
+                <strong>Aadhar Number:</strong> 456789012345
+            </div>
+        </div>
+
+        <div class="test-case">
+            <h3>Test User 5</h3>
+            <div class="credentials">
+                <strong>First Name:</strong> Vikram<br>
+                <strong>Aadhar Number:</strong> 567890123456
+            </div>
+        </div>
+
+        <h2>How to Test</h2>
+        <ol>
+            <li>Start the React development server: <code>cd client && npm start</code></li>
+            <li>Open the application in your browser</li>
+            <li>You'll see the login screen with "Flame Thrower Jat" title</li>
+            <li>Enter any of the valid credentials above</li>
+            <li>The system will verify the Aadhar number and first name</li>
+            <li>Upon successful login, you'll see the main dashboard with your name in the status bar</li>
+        </ol>
+
+        <h2>Test Cases</h2>
+        <ul>
+            <li><strong>Valid Login:</strong> Use any of the credentials above</li>
+            <li><strong>Invalid Aadhar:</strong> Try any 12-digit number not in the list</li>
+            <li><strong>Wrong Name:</strong> Use correct Aadhar but wrong first name</li>
+            <li><strong>Empty Fields:</strong> Try submitting with empty fields</li>
+            <li><strong>Invalid Format:</strong> Try Aadhar numbers with less than 12 digits</li>
+        </ul>
+
+        <div class="note">
+            <strong>Security Note:</strong> This is a demonstration system with mock data. 
+            In a real application, Aadhar verification would be done through official APIs 
+            and proper security measures would be implemented.
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,225 @@
+.planner-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #001a33;
+  color: white;
+}
+
+.planner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #00264d;
+  border-bottom: 2px solid #00ffff;
+}
+
+.planner-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ffff;
+}
+
+.planner-controls {
+  display: flex;
+  align-items: center;
+}
+
+.home-button {
+  margin-right: 20px;
+  background: #003366;
+  color: white;
+  border: 1px solid #00ffff;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.filter-controls {
+  display: flex;
+}
+
+.filter-controls button {
+  background: #001a33;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.filter-controls button.active {
+  background: #0066cc;
+  color: white;
+}
+
+.planner-content {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 20px;
+  padding: 20px;
+  height: calc(100vh - 60px);
+  overflow: hidden;
+}
+
+.mission-form {
+  background-color: #002b4d;
+  border: 1px solid #00ffff;
+  border-radius: 5px;
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.mission-form h3 {
+  color: #00ffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #cccccc;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  background-color: #001a33;
+  border: 1px solid #0066cc;
+  color: white;
+  border-radius: 3px;
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.add-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #003366;
+  color: white;
+  border: 1px solid #00ffff;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-button:hover {
+  background-color: #004080;
+}
+
+.mission-list {
+  background-color: #001a33;
+  border: 1px solid #00ffff;
+  border-radius: 5px;
+  padding: 20px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.mission-list h3 {
+  color: #00ffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.mission-card {
+  background-color: #002b4d;
+  border-left: 4px solid #cccccc;
+  border-radius: 3px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.priority-high {
+  border-left-color: #ff4d4d;
+}
+
+.priority-medium {
+  border-left-color: #ffcc00;
+}
+
+.priority-low {
+  border-left-color: #00cc66;
+}
+
+.mission-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.mission-header h4 {
+  margin: 0;
+  color: #00ffff;
+}
+
+.mission-actions button {
+  background-color: #660000;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.mission-description {
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.mission-due-date {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-bottom: 10px;
+}
+
+.mission-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mission-status label {
+  color: #cccccc;
+}
+
+.mission-status select {
+  background-color: #001a33;
+  border: 1px solid #0066cc;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.no-missions {
+  text-align: center;
+  color: #cccccc;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .planner-content {
+    grid-template-columns: 1fr;
+  }
+}

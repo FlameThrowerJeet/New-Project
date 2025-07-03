@@ -1,0 +1,796 @@
+.file-storage-root {
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+  background: #0a0a0a;
+  color: #fff;
+}
+
+.file-storage-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.file-storage-header h1 {
+  color: #00d4aa;
+  font-size: 2.5rem;
+  margin: 0 0 10px 0;
+  text-shadow: 0 0 20px rgba(0, 212, 170, 0.5);
+}
+
+.file-storage-header p {
+  color: #888;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.file-storage-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tab-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: rgba(30, 30, 30, 0.8);
+  border: 1px solid rgba(0, 212, 170, 0.3);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-weight: 500;
+  min-width: 120px;
+}
+
+.tab-icon {
+  font-size: 1.2em;
+  margin-bottom: 4px;
+}
+
+.tab-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tab-text .hindi-text {
+  font-size: 0.9em;
+  margin-bottom: 1px;
+}
+
+.tab-text .english-text {
+  font-size: 0.7em;
+}
+
+.tab-button:hover {
+  background: rgba(0, 212, 170, 0.1);
+  border-color: #00d4aa;
+}
+
+.tab-button.active {
+  background: linear-gradient(135deg, #00d4aa, #667eea);
+  color: #000;
+  border-color: #00d4aa;
+  box-shadow: 0 4px 15px rgba(0, 212, 170, 0.3);
+}
+
+.tab-button.active .hindi-text,
+.tab-button.active .english-text {
+  color: #000;
+}
+
+/* Registry Styles */
+.registry-container {
+  background: rgba(20, 20, 20, 0.8);
+  border-radius: 15px;
+  padding: 30px;
+  border: 1px solid rgba(0, 212, 170, 0.2);
+}
+
+.registry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.registry-header h2 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #00d4aa;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.registry-header h2 .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.registry-header h2 .english-text {
+  font-size: 0.7em;
+  color: #888;
+}
+
+.registry-stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+  background: rgba(0, 212, 170, 0.1);
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 212, 170, 0.2);
+  min-width: 80px;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00d4aa;
+}
+
+.stat-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 5px;
+}
+
+.stat-label .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.stat-label .english-text {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.registry-controls {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.search-box input {
+  background: rgba(30, 30, 30, 0.8);
+  border: 1px solid rgba(0, 212, 170, 0.3);
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  min-width: 300px;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #00d4aa;
+  box-shadow: 0 0 0 2px rgba(0, 212, 170, 0.2);
+}
+
+.filters select {
+  background: rgba(30, 30, 30, 0.8);
+  border: 1px solid rgba(0, 212, 170, 0.3);
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.filters select:focus {
+  outline: none;
+  border-color: #00d4aa;
+}
+
+.registry-table {
+  overflow-x: auto;
+}
+
+.registry-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(30, 30, 30, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.registry-table th {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  background: rgba(0, 212, 170, 0.2);
+  color: #00d4aa;
+  padding: 15px 12px;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(0, 212, 170, 0.3);
+}
+
+.registry-table th .hindi-text {
+  font-size: 0.9em;
+  margin-bottom: 0;
+}
+
+.registry-table th .english-text {
+  font-size: 0.7em;
+  color: #888;
+}
+
+.registry-table td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.registry-table tr:hover {
+  background: rgba(0, 212, 170, 0.05);
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.status-badge.active {
+  background: rgba(0, 255, 0, 0.2);
+  color: #00ff00;
+  border: 1px solid rgba(0, 255, 0, 0.3);
+}
+
+.status-badge.inactive {
+  background: rgba(255, 0, 0, 0.2);
+  color: #ff0000;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+.status-badge.pending {
+  background: rgba(255, 165, 0, 0.2);
+  color: #ffa500;
+  border: 1px solid rgba(255, 165, 0, 0.3);
+}
+
+/* Documents Styles */
+.documents-container {
+  background: rgba(20, 20, 20, 0.8);
+  border-radius: 15px;
+  padding: 30px;
+  border: 1px solid rgba(0, 212, 170, 0.2);
+}
+
+.documents-container h2 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #00d4aa;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.documents-container h2 .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.documents-container h2 .english-text {
+  font-size: 0.7em;
+  color: #888;
+}
+
+.documents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.document-card {
+  background: rgba(30, 30, 30, 0.8);
+  border: 1px solid rgba(0, 212, 170, 0.3);
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.document-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 212, 170, 0.2);
+  border-color: #00d4aa;
+}
+
+.document-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.document-card h3 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: #00d4aa;
+  margin: 15px 0 10px 0;
+  font-size: 1.2rem;
+}
+
+.document-card h3 .hindi-text,
+.document-card h3 .english-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.document-card p {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: #ccc;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.document-card p .hindi-text,
+.document-card p .english-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.download-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  background: linear-gradient(135deg, #00d4aa, #667eea);
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  min-width: 140px;
+}
+
+.download-btn .hindi-text,
+.download-btn .english-text {
+  font-size: 0.9em;
+  margin-bottom: 0;
+  color: #000;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 212, 170, 0.4);
+}
+
+/* Media Styles */
+.media-container {
+  background: rgba(20, 20, 20, 0.8);
+  border-radius: 15px;
+  padding: 30px;
+  border: 1px solid rgba(0, 212, 170, 0.2);
+}
+
+.media-container h2 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #00d4aa;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.media-container h2 .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.media-container h2 .english-text {
+  font-size: 0.7em;
+  color: #888;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.media-card {
+  background: rgba(30, 30, 30, 0.8);
+  border: 1px solid rgba(0, 212, 170, 0.3);
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.media-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 212, 170, 0.2);
+  border-color: #00d4aa;
+}
+
+.media-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.media-card h3 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: #00d4aa;
+  margin: 15px 0 10px 0;
+  font-size: 1.2rem;
+}
+
+.media-card h3 .hindi-text,
+.media-card h3 .english-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.media-card p {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: #ccc;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.media-card p .hindi-text,
+.media-card p .english-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.view-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  background: linear-gradient(135deg, #667eea, #00d4aa);
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  min-width: 140px;
+}
+
+.view-btn .hindi-text,
+.view-btn .english-text {
+  font-size: 0.9em;
+  margin-bottom: 0;
+  color: #000;
+}
+
+.view-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 212, 170, 0.4);
+}
+
+/* Bilingual Text Styles */
+.hindi-text {
+  display: block;
+  font-size: 1em;
+  color: #00d4aa;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.english-text {
+  display: block;
+  font-size: 0.85em;
+  color: #888;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+/* Header bilingual styling */
+.file-storage-header h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #00d4aa;
+  font-size: 2.5rem;
+  margin: 0 0 10px 0;
+  text-shadow: 0 0 20px rgba(0, 212, 170, 0.5);
+}
+
+.file-storage-header h1 .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.file-storage-header h1 .english-text {
+  font-size: 0.6em;
+  color: #888;
+  text-shadow: none;
+}
+
+.file-storage-header p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #888;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.file-storage-header p .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.file-storage-header p .english-text {
+  font-size: 0.8em;
+  color: #666;
+}
+
+/* Registry header bilingual styling */
+.registry-header h2 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #00d4aa;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.registry-header h2 .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.registry-header h2 .english-text {
+  font-size: 0.7em;
+  color: #888;
+}
+
+/* Stat labels bilingual styling */
+.stat-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 5px;
+}
+
+.stat-label .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.stat-label .english-text {
+  font-size: 0.8em;
+  color: #666;
+}
+
+/* Table headers bilingual styling */
+.registry-table th {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  background: rgba(0, 212, 170, 0.2);
+  color: #00d4aa;
+  padding: 15px 12px;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(0, 212, 170, 0.3);
+}
+
+.registry-table th .hindi-text {
+  font-size: 0.9em;
+  margin-bottom: 0;
+}
+
+.registry-table th .english-text {
+  font-size: 0.7em;
+  color: #888;
+}
+
+/* Document and media cards bilingual styling */
+.document-card h3,
+.media-card h3 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: #00d4aa;
+  margin: 15px 0 10px 0;
+  font-size: 1.2rem;
+}
+
+.document-card h3 .hindi-text,
+.media-card h3 .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.document-card h3 .english-text,
+.media-card h3 .english-text {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.document-card p,
+.media-card p {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: #ccc;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.document-card p .hindi-text,
+.media-card p .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.document-card p .english-text,
+.media-card p .english-text {
+  font-size: 0.85em;
+  color: #999;
+}
+
+/* Button bilingual styling */
+.download-btn,
+.view-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  background: linear-gradient(135deg, #00d4aa, #667eea);
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  min-width: 140px;
+}
+
+.download-btn .hindi-text,
+.view-btn .hindi-text {
+  font-size: 0.9em;
+  margin-bottom: 0;
+  color: #000;
+}
+
+.download-btn .english-text,
+.view-btn .english-text {
+  font-size: 0.7em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.download-btn:hover,
+.view-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 212, 170, 0.4);
+}
+
+/* Documents and media container headers */
+.documents-container h2,
+.media-container h2 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #00d4aa;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.documents-container h2 .hindi-text,
+.media-container h2 .hindi-text {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.documents-container h2 .english-text,
+.media-container h2 .english-text {
+  font-size: 0.7em;
+  color: #888;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .registry-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .registry-stats {
+    justify-content: center;
+  }
+  
+  .registry-controls {
+    flex-direction: column;
+  }
+  
+  .search-box input {
+    min-width: auto;
+    width: 100%;
+  }
+  
+  .documents-grid,
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hindi-text {
+    font-size: 0.9em;
+  }
+  
+  .english-text {
+    font-size: 0.75em;
+  }
+  
+  .tab-button {
+    min-width: 100px;
+    padding: 10px 16px;
+  }
+  
+  .tab-text .hindi-text {
+    font-size: 0.8em;
+  }
+  
+  .tab-text .english-text {
+    font-size: 0.6em;
+  }
+  
+  .file-storage-header h1 {
+    font-size: 2rem;
+  }
+  
+  .file-storage-header h1 .english-text {
+    font-size: 0.65em;
+  }
+  
+  .registry-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .registry-header h2 .english-text {
+    font-size: 0.75em;
+  }
+} 

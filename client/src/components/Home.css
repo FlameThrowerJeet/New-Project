@@ -1,0 +1,1261 @@
+/* Fullscreen fixes */
+.home-screen {
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Camera background with improved visibility */
+.camera-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0; 
+}
+
+/* Content container adjustments for fullscreen */
+.content-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.8);
+  transition: background 0.5s ease;
+  box-shadow: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Twitch stream container - background layer */
+.twitch-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: transparent;
+  box-shadow: none;
+  opacity: 0.8;
+  pointer-events: none; /* Makes clicks pass through to elements below */
+}
+
+.twitch-container iframe {
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Ensures the iframe cannot receive clicks */
+}
+
+/* Cockpit UI - front layer */
+.cockpit-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 15px solid rgba(51, 51, 51, 0.7); /* Make border semi-transparent */
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  box-shadow: none;
+  z-index: 2; /* Place above the twitch stream */
+}
+
+.cockpit-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 2px solid #00ff00;
+  background-color: rgba(0, 0, 0, 0.5); /* More transparent */
+}
+
+.title {
+  color: #00ff00;
+  font-size: 2.5rem;
+  text-shadow: 0 0 5px #000, 0 0 10px #000; /* Add shadow to keep text readable */
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 0;
+}
+
+.login-button {
+  background-color: #222;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  letter-spacing: 0.1em;
+}
+
+.status-light {
+  width: 12px;
+  height: 12px;
+  background-color: #00ff00;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: 0 0 10px #00ff00;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+.main-display {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 700px;
+}
+
+.nav-button {
+  background-color: rgba(0, 0, 0, 0.5); /* More transparent */
+  border: 2px solid #00ff00;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 255, 0, 0.1);
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+.nav-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.cockpit-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* More transparent */
+  border-top: 1px solid #00ff00;
+}
+
+/* Add scan line effect */
+.cockpit-frame::after {
+  display: none;
+}
+
+/* Duplicate definition removed - keeping only the first one */
+
+/* Site header styling */
+.site-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  background: rgba(0, 10, 30, 0.5);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #00ffff;
+}
+
+.site-header h1 {
+  color: #00ffff;
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+  }
+}
+
+.header-subtitle {
+  color: #ffffff;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+/* Navigation tiles styling */
+.navigation-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.nav-tile {
+  background: rgba(0, 24, 48, 0.6);
+  border: 1px solid #00ffff;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.nav-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.2);
+  background: rgba(0, 36, 72, 0.8);
+}
+
+.tile-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.nav-tile h2 {
+  color: #00ffff;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.nav-tile p {
+  color: #cccccc;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Camera background specific styling */
+.camera-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0; /* Change from -1 to 0 */
+}
+
+/* New container for content that sits above background */
+.navigation-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  background-color: transparent;
+}
+
+/* Terminal scanline effect */
+.scanline {
+  display: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .nav-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  
+  .nav-box {
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Glowing border animation */
+@keyframes pulse {
+  0% {
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(0, 255, 0, 1), 0 0 30px rgba(0, 255, 0, 0.7);
+  }
+}
+
+/* Make sure the clock is visible */
+.retro-clock {
+  width: 280px;
+  margin: 1rem auto 2rem;
+}
+
+/* Terminal Header with Title and Clock */
+.terminal-header {
+  text-align: center;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.terminal-title {
+  color: #00ff00;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.2em;
+  text-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+  text-transform: uppercase;
+}
+
+.terminal-clock {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #00ff00;
+  border-radius: 4px;
+  padding: 10px 25px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+/* Terminal Content and Navigation */
+.terminal-content {
+  width: 100%;
+  max-width: 800px;
+}
+
+.nav-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.terminal-link {
+  display: flex;
+  text-decoration: none;
+  color: #00ff00;
+  background-color: rgba(0, 30, 0, 0.7);
+  border: 2px solid #00ff00;
+  border-radius: 4px;
+  padding: 15px;
+  height: 120px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+}
+
+.terminal-link:hover {
+  transform: scale(1.03);
+  background-color: rgba(0, 40, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+}
+
+.terminal-link:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 255, 0, 0) 0%,
+    rgba(0, 255, 0, 0.1) 50%,
+    rgba(0, 255, 0, 0) 100%
+  );
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.terminal-link:hover:before {
+  transform: rotate(45deg) translate(50%, 50%);
+}
+
+.terminal-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  width: 60px;
+  margin-right: 15px;
+  z-index: 2;
+}
+
+.terminal-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+.label-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-bottom: 5px;
+}
+
+.label-desc {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  
+  .terminal-link {
+    height: 80px;
+  }
+  
+  .terminal-title {
+    font-size: 2rem;
+  }
+  
+  .terminal-clock {
+    font-size: 1.4rem;
+  }
+}
+
+/* More styles as needed */
+
+/* Add to Home.css */
+.content {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-grid {
+  overflow-y: auto;
+}
+
+/* Add to Mission.css */
+.mission-content {
+  height: calc(100vh - 150px); /* Adjust based on your header height */
+  overflow: hidden;
+}
+
+/* Add to Images.css */
+.lightbox-info-container {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.upload-modal-content {
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+.camera-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0; /* Change from -1 to 0 */
+}
+
+/* New container for content that sits above background */
+.navigation-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  background-color: transparent;
+}
+
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-column,
+.right-column {
+  flex: 0 0 300px;
+}
+
+.center-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .content-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-column,
+  .right-column,
+  .center-column {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+.home-root {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0f1a 0%, #1a2332 50%, #0f1419 100%);
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: 'Orbitron', 'Courier New', monospace;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(10, 20, 30, 0.72) !important;
+}
+
+.main-content-row {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.main-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.center-col {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.right-components {
+  width: 1200px;
+  min-width: 1200px;
+}
+
+.right-components-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  height: 100%;
+}
+
+.component-wrapper {
+  flex: 1;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation Links Styling */
+.main-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid #0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background: rgba(0, 255, 0, 0.05);
+  border: 1px solid rgba(0, 255, 0, 0.2);
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link:hover {
+  background: rgba(0, 255, 0, 0.1);
+  transform: translateX(8px);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
+.nav-link:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 255, 0, 0) 0%,
+    rgba(0, 255, 0, 0.1) 50%,
+    rgba(0, 255, 0, 0) 100%
+  );
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.nav-link:hover:before {
+  transform: rotate(45deg) translate(50%, 50%);
+}
+
+.nav-link .icon {
+  font-size: 2.5rem;
+  margin-right: 16px;
+  text-shadow: 0 0 8px #0f0;
+  z-index: 2;
+}
+
+.nav-link .text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-right: 12px;
+  text-shadow: 0 0 8px #0f0;
+  letter-spacing: 0.1em;
+  z-index: 2;
+}
+
+.nav-link .description {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-left: auto;
+  z-index: 2;
+}
+
+/* iPhone-style LiveChat */
+.live-chat-container {
+  width: 430px;
+  height: 932px;
+  background: #18191a;
+  border-radius: 54px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  border: 3px solid #222;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.45), 0 1.5px 0 #fff inset;
+}
+
+.chat-header {
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chat-header h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.messages-container {
+  flex: 1;
+  padding: 24px 18px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-size: 1.1rem;
+  background: #18191a;
+}
+
+.message {
+  max-width: 80%;
+  margin-bottom: 10px;
+}
+
+.message.user {
+  align-self: flex-end;
+}
+
+.message-content {
+  background: #23272b;
+  padding: 14px 18px;
+  border-radius: 18px;
+  color: #fff;
+  font-family: 'JetBrains Mono', 'Fira Mono', 'Consolas', monospace;
+  font-size: 1.1rem;
+}
+
+.message.user .message-content {
+  background: #007AFF;
+  color: #fff;
+}
+
+.message-time {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 6px;
+  display: block;
+}
+
+.message-input-form {
+  padding: 18px;
+  background: #18191a;
+  display: flex;
+  gap: 12px;
+  border-top: 1px solid #333;
+}
+
+.message-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 20px;
+  background: #23272b;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.message-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #007AFF;
+}
+
+.message-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.send-button {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 20px;
+  background: #007AFF;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background 0.3s ease;
+}
+
+.send-button:hover {
+  background: #0056b3;
+}
+
+/* Scanline effect */
+.scanline-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(0, 255, 0, 0.02) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 2;
+  animation: scanline 8s linear infinite;
+}
+
+@keyframes scanline {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+.dashboard-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Share Tech Mono', 'Courier New', monospace;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  border-radius: 12px;
+  border: 2px solid #00ffcc;
+  background: linear-gradient(90deg, rgba(0,255,128,0.18) 0%, rgba(0,0,0,0.7) 100%);
+  color: #00ffcc;
+  box-shadow: 0 0 8px #00ffcc44, 0 0 2px #0f0 inset;
+  transition: all 0.22s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+  text-shadow: 0 0 8px #00ffcc, 0 0 2px #0f0;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+.dashboard-link:hover, .dashboard-link:focus {
+  background: linear-gradient(90deg, #00ffcc 0%, #7f00ff 100%);
+  color: #fff;
+  box-shadow: 0 0 24px #00ffcc, 0 0 8px #7f00ff, 0 0 2px #0f0 inset;
+  border-color: #7f00ff;
+  text-shadow: 0 0 16px #00ffcc, 0 0 8px #7f00ff;
+  transform: scale(1.04) translateY(-2px);
+}
+.dashboard-link:active {
+  background: linear-gradient(90deg, #0f0 0%, #00f 100%);
+  color: #fff;
+  box-shadow: 0 0 16px #0f0, 0 0 8px #00f, 0 0 2px #0f0 inset;
+  border-color: #0f0;
+  transform: scale(0.98);
+}
+
+.links-label {
+  text-align: center;
+  color: #0ff;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  text-shadow: 0 0 8px #0ff, 0 0 16px #00ffcc, 0 0 2px #0f0;
+  filter: drop-shadow(0 0 8px #0ff);
+  animation: linksGlow 2.5s infinite alternate;
+}
+
+@keyframes linksGlow {
+  0% { text-shadow: 0 0 8px #0ff, 0 0 16px #00ffcc, 0 0 2px #0f0; }
+  100% { text-shadow: 0 0 24px #0ff, 0 0 32px #00ffcc, 0 0 8px #0f0; }
+}
+
+/* --- Cockpit Grid Layout --- */
+.cockpit-grid-layout {
+  display: grid;
+  grid-template-rows: 60px 1fr auto 60px;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  width: 100vw;
+  gap: 0;
+}
+
+/* Main Content Container */
+.main-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Main Content Grid - Horizontal Layout */
+.cockpit-grid-main-extended {
+  display: grid;
+  grid-template-columns: 300px 40px 900px 40px 300px 320px;
+  grid-template-rows: 600px;
+  gap: 0;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 600px;
+  margin: 20px 0;
+}
+
+.cockpit-grid-phone, .mission-tracker-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+
+.cockpit-main-viewer, .cockpit-grid-mainviewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 900px;
+  min-width: 900px;
+  min-height: 600px;
+  max-width: 900px;
+  max-height: 600px;
+}
+
+.background-stream-strip {
+  width: 40px;
+  height: 600px;
+  background: linear-gradient(180deg, rgba(0,212,170,0.1) 0%, rgba(0,212,170,0.05) 50%, rgba(0,212,170,0.1) 100%),
+    repeating-linear-gradient(0deg, transparent 0px, transparent 9px, rgba(0,212,170,0.1) 10px, rgba(0,212,170,0.1) 11px);
+  border: 1px solid rgba(0,212,170,0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Tactical Navigation Links - Industrial 80s Style with Scroll */
+.cockpit-top-links, .cockpit-bottom-links {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(180deg, #2a2a2a 0%, #1a1a1a 100%);
+  border-top: 3px solid #00d4aa;
+  border-bottom: 3px solid #00d4aa;
+  box-shadow: 0 0 15px rgba(0,212,170,0.3), inset 0 0 15px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1), inset 0 -1px 0 rgba(0,0,0,0.8);
+  overflow-x: auto !important;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #00d4ff #1a1a1a;
+  position: relative;
+  z-index: 10;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.cockpit-top-links::-webkit-scrollbar, 
+.cockpit-bottom-links::-webkit-scrollbar {
+  display: none;
+}
+
+/* Aircraft-Style Tactical Buttons with Industrial 80s Aesthetics */
+.cockpit-link-box-lg {
+  flex: 1;
+  min-width: 160px;
+  max-width: 180px;
+  height: 44px;
+  margin: 6px 3px;
+  padding: 0 10px;
+  background: linear-gradient(180deg, #232b2b 0%, #1a1a1a 100%);
+  border: 4px solid #00d4ff;
+  border-radius: 0;
+  color: #00f6ff;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+  box-shadow: 0 0 18px #00d4ff88, 0 2px 8px #00f6ff44 inset;
+  text-shadow: 0 0 8px #00f6ff, 0 1px 2px #000a;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Share Tech Mono', 'Courier New', monospace;
+}
+
+.cockpit-link-box-lg .bilingual-label span {
+  color: #00f6ff;
+  font-size: 1.1em;
+  font-weight: 900;
+  text-shadow: 0 0 8px #00f6ff, 0 1px 2px #000a;
+}
+
+.cockpit-link-box-lg.selected, .cockpit-link-box-lg:active {
+  background: linear-gradient(180deg, #00d4ff 0%, #00f6ff 100%);
+  color: #222;
+  border-color: #fff200;
+  box-shadow: 0 0 40px #fff200cc, 0 0 24px #00d4ff, 0 2px 8px #fff20044 inset;
+  text-shadow: 0 0 16px #fff200, 0 2px 8px #000a;
+  transform: scale(1.08) translateY(2px);
+}
+
+.cockpit-link-box-lg:hover {
+  background: linear-gradient(180deg, #00f6ff 0%, #00d4ff 100%);
+  color: #fff200;
+  border-color: #fff200;
+  box-shadow: 0 0 32px #00f6ffcc, 0 0 16px #fff20088, 0 2px 8px #00f6ff44 inset;
+  text-shadow: 0 0 16px #fff200, 0 2px 8px #000a;
+  transform: scale(1.04) translateY(-2px);
+}
+
+/* iPhone Shapes - Industrial Rectangular */
+.iphone-shape {
+  width: 300px !important;
+  height: 600px !important;
+  background: linear-gradient(180deg, #2a2a2a, #1a1a1a);
+  border-radius: 0 !important;
+  border: 3px solid #444;
+  box-shadow: 
+    0 0 15px rgba(0,0,0,0.8),
+    inset 0 0 15px rgba(255,255,255,0.03),
+    0 0 25px rgba(0,212,170,0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.phone-notch {
+  width: 120px;
+  height: 25px;
+  background: #000;
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  border: 2px solid #333;
+  border-top: none;
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-screen iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: none !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 1 !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  background-color: #000 !important;
+}
+
+.phone-home-indicator {
+  width: 120px;
+  height: 4px;
+  background: #666;
+  border-radius: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Main Viewer with Industrial Tactical Styling */
+.cockpit-main-viewer, .cockpit-grid-mainviewer {
+  width: 900px;
+  height: 600px;
+  min-width: 900px;
+  min-height: 600px;
+  max-width: 900px;
+  max-height: 600px;
+  margin: 0 auto;
+  border: 4px solid #00d4aa;
+  border-radius: 0;
+  box-shadow: 
+    0 0 30px rgba(0,212,170,0.4),
+    0 8px 32px rgba(0,0,0,0.8),
+    inset 0 0 20px rgba(0,0,0,0.3),
+    inset 0 2px 0 rgba(255,255,255,0.1),
+    inset 0 -2px 0 rgba(0,0,0,0.6);
+  background: 
+    linear-gradient(180deg, rgba(20,20,20,0.98) 0%, rgba(10,10,10,0.98) 100%),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0px,
+      transparent 19px,
+      rgba(0,212,170,0.05) 20px,
+      rgba(0,212,170,0.05) 21px
+    );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cockpit-main-viewer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(90deg, transparent 49%, rgba(0,212,170,0.08) 50%, transparent 51%),
+    linear-gradient(0deg, transparent 49%, rgba(0,212,170,0.08) 50%, transparent 51%);
+  background-size: 30px 30px;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.background-stream-strip {
+  width: 40px;
+  height: 600px;
+  background: 
+    linear-gradient(180deg, rgba(0,212,170,0.1) 0%, rgba(0,212,170,0.05) 50%, rgba(0,212,170,0.1) 100%),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0px,
+      transparent 9px,
+      rgba(0,212,170,0.1) 10px,
+      rgba(0,212,170,0.1) 11px
+    );
+  border: 1px solid rgba(0,212,170,0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.background-stream-strip::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  height: 200%;
+  background: linear-gradient(180deg, transparent 0%, rgba(0,212,170,0.3) 50%, transparent 100%);
+  animation: stream-scan 3s linear infinite;
+}
+
+@keyframes stream-scan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.cockpit-bottom-links {
+  position: relative !important;
+  width: 100% !important;
+  z-index: 10 !important;
+}
+
+.cockpit-status-bar{display:none !important;}
+
+/* --- Ticker Bar Overlay (Second iPhone) --- */
+.ticker-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 26px; /* Small fixed height */
+  background: rgba(0, 0, 0, 0.85);
+  border-bottom: 1px solid #00d4aa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5; /* Above phone-screen content */
+  pointer-events: auto;
+  overflow: hidden;
+}
+
+.ticker-bar a {
+  color: #00d4aa;
+  font-family: 'Share Tech Mono', 'Courier New', monospace;
+  font-size: 0.8rem;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Ensure phone-screen content is not pushed by absolute overlay */
+.phone-screen {
+  position: relative; /* Establish containing block for absolute ticker */
+}
+
+/* --- Cockpit dynamic height adjustments --- */
+.cockpit-grid-mainviewer,
+.cockpit-main-viewer,
+.cockpit-grid-phone .iphone-shape,
+.background-stream-strip {
+  height: 100% !important;
+}
+
+/* Compact sizing inside cockpit viewer */
+.cockpit-grid-mainviewer .main-module-panel {
+  padding: 12px 16px !important;
+}
+.cockpit-grid-mainviewer .main-module-title {
+  font-size: 20px !important;
+  line-height: 1.2;
+}
+.cockpit-grid-mainviewer .main-module-panel p,
+.cockpit-grid-mainviewer .status-label {
+  font-size: 12px !important;
+}
+
+/* Stretch mission tracker to full height */
+.mission-tracker-container {
+  height: 100% !important;
+}

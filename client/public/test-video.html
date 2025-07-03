@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>0
+<head>
+    <title>Video Test</title>
+    <style>
+        body { 
+            background: #000; 
+            color: #fff; 
+            font-family: monospace; 
+            padding: 20px;
+        }
+        video { 
+            border: 3px solid #ff0000; 
+            margin: 10px 0;
+            background: #333;
+        }
+        .test-section {
+            border: 2px solid #00ff00;
+            padding: 15px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎥 DIRECT VIDEO FILE TEST</h1>
+    
+    <div class="test-section">
+        <h2>Test 1: Direct MKV File</h2>
+        <video width="400" height="300" controls>
+            <source src="/videos/[HD] Kneehigh Miina Tsubaki mk02 [HEVC].mkv" type="video/x-matroska">
+            <source src="/videos/[HD] Kneehigh Miina Tsubaki mk02 [HEVC].mkv" type="video/mp4">
+            VIDEO NOT LOADING - Check console for errors
+        </video>
+        <p>File: /videos/[HD] Kneehigh Miina Tsubaki mk02 [HEVC].mkv</p>
+    </div>
+
+    <div class="test-section">
+        <h2>Test 2: Another MKV File</h2>
+        <video width="400" height="300" controls>
+            <source src="/videos/[FHD] IMBD-253 Miina Tsubaki - 椿美衣奈 [HEVC].mkv" type="video/x-matroska">
+            <source src="/videos/[FHD] IMBD-253 Miina Tsubaki - 椿美衣奈 [HEVC].mkv" type="video/mp4">
+            VIDEO NOT LOADING - Check console for errors
+        </video>
+        <p>File: /videos/[FHD] IMBD-253 Miina Tsubaki - 椿美衣奈 [HEVC].mkv</p>
+    </div>
+
+    <div class="test-section">
+        <h2>Test 3: Manifest File</h2>
+        <button onclick="testManifest()">Load Manifest</button>
+        <pre id="manifest-result"></pre>
+    </div>
+
+    <script>
+        // Test manifest loading
+        async function testManifest() {
+            try {
+                const response = await fetch('/videos/miina-videos-manifest.json');
+                const data = await response.json();
+                document.getElementById('manifest-result').textContent = JSON.stringify(data, null, 2);
+                console.log('Manifest loaded:', data);
+            } catch (error) {
+                document.getElementById('manifest-result').textContent = 'ERROR: ' + error.message;
+                console.error('Manifest error:', error);
+            }
+        }
+
+        // Log video events
+        document.querySelectorAll('video').forEach((video, index) => {
+            video.addEventListener('loadstart', () => console.log(`Video ${index + 1}: Load started`));
+            video.addEventListener('loadeddata', () => console.log(`Video ${index + 1}: Data loaded`));
+            video.addEventListener('canplay', () => console.log(`Video ${index + 1}: Can play`));
+            video.addEventListener('error', (e) => {
+                console.error(`Video ${index + 1} error:`, e);
+                console.error('Error details:', video.error);
+            });
+        });
+
+        // Auto-test manifest on load
+        window.onload = () => {
+            testManifest();
+        };
+    </script>
+</body>
+</html> 

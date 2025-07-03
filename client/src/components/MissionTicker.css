@@ -1,0 +1,25 @@
+.mission-ticker {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  color: #00d4aa;
+  font-size: 11px;
+  text-shadow: 0 0 4px rgba(0,255,200,0.8);
+  z-index: 30;
+}
+
+.mission-line {
+  white-space: nowrap;
+}
+
+.fade {
+  animation: fadeInOut 4s linear infinite;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+} 

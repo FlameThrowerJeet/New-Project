@@ -1,0 +1,1 @@
+export { default } from '../components/StatusConsole'; // TEMP: Export the new Stats map as the Stats page 

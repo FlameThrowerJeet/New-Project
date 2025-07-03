@@ -1,0 +1,630 @@
+/* Retro Arcade Gaming Station CSS */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.game-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+  color: #00ff00;
+  font-family: 'Press Start 2P', monospace;
+  position: relative;
+  overflow: hidden;
+}
+
+/* CRT Scanlines Effect */
+.game-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 255, 0, 0.03) 2px,
+    rgba(0, 255, 0, 0.03) 4px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* CRT Glow Effect */
+.game-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 0%,
+    rgba(0, 255, 0, 0.1) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: linear-gradient(90deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+  border-bottom: 3px solid #00ff00;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+  position: relative;
+  z-index: 3;
+}
+
+.game-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.game-subtitle {
+  font-size: 0.8rem;
+  color: #00aa00;
+  margin-top: 5px;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00; }
+  to { text-shadow: 0 0 15px #00ff00, 0 0 25px #00ff00, 0 0 35px #00ff00; }
+}
+
+.back-button, .control-button {
+  background: linear-gradient(135deg, #00ff00 0%, #00aa00 100%);
+  color: #000;
+  border: 2px solid #00ff00;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+.back-button:hover, .control-button:hover {
+  background: linear-gradient(135deg, #00aa00 0%, #00ff00 100%);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+  transform: translateY(-2px);
+}
+
+.game-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  z-index: 3;
+}
+
+/* Main Menu Styling */
+.game-menu {
+  background: rgba(0, 0, 0, 0.9);
+  border: 3px solid #00ff00;
+  border-radius: 10px;
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 
+    0 0 30px rgba(0, 255, 0, 0.5),
+    inset 0 0 30px rgba(0, 255, 0, 0.1);
+  position: relative;
+}
+
+.game-menu::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #00ff00, #00aa00, #00ff00);
+  border-radius: 12px;
+  z-index: -1;
+  animation: borderGlow 3s ease-in-out infinite;
+}
+
+@keyframes borderGlow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.menu-logo {
+  margin-bottom: 30px;
+}
+
+.nes-logo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00ff00;
+  text-shadow: 0 0 20px #00ff00;
+  margin-bottom: 10px;
+  animation: logoPulse 2s ease-in-out infinite;
+}
+
+@keyframes logoPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.emulator-title {
+  font-size: 1rem;
+  color: #00aa00;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.menu-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.menu-button {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  color: #00ff00;
+  border: 2px solid #00ff00;
+  padding: 15px 30px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 0, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.menu-button:hover::before {
+  left: 100%;
+}
+
+.menu-button.primary {
+  background: linear-gradient(135deg, #00ff00 0%, #00aa00 100%);
+  color: #000;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+}
+
+.menu-button.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.8);
+}
+
+.menu-button.secondary:hover {
+  background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.4);
+}
+
+.menu-info {
+  color: #00aa00;
+  font-size: 0.6rem;
+  line-height: 1.5;
+}
+
+.controls-info {
+  margin-top: 15px;
+  padding: 10px;
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid #00ff00;
+  border-radius: 5px;
+}
+
+/* Game Selector Styling */
+.game-selector {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.selector-controls {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.search-box, .category-filter {
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-input, .category-select {
+  width: 100%;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7rem;
+  border-radius: 5px;
+}
+
+.search-input::placeholder {
+  color: #00aa00;
+}
+
+.search-input:focus, .category-select:focus {
+  outline: none;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.game-card {
+  background: rgba(0, 0, 0, 0.9);
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.game-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent, rgba(0, 255, 0, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.game-card:hover::before {
+  opacity: 1;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.6);
+  border-color: #00aa00;
+}
+
+.game-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.game-name {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00;
+}
+
+.game-year {
+  font-size: 0.6rem;
+  color: #00aa00;
+  background: rgba(0, 255, 0, 0.2);
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+.game-card-body {
+  margin-bottom: 15px;
+}
+
+.game-category {
+  font-size: 0.6rem;
+  color: #00aa00;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.game-description {
+  font-size: 0.6rem;
+  color: #00ff00;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.game-publisher {
+  font-size: 0.5rem;
+  color: #00aa00;
+  font-style: italic;
+}
+
+.game-card-footer {
+  text-align: center;
+}
+
+.play-button {
+  background: linear-gradient(135deg, #00ff00 0%, #00aa00 100%);
+  color: #000;
+  border: none;
+  padding: 8px 20px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.6rem;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.play-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+/* Emulator Styling */
+.emulator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.emulator-controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.canvas-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.nes-canvas {
+  border: 3px solid #00ff00;
+  border-radius: 10px;
+  background: #000;
+  box-shadow: 
+    0 0 30px rgba(0, 255, 0, 0.5),
+    inset 0 0 20px rgba(0, 0, 0, 0.8);
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  max-width: 100%;
+  height: auto;
+}
+
+.pause-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00ff00;
+  font-family: 'Press Start 2P', monospace;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+.pause-overlay p {
+  margin: 10px 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.game-size {
+  font-size: 0.5rem;
+  color: #00aa00;
+  background: rgba(0, 255, 0, 0.1);
+  padding: 2px 6px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.loading-overlay, .error-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00ff00;
+  font-family: 'Press Start 2P', monospace;
+  z-index: 10;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #00ff00;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.emulator-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.game-info, .controls-info {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00ff00;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.game-info h3, .controls-info h4 {
+  color: #00ff00;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.game-info p {
+  font-size: 0.6rem;
+  color: #00aa00;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.game-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.game-meta span {
+  font-size: 0.5rem;
+  color: #00ff00;
+}
+
+.controls-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.control-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background: rgba(0, 255, 0, 0.1);
+  border-radius: 3px;
+}
+
+.control-key {
+  font-size: 0.5rem;
+  color: #00ff00;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.control-label {
+  font-size: 0.5rem;
+  color: #00aa00;
+}
+
+.no-games {
+  text-align: center;
+  color: #00aa00;
+  font-size: 0.8rem;
+  margin-top: 50px;
+}
+
+.clear-filters {
+  background: linear-gradient(135deg, #00ff00 0%, #00aa00 100%);
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.6rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .game-title {
+    font-size: 1rem;
+  }
+  
+  .nes-logo {
+    font-size: 2rem;
+  }
+  
+  .games-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .selector-controls {
+    flex-direction: column;
+  }
+  
+  .emulator-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .emulator-controls {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-menu {
+    padding: 20px;
+  }
+  
+  .menu-button {
+    padding: 12px 20px;
+    font-size: 0.7rem;
+  }
+  
+  .game-card {
+    padding: 15px;
+  }
+}
+
+/* Pixel Art Decorative Elements */
+.pixel-border {
+  border-image: repeating-linear-gradient(
+    45deg,
+    #00ff00,
+    #00ff00 2px,
+    transparent 2px,
+    transparent 4px
+  ) 1;
+}
+
+/* Retro Button Press Effect */
+.menu-button:active, .play-button:active, .back-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 5px rgba(0, 255, 0, 0.3);
+}

@@ -1,0 +1,76 @@
+.mission-encouragement-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 60px;
+  height: 60px;
+  pointer-events: none;
+  z-index: 10;
+  overflow: hidden;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  filter: brightness(1.2) contrast(1.5) hue-rotate(90deg) drop-shadow(0 0 8px #00ff99);
+  font-family: 'Share Tech Mono', 'Courier New', monospace;
+}
+
+.encouragement-vertical-scroll {
+  display: flex;
+  flex-direction: column;
+  animation: encouragement-scroll 24s linear infinite;
+}
+
+@keyframes encouragement-scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.encouragement-message {
+  color: #00ff99;
+  font-size: 1.2rem;
+  text-shadow: 0 0 8px #00ff99, 0 0 2px #003300;
+  padding: 8px 0 8px 32px;
+  white-space: pre;
+  opacity: 0.85;
+  letter-spacing: 1px;
+}
+
+/* --- Mission Bulletin Styles --- */
+.mission-bulletin-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 450px;
+  height: 150px;
+  background: rgba(0, 20, 40, 0.75);
+  border: 1px solid #00d4aa;
+  border-radius: 4px;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  z-index: 100;
+  font-family: 'Share Tech Mono', monospace;
+  color: #00d4aa;
+}
+
+.bulletin-scroll {
+  display: flex;
+  flex-direction: column;
+  animation: vertical-scroll 40s linear infinite;
+}
+
+.bulletin-message {
+  padding: 10px 15px;
+  font-size: 13px;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(0, 212, 170, 0.1);
+}
+
+@keyframes vertical-scroll {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
+} 

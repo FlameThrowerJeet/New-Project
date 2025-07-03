@@ -1,0 +1,89 @@
+/* MiinaAnimeViewer.css */
+
+.viewer-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Courier New', monospace;
+  color: #00d4aa;
+}
+
+.viewer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+  gap: 15px; /* Add gap between title and button */
+}
+
+.viewer-title {
+  color: #00d4aa;
+  margin: 0;
+  font-size: 1.5em; /* Responsive font size */
+  white-space: nowrap; /* Prevent title from wrapping */
+  flex-shrink: 1; /* Allow title to shrink if needed */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ... if title is too long */
+}
+
+.process-button {
+  background: #00d4aa;
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 0;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  white-space: nowrap; /* Prevent button text from wrapping */
+  flex-shrink: 0; /* Prevent button from shrinking */
+}
+
+.process-button:disabled {
+  background: #555;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.viewer-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout for the phone screen */
+  gap: 20px;
+}
+
+.image-card {
+  background: #001a33;
+  border-radius: 0;
+  overflow: hidden;
+  border: 1px solid #00d4aa;
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-title {
+  padding: 10px;
+  color: #00fff7;
+  font-size: 0.9em;
+}
+
+.no-images-message {
+  text-align: center;
+  font-size: 1.1em;
+  align-self: center;
+  justify-self: center;
+  padding: 20px;
+} 

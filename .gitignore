@@ -1,0 +1,83 @@
+# Dependencies
+/node_modules
+/client/node_modules
+
+# Python
+/venv
+/Lib
+/Scripts
+__pycache__/
+*.pyc
+
+# Build artifacts
+/client/dist
+/client/build
+
+# Large assets we don't need in the repo
+/AnimeGANv2
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE / OS files
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*~
+.DS_Store
+Thumbs.db
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Lock files
+package-lock.json
+client/package-lock.json
+bun.lockb
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+/dist
+/build
+/client/dist
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Large raw media & generated assets (do NOT upload to repo)
+/debug-screenshots/
+/chrome-profile/
+/client/Miina - Pics/
+/client/public/images/
+/client/public/videos/
+/uploads/
+/temp_uploads/
+
+# Misc large binaries / installers
+*.whl
+*.exe
+/largest_files.txt 

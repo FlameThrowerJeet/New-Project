@@ -1,0 +1,269 @@
+/* Pure Miina Gallery - No UI Clutter */
+.miina-pure-gallery {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.miina-pure-gallery.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+}
+
+.main-anime-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.main-anime-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Fullscreen toggle button */
+.fullscreen-toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #00d4aa;
+  border: 2px solid #00d4aa;
+  border-radius: 0;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  font-family: 'Courier New', 'Consolas', monospace;
+  font-weight: 900;
+}
+
+.fullscreen-toggle-btn:hover {
+  background: rgba(0, 212, 170, 0.2);
+  box-shadow: 0 0 15px rgba(0, 212, 170, 0.5);
+}
+
+/* Progress indicator */
+.progress-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  z-index: 10;
+}
+
+.progress-bar {
+  width: 200px;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #00d4aa;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #00d4aa;
+  transition: width 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 212, 170, 0.5);
+}
+
+.progress-text {
+  color: #00d4aa;
+  font-family: 'Courier New', 'Consolas', monospace;
+  font-size: 12px;
+  font-weight: 900;
+  text-shadow: 0 0 5px rgba(0, 212, 170, 0.8);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4px 8px;
+  border: 1px solid #00d4aa;
+  border-radius: 4px;
+}
+
+/* Meditation text overlay */
+.meditation-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px 40px;
+  border: 2px solid #00d4aa;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0, 212, 170, 0.5);
+  animation: meditationPulse 2s ease-in-out infinite;
+}
+
+.meditation-text.inhale {
+  border-color: #00d4aa;
+  box-shadow: 0 0 30px rgba(0, 212, 170, 0.5);
+}
+
+.meditation-text.exhale {
+  border-color: #00fff7;
+  box-shadow: 0 0 30px rgba(0, 255, 247, 0.5);
+}
+
+.meditation-message {
+  font-family: 'Courier New', 'Consolas', monospace;
+  font-size: 24px;
+  font-weight: 900;
+  color: #00d4aa;
+  text-shadow: 0 0 15px rgba(0, 212, 170, 0.8);
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  animation: textGlow 1s ease-in-out infinite alternate;
+}
+
+.meditation-text.exhale .meditation-message {
+  color: #00fff7;
+  text-shadow: 0 0 15px rgba(0, 255, 247, 0.8);
+}
+
+.meditation-countdown {
+  font-family: 'Courier New', 'Consolas', monospace;
+  font-size: 48px;
+  font-weight: 900;
+  color: #00d4aa;
+  text-shadow: 0 0 20px rgba(0, 212, 170, 0.9);
+  animation: countdownPulse 1s ease-in-out infinite;
+}
+
+.meditation-text.exhale .meditation-countdown {
+  color: #00fff7;
+  text-shadow: 0 0 20px rgba(0, 255, 247, 0.9);
+}
+
+@keyframes meditationPulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.05);
+    opacity: 1;
+  }
+}
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 15px rgba(0, 212, 170, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 25px rgba(0, 212, 170, 1);
+  }
+}
+
+.meditation-text.exhale .meditation-message {
+  animation: textGlowExhale 1s ease-in-out infinite alternate;
+}
+
+@keyframes textGlowExhale {
+  0% {
+    text-shadow: 0 0 15px rgba(0, 255, 247, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 25px rgba(0, 255, 247, 1);
+  }
+}
+
+@keyframes countdownPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Responsive design for meditation text */
+@media (max-width: 768px) {
+  .meditation-text {
+    padding: 20px 30px;
+  }
+  
+  .meditation-message {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  
+  .meditation-countdown {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .meditation-text {
+    padding: 15px 25px;
+  }
+  
+  .meditation-message {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  
+  .meditation-countdown {
+    font-size: 28px;
+  }
+}
+
+.no-images-message {
+  text-align: center;
+  color: #00d4aa;
+  font-family: 'Courier New', 'Consolas', monospace;
+  padding: 40px;
+}
+
+.no-images-message h2 {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(0, 212, 170, 0.8);
+}
+
+.no-images-message p {
+  margin: 0 0 30px 0;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.image-count {
+  font-size: 14px;
+  font-weight: 700;
+  color: #00fff7;
+  text-shadow: 0 0 6px #00fff7;
+  background: rgba(0, 212, 170, 0.1);
+  padding: 8px 16px;
+  border: 1px solid #00d4aa;
+  border-radius: 4px;
+  letter-spacing: 1px;
+} 
