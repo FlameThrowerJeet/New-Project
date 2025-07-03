@@ -166,6 +166,43 @@ const Images: React.FC<ImagesProps> = ({ sectionIndex, setSectionIndex, imageInd
     return () => clearTimeout(timer);
   }, [imageIndex, filteredImages.length, isPlaying]);
 
+  // --- Drag to pan support ---
+  const [offset, setOffset] = React.useState({ x: 0, y: 0 });
+  const dragState = React.useRef<{ startX: number; startY: number; originX: number; originY: number; dragging: boolean }>({ startX: 0, startY: 0, originX: 0, originY: 0, dragging: false });
+
+  const startDrag = (e: React.PointerEvent) => {
+    e.currentTarget.setPointerCapture(e.pointerId);
+    dragState.current = {
+      startX: e.clientX,
+      startY: e.clientY,
+      originX: offset.x,
+      originY: offset.y,
+      dragging: true
+    };
+  };
+
+  const onDrag = (e: React.PointerEvent) => {
+    if (!dragState.current.dragging) return;
+    const dx = e.clientX - dragState.current.startX;
+    const dy = e.clientY - dragState.current.startY;
+    setOffset({ x: dragState.current.originX + dx, y: dragState.current.originY + dy });
+  };
+
+  const endDrag = (e: React.PointerEvent) => {
+    dragState.current.dragging = false;
+    e.currentTarget.releasePointerCapture(e.pointerId);
+  };
+
+  // --- Mouse wheel zoom ---
+  const handleWheel = (e: React.WheelEvent) => {
+    e.preventDefault();
+    if (e.deltaY < 0) {
+      handleZoomIn();
+    } else {
+      handleZoomOut();
+    }
+  };
+
   // --- Clean anime image viewer ---
   return (
     <div className={`images-container ${isFullscreen ? 'fullscreen-container' : ''}`}>
@@ -209,17 +246,26 @@ const Images: React.FC<ImagesProps> = ({ sectionIndex, setSectionIndex, imageInd
               ◀
             </button>
             
-            <div className="image-display-container" ref={imageContainerRef}>
+            <div
+              className="image-display-container"
+              ref={imageContainerRef}
+              onPointerDown={startDrag}
+              onPointerMove={onDrag}
+              onPointerUp={endDrag}
+              onPointerLeave={endDrag}
+              onWheel={handleWheel}
+            >
               <OptimizedImage
                 src={filteredImages[imageIndex].url}
                 alt={filteredImages[imageIndex].title}
                 className="main-image"
                 style={{
-                  transform: `scale(${zoom})`,
+                  transform: `translate(${offset.x}px, ${offset.y}px) scale(${zoom})`,
                   objectFit: 'cover',
                   objectPosition: 'center center',
                   width: '100%',
-                  height: '100%'
+                  height: '100%',
+                  cursor: dragState.current.dragging ? 'grabbing' : 'grab'
                 }}
               />
               
