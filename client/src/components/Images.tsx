@@ -171,6 +171,12 @@ const Images: React.FC<ImagesProps> = ({ sectionIndex, setSectionIndex, imageInd
   const dragState = React.useRef<{ startX: number; startY: number; originX: number; originY: number; dragging: boolean }>({ startX: 0, startY: 0, originX: 0, originY: 0, dragging: false });
 
   const startDrag = (e: React.PointerEvent) => {
+    // Ignore if clicking on controls overlay or nav buttons
+    const targetEl = e.target as HTMLElement;
+    if (targetEl.closest('.image-controls-overlay') || targetEl.closest('.fullscreen-nav-controls') || targetEl.closest('.image-nav-button')) {
+      return;
+    }
+
     e.currentTarget.setPointerCapture(e.pointerId);
     dragState.current = {
       startX: e.clientX,
