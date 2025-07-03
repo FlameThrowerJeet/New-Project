@@ -267,8 +267,7 @@ const Images: React.FC<ImagesProps> = ({ sectionIndex, setSectionIndex, imageInd
                 className="main-image"
                 style={{
                   transform: `translate(${offset.x}px, ${offset.y}px) scale(${zoom})`,
-                  objectFit: 'cover',
-                  objectPosition: 'center center',
+                  objectFit: 'contain',
                   width: '100%',
                   height: '100%',
                   cursor: dragState.current.dragging ? 'grabbing' : 'grab'
