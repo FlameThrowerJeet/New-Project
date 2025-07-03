@@ -7,6 +7,9 @@ interface GalleryImage {
   url: string;
   category: string;
   title: string;
+  width?: number;
+  height?: number;
+  isLandscape?: boolean;
 }
 
 interface ImagesProps {
@@ -40,7 +43,10 @@ const Images: React.FC<ImagesProps> = ({ sectionIndex, setSectionIndex, imageInd
               id: imgs.length,
               url: img.url,
               category: cat,
-              title: img.title || img.originalName || 'Image'
+              title: img.title || img.originalName || 'Image',
+              width: img.width,
+              height: img.height,
+              isLandscape: img.width && img.height ? img.width > img.height : false
             });
           });
         });
@@ -148,6 +154,15 @@ const Images: React.FC<ImagesProps> = ({ sectionIndex, setSectionIndex, imageInd
     setJumpInput('');
   };
 
+  // --- Auto-slideshow (advance every 6 s) ---
+  useEffect(() => {
+    if (filteredImages.length <= 1) return;
+    const timer = setTimeout(() => {
+      setImageIndex((imageIndex + 1) % filteredImages.length);
+    }, 6000);
+    return () => clearTimeout(timer);
+  }, [imageIndex, filteredImages.length]);
+
   // --- Clean anime image viewer ---
   return (
     <div className={`images-container ${isFullscreen ? 'fullscreen-container' : ''}`}>
@@ -196,7 +211,13 @@ const Images: React.FC<ImagesProps> = ({ sectionIndex, setSectionIndex, imageInd
                 src={filteredImages[imageIndex].url}
                 alt={filteredImages[imageIndex].title}
                 className="main-image"
-                style={{ transform: `scale(${zoom})` }}
+                style={{
+                  transform: `scale(${zoom})`,
+                  objectFit: 'cover',
+                  objectPosition: 'center center',
+                  width: '100%',
+                  height: '100%'
+                }}
               />
               
               {/* Controls overlay - always visible */}
