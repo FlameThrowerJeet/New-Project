@@ -124,7 +124,7 @@ const iPhoneImageComparison: React.FC = () => {
   useEffect(() => {
     if (portraitImages.length > 1) {
       if (leftTimerRef.current) clearTimeout(leftTimerRef.current);
-      const interval = 4000 + Math.random() * 3000;
+      const getInterval = () => 2000 + Math.random() * 2000; // 2-4 s
       function tick() {
         setLeftPointer(prev => {
           if (prev + 1 >= leftShuffle.length) {
@@ -133,9 +133,9 @@ const iPhoneImageComparison: React.FC = () => {
           }
           return prev + 1;
         });
-        leftTimerRef.current = setTimeout(tick, interval);
+        leftTimerRef.current = setTimeout(tick, getInterval());
       }
-      // Start immediately (no initial delay)
+      // Start immediately with first random interval
       tick();
       return () => { if (leftTimerRef.current) clearTimeout(leftTimerRef.current); };
     }
