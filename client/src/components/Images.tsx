@@ -137,6 +137,17 @@ const Images: React.FC<ImagesProps> = ({ sectionIndex, setSectionIndex, imageInd
     return () => document.removeEventListener('fullscreenchange', onFullscreenChange);
   }, []);
   
+  // --- Jump-to-image helpers ---
+  const [jumpInput, setJumpInput] = React.useState('');
+
+  const handleJump = () => {
+    const num = parseInt(jumpInput, 10);
+    if (!Number.isNaN(num) && num >= 1 && num <= filteredImages.length) {
+      setImageIndex(num - 1);
+    }
+    setJumpInput('');
+  };
+
   // --- Clean anime image viewer ---
   return (
     <div className={`images-container ${isFullscreen ? 'fullscreen-container' : ''}`}>
@@ -153,12 +164,6 @@ const Images: React.FC<ImagesProps> = ({ sectionIndex, setSectionIndex, imageInd
             <span>{cat.toUpperCase()}</span>
           </div>
         ))}
-      </div>
-      
-      {/* Header with image count */}
-      <div className="images-header">
-        <div className="images-title">IMAGE GALLERY</div>
-        <div className="images-count">{filteredImages.length} IMAGES AVAILABLE</div>
       </div>
       
       {/* Center: Clean image viewer */}
@@ -233,11 +238,24 @@ const Images: React.FC<ImagesProps> = ({ sectionIndex, setSectionIndex, imageInd
         ) : null}
       </div>
       
-      {/* Footer with progress */}
+      {/* Footer with progress + jump-to control */}
       {filteredImages[imageIndex] && (
         <div className="images-footer">
           <div className="image-progress">
             {imageIndex + 1} / {filteredImages.length}
+          </div>
+          <div className="image-jump-control">
+            <input
+              type="number"
+              min={1}
+              max={filteredImages.length}
+              placeholder="Jump to #"
+              value={jumpInput}
+              onChange={e => setJumpInput(e.target.value)}
+              onKeyDown={e => { if (e.key === 'Enter') handleJump(); }}
+              className="image-jump-input"
+            />
+            <button onClick={handleJump} className="image-jump-btn">GO</button>
           </div>
         </div>
       )}
