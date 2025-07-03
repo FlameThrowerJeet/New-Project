@@ -3,9 +3,10 @@ import os
 from flask import Flask, request, send_file, jsonify
 
 try:
-    from facefusion import fusion
-except ImportError as e:
-    raise RuntimeError("facefusion package is required. Install via 'pip install facefusion onnxruntime opencv-python pillow flask'") from e
+    from facefusion import fusion  # type: ignore
+except ImportError:
+    fusion = None  # type: ignore
+    print("[FaceSwapPy] facefusion not installed – swap endpoint will return 501. Run 'pip install facefusion onnxruntime opencv-python pillow flask' to enable.")
 
 app = Flask(__name__)
 
@@ -16,6 +17,9 @@ def swap():
 
     base_file = request.files['base']
     face_file = request.files['face']
+
+    if fusion is None:
+        return jsonify({'error': 'Face-swap service unavailable. Install facefusion to enable.'}), 501
 
     with tempfile.TemporaryDirectory() as temp_dir:
         base_path = os.path.join(temp_dir, 'base.png')
